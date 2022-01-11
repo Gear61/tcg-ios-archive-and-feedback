@@ -11,9 +11,13 @@
 		813AD89D278CFE6F00C03B2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AD89C278CFE6F00C03B2C /* ContentView.swift */; };
 		813AD89F278CFE7400C03B2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813AD89E278CFE7400C03B2C /* Assets.xcassets */; };
 		813AD8A2278CFE7400C03B2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813AD8A1278CFE7400C03B2C /* Preview Assets.xcassets */; };
+		A0B13811264EACE818262661 /* Pods_TCG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4369D5D0A613E86BD977D652 /* Pods_TCG.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E4A011A94843A606EA38E78 /* Pods-TCG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCG.release.xcconfig"; path = "Target Support Files/Pods-TCG/Pods-TCG.release.xcconfig"; sourceTree = "<group>"; };
+		172527B9954D6B8626B5E2CB /* Pods-TCG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCG.debug.xcconfig"; path = "Target Support Files/Pods-TCG/Pods-TCG.debug.xcconfig"; sourceTree = "<group>"; };
+		4369D5D0A613E86BD977D652 /* Pods_TCG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		813AD897278CFE6F00C03B2C /* TCG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		813AD89A278CFE6F00C03B2C /* TCGApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCGApp.swift; sourceTree = "<group>"; };
 		813AD89C278CFE6F00C03B2C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,17 +30,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0B13811264EACE818262661 /* Pods_TCG.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A4FFEC9E067142F690197A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4369D5D0A613E86BD977D652 /* Pods_TCG.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A4C31B9A39205AAD79BAF62 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				172527B9954D6B8626B5E2CB /* Pods-TCG.debug.xcconfig */,
+				0E4A011A94843A606EA38E78 /* Pods-TCG.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		813AD88E278CFE6F00C03B2C = {
 			isa = PBXGroup;
 			children = (
 				813AD899278CFE6F00C03B2C /* TCG */,
 				813AD898278CFE6F00C03B2C /* Products */,
+				7A4C31B9A39205AAD79BAF62 /* Pods */,
+				4A4FFEC9E067142F690197A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 813AD8A5278CFE7400C03B2C /* Build configuration list for PBXNativeTarget "TCG" */;
 			buildPhases = (
+				B45B4CBDCB0ED37CA9527941 /* [CP] Check Pods Manifest.lock */,
 				813AD893278CFE6F00C03B2C /* Sources */,
 				813AD894278CFE6F00C03B2C /* Frameworks */,
 				813AD895278CFE6F00C03B2C /* Resources */,
+				72229D4E36C1F338DF9A3495 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72229D4E36C1F338DF9A3495 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TCG/Pods-TCG-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TCG/Pods-TCG-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TCG/Pods-TCG-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B45B4CBDCB0ED37CA9527941 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TCG-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		813AD893278CFE6F00C03B2C /* Sources */ = {
@@ -263,6 +332,7 @@
 		};
 		813AD8A6278CFE7400C03B2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 172527B9954D6B8626B5E2CB /* Pods-TCG.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,6 +362,7 @@
 		};
 		813AD8A7278CFE7400C03B2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E4A011A94843A606EA38E78 /* Pods-TCG.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -1,0 +1,6 @@
+framework module Pods_TCG {
+  umbrella header "Pods-TCG-umbrella.h"
+
+  export *
+  module * { export * }
+}
