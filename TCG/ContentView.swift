@@ -8,14 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
-    }
-}
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    @State private var action: Int? = 0
+    
+    var body: some View {
+        NavigationView {
+            ZStack {
+                NavigationLink(destination: SettingsView(),
+                               tag: 1,
+                               selection: $action) {
+                    EmptyView()
+                }
+                VStack {
+                    
+                }
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .principal) {
+                        HStack {
+                            Text("Tech Career Growth")
+                                .font(.headline)
+                                .foregroundColor(Colors.titleText)
+                        }
+                    }
+                    ToolbarItemGroup(placement: .navigationBarTrailing) {
+                        Button(action: {self.action = 1}) {
+                            Image(systemName: "gearshape.fill")
+                        }
+                    }
+                }
+            }
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
