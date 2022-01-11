@@ -11,6 +11,7 @@
 		813AD89D278CFE6F00C03B2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AD89C278CFE6F00C03B2C /* ContentView.swift */; };
 		813AD89F278CFE7400C03B2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813AD89E278CFE7400C03B2C /* Assets.xcassets */; };
 		813AD8A2278CFE7400C03B2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813AD8A1278CFE7400C03B2C /* Preview Assets.xcassets */; };
+		81B280CC278D074700DCB425 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81B280CB278D074700DCB425 /* Launch Screen.storyboard */; };
 		A0B13811264EACE818262661 /* Pods_TCG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4369D5D0A613E86BD977D652 /* Pods_TCG.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		813AD89C278CFE6F00C03B2C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		813AD89E278CFE7400C03B2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		813AD8A1278CFE7400C03B2C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		81B280CB278D074700DCB425 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +53,6 @@
 				172527B9954D6B8626B5E2CB /* Pods-TCG.debug.xcconfig */,
 				0E4A011A94843A606EA38E78 /* Pods-TCG.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,6 +80,7 @@
 				813AD89A278CFE6F00C03B2C /* TCGApp.swift */,
 				813AD89C278CFE6F00C03B2C /* ContentView.swift */,
 				813AD89E278CFE7400C03B2C /* Assets.xcassets */,
+				81B280CB278D074700DCB425 /* Launch Screen.storyboard */,
 				813AD8A0278CFE7400C03B2C /* Preview Content */,
 			);
 			path = TCG;
@@ -152,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81B280CC278D074700DCB425 /* Launch Screen.storyboard in Resources */,
 				813AD8A2278CFE7400C03B2C /* Preview Assets.xcassets in Resources */,
 				813AD89F278CFE7400C03B2C /* Assets.xcassets in Resources */,
 			);
@@ -345,6 +348,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -375,6 +379,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
