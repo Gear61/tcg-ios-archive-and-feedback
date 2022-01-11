@@ -33,4 +33,4 @@ https://developer.apple.com/tutorials/swiftui/
 - LinearLayout seems to be the dominant layout engine as everything is contained within "stacks". An HStack is a horizontal LinearLayout and a VStack is a vertical one. Use ZStack to lay out views on top of one another, similar to FrameLayout.
 - Icon lookup (website): https://hotpot.ai/free-icons?s=sfSymbols
 - Icon lookup (Mac apps): https://developer.apple.com/sf-symbols/
-- iOS icon generator: https://makeappicon.com/
+- iOS icon generator: https://easyappicon.com/
