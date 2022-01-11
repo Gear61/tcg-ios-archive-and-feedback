@@ -6,6 +6,6 @@ target 'TCG' do
   use_frameworks!
 
   # Pods for TCG
-  pod 'PagerTabStripView', '~> 2.0'
+  pod 'PagerTabStripView', '~> 3.0'
 
 end

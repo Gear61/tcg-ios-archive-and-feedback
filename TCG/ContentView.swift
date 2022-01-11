@@ -20,7 +20,7 @@ struct ContentView: View {
                     EmptyView()
                 }
                 VStack {
-                    
+                    HomepageView()
                 }
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {

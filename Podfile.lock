@@ -1,16 +1,16 @@
 PODS:
-  - PagerTabStripView (2.1.0)
+  - PagerTabStripView (3.0.0)
 
 DEPENDENCIES:
-  - PagerTabStripView (~> 2.0)
+  - PagerTabStripView (~> 3.0)
 
 SPEC REPOS:
   trunk:
     - PagerTabStripView
 
 SPEC CHECKSUMS:
-  PagerTabStripView: a2eb266c3a688d964170d49e8cf490977a8a0a49
+  PagerTabStripView: 39ff1bb8cb1bee877c7a21740cede99b45fd3355
 
-PODFILE CHECKSUM: 0697afdb2c725c8e94371872ef77d9e2d5d659c4
+PODFILE CHECKSUM: ef1ea2185eb297b181418b00d2fa163d982018f3
 
 COCOAPODS: 1.11.2
