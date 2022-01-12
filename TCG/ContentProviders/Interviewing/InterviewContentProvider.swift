@@ -13,21 +13,31 @@ class InterviewContentProvider {
     
     init() {
         self.lessons = []
+        lessons.append(makeLesson1())
+        lessons.append(makeLesson2())
+    }
+    
+    private func makeLesson1() -> Lesson {
+        let questions = [Question]()
         
-        let lessonOne = Lesson(
-            id: "lesson-one",
-            name: "Lesson One",
+        return Lesson(
+            id: "interviewing-1",
+            name: "Properly Learning Data Structures And Algorithms",
+            youtubeUrl: "https://www.youtube.com/watch?v=j9FD_Y5JTbw",
             isCompleted: false,
-            questions: []
+            questions: questions
         )
-        lessons.append(lessonOne)
+    }
+    
+    private func makeLesson2() -> Lesson {
+        let questions = [Question]()
         
-        let lessonTwo = Lesson(
-            id: "lesson-two",
-            name: "Lesson Two",
+        return Lesson(
+            id: "interviewing-2",
+            name: "Having The Proper Mindset",
+            youtubeUrl: "https://www.youtube.com/watch?v=guxFTl_qIRg",
             isCompleted: true,
-            questions: []
+            questions: questions
         )
-        lessons.append(lessonTwo)
     }
 }
