@@ -14,30 +14,31 @@ private class NavTabViewTheme: ObservableObject {
 }
 
 struct TitleNavBarItem: View, PagerTabViewDelegate {
-
+    
     let title: String
     @ObservedObject fileprivate var theme = NavTabViewTheme()
-
+    
     var body: some View {
         VStack {
             Text(title)
                 .foregroundColor(theme.textColor)
-                .font(.subheadline)
+                .font(.system(size: 17))
+                .padding(.horizontal)
         }
         .background(theme.backgroundColor)
-        .padding(.horizontal)
     }
-
+    
     func setState(state: PagerTabViewState) {
         switch state {
         case .selected:
             self.theme.textColor = Colors.titleText
-            self.theme.backgroundColor = Colors.tabBackgroundColor
+            self.theme.backgroundColor = Colors.tabBackground
         case .highlighted:
-            self.theme.textColor = Colors.normalText
+            self.theme.textColor = Colors.highlightedText
+            self.theme.backgroundColor = Colors.tabBackground
         default:
             self.theme.textColor = Colors.footerText
-            self.theme.backgroundColor = Colors.tabBackgroundColor
+            self.theme.backgroundColor = Colors.tabBackground
         }
     }
 }
