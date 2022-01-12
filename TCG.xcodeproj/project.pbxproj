@@ -22,6 +22,8 @@
 		81B280E4278D62BF00DCB425 /* InterviewingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280E3278D62BF00DCB425 /* InterviewingView.swift */; };
 		81B280E6278D62D300DCB425 /* ResumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280E5278D62D300DCB425 /* ResumeView.swift */; };
 		81B280E8278EA16600DCB425 /* TitleNavBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280E7278EA16600DCB425 /* TitleNavBarItem.swift */; };
+		81B280EA278EC23D00DCB425 /* LessonRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280E9278EC23D00DCB425 /* LessonRowView.swift */; };
+		81B280EC278EC72A00DCB425 /* InterviewContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280EB278EC72A00DCB425 /* InterviewContentProvider.swift */; };
 		A0B13811264EACE818262661 /* Pods_TCG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4369D5D0A613E86BD977D652 /* Pods_TCG.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		81B280E3278D62BF00DCB425 /* InterviewingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewingView.swift; sourceTree = "<group>"; };
 		81B280E5278D62D300DCB425 /* ResumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeView.swift; sourceTree = "<group>"; };
 		81B280E7278EA16600DCB425 /* TitleNavBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleNavBarItem.swift; sourceTree = "<group>"; };
+		81B280E9278EC23D00DCB425 /* LessonRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonRowView.swift; sourceTree = "<group>"; };
+		81B280EB278EC72A00DCB425 /* InterviewContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewContentProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,7 @@
 		81B280DD278D5EC300DCB425 /* Interviewing */ = {
 			isa = PBXGroup;
 			children = (
+				81B280EB278EC72A00DCB425 /* InterviewContentProvider.swift */,
 			);
 			path = Interviewing;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 				81B280E3278D62BF00DCB425 /* InterviewingView.swift */,
 				81B280E5278D62D300DCB425 /* ResumeView.swift */,
 				81B280E7278EA16600DCB425 /* TitleNavBarItem.swift */,
+				81B280E9278EC23D00DCB425 /* LessonRowView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -305,7 +311,9 @@
 				813AD89D278CFE6F00C03B2C /* ContentView.swift in Sources */,
 				81B280E4278D62BF00DCB425 /* InterviewingView.swift in Sources */,
 				81B280D9278D5CED00DCB425 /* Lesson.swift in Sources */,
+				81B280EC278EC72A00DCB425 /* InterviewContentProvider.swift in Sources */,
 				813AD89B278CFE6F00C03B2C /* TCGApp.swift in Sources */,
+				81B280EA278EC23D00DCB425 /* LessonRowView.swift in Sources */,
 				81B280E8278EA16600DCB425 /* TitleNavBarItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

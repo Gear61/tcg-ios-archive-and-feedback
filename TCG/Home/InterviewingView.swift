@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct InterviewingView: View {
+
+    var dataModel = InterviewContentProvider()
+    
     var body: some View {
-        VStack{
-            Spacer()
-            Text("Interviewing")
-            Spacer()
+        LazyVStack() {
+            ForEach(dataModel.lessons) { lesson in
+                LessonRowView(lesson: lesson).id(UUID())
+                Divider()
+            }
         }
-        .padding()
     }
 }
