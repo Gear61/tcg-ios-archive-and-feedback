@@ -9,6 +9,11 @@ import SwiftUI
 
 struct InterviewingView: View {
     var body: some View {
-        Text("Interviewing")
+        VStack{
+            Spacer()
+            Text("Interviewing")
+            Spacer()
+        }
+        .padding()
     }
 }

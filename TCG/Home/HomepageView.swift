@@ -13,20 +13,23 @@ struct HomepageView: View {
     @State private var selection: Int = 0
     
     var body: some View {
-        PagerTabStripView(selection: $selection) {
-            InterviewingView()
-                .pagerTabItem {
-                    Text("Interviewing")
-                }
-            ResumeView()
-                .pagerTabItem {
-                    Text("Resume")
-                }
+        VStack {
+            Divider()
+            PagerTabStripView(selection: $selection) {
+                InterviewingView()
+                    .pagerTabItem {
+                        TitleNavBarItem(title: "Interviewing")
+                    }
+                ResumeView()
+                    .pagerTabItem {
+                        TitleNavBarItem(title: "Resume")
+                    }
+            }
+            .pagerTabStripViewStyle(.scrollableBarButton(
+                indicatorBarColor: Color.blue,
+                tabItemSpacing: 16,
+                tabItemHeight: 48
+            ))
         }
-        .pagerTabStripViewStyle(.scrollableBarButton(
-            indicatorBarColor: Color.blue,
-            tabItemSpacing: 16,
-            tabItemHeight: 48
-        ))
     }
 }

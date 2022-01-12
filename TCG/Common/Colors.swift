@@ -12,4 +12,6 @@ struct Colors {
     
     static let normalText = Color(UIColor(named: "normalTextColor")!)
     static let titleText = Color(UIColor(named: "titleTextColor")!)
+    static let footerText = Color(UIColor(named: "footerTextColor")!)
+    static let tabBackgroundColor = Color(UIColor(named: "tabBackgroundColor")!)
 }

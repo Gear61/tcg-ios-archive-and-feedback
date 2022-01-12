@@ -10,6 +10,11 @@ import SwiftUI
 struct ResumeView: View {
 
     var body: some View {
-        Text("Resume")
+        VStack{
+            Spacer()
+            Text("Resume")
+            Spacer()
+        }
+        .padding()
     }
 }
