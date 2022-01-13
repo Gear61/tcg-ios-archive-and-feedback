@@ -26,6 +26,9 @@
 		81B280EC278EC72A00DCB425 /* InterviewContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280EB278EC72A00DCB425 /* InterviewContentProvider.swift */; };
 		81B280EF278FA22100DCB425 /* LearningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280EE278FA22100DCB425 /* LearningView.swift */; };
 		81B280F1278FA25000DCB425 /* LearningViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280F0278FA25000DCB425 /* LearningViewModel.swift */; };
+		81B280F3278FA76300DCB425 /* WatchingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280F2278FA76300DCB425 /* WatchingContentView.swift */; };
+		81B280F5278FA77700DCB425 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280F4278FA77700DCB425 /* QuizView.swift */; };
+		81B280F7278FA78700DCB425 /* ScoreReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280F6278FA78700DCB425 /* ScoreReportView.swift */; };
 		A0B13811264EACE818262661 /* Pods_TCG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4369D5D0A613E86BD977D652 /* Pods_TCG.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +56,9 @@
 		81B280EB278EC72A00DCB425 /* InterviewContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewContentProvider.swift; sourceTree = "<group>"; };
 		81B280EE278FA22100DCB425 /* LearningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningView.swift; sourceTree = "<group>"; };
 		81B280F0278FA25000DCB425 /* LearningViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningViewModel.swift; sourceTree = "<group>"; };
+		81B280F2278FA76300DCB425 /* WatchingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchingContentView.swift; sourceTree = "<group>"; };
+		81B280F4278FA77700DCB425 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		81B280F6278FA78700DCB425 /* ScoreReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreReportView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +186,9 @@
 			children = (
 				81B280EE278FA22100DCB425 /* LearningView.swift */,
 				81B280F0278FA25000DCB425 /* LearningViewModel.swift */,
+				81B280F2278FA76300DCB425 /* WatchingContentView.swift */,
+				81B280F4278FA77700DCB425 /* QuizView.swift */,
+				81B280F6278FA78700DCB425 /* ScoreReportView.swift */,
 			);
 			path = Learning;
 			sourceTree = "<group>";
@@ -302,6 +311,7 @@
 				81B280E6278D62D300DCB425 /* ResumeView.swift in Sources */,
 				81B280E1278D625000DCB425 /* HomepageView.swift in Sources */,
 				81B280CF278D0BDD00DCB425 /* SettingsView.swift in Sources */,
+				81B280F7278FA78700DCB425 /* ScoreReportView.swift in Sources */,
 				81B280DB278D5CFE00DCB425 /* Question.swift in Sources */,
 				81B280D6278D0C9600DCB425 /* MailView.swift in Sources */,
 				81B280D4278D0C3500DCB425 /* Colors.swift in Sources */,
@@ -310,7 +320,9 @@
 				813AD89D278CFE6F00C03B2C /* ContentView.swift in Sources */,
 				81B280E4278D62BF00DCB425 /* InterviewingView.swift in Sources */,
 				81B280D9278D5CED00DCB425 /* Lesson.swift in Sources */,
+				81B280F5278FA77700DCB425 /* QuizView.swift in Sources */,
 				81B280EC278EC72A00DCB425 /* InterviewContentProvider.swift in Sources */,
+				81B280F3278FA76300DCB425 /* WatchingContentView.swift in Sources */,
 				813AD89B278CFE6F00C03B2C /* TCGApp.swift in Sources */,
 				81B280EA278EC23D00DCB425 /* LessonRowView.swift in Sources */,
 				81B280F1278FA25000DCB425 /* LearningViewModel.swift in Sources */,

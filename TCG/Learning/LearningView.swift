@@ -12,6 +12,22 @@ struct LearningView: View {
     @ObservedObject var viewModel: LearningViewModel
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            switch viewModel.state {
+            case LearningState.WatchingContent:
+                WatchingContentView(lesson: viewModel.lesson)
+            case LearningState.TakingQuiz:
+                QuizView()
+            case LearningState.ReportingScore:
+                ScoreReportView()
+            }
+        }
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                HStack {
+                    Text("Lesson Page").font(.headline)
+                }
+            }
+        }
     }
 }
