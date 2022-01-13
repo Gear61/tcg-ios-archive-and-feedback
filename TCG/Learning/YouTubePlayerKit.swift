@@ -44,7 +44,7 @@ struct LoadingView<Content>: View where Content: View {
     }
 }
 
-class WebViewModel: ObservableObject {
+class YouTubeWebViewModel: ObservableObject {
     @Published var url: String
     @Published var isLoading: Bool = true
     
@@ -53,8 +53,8 @@ class WebViewModel: ObservableObject {
     }
 }
 
-struct WebView: UIViewRepresentable {
-    @ObservedObject var viewModel: WebViewModel
+struct YouTubeWebView: UIViewRepresentable {
+    @ObservedObject var viewModel: YouTubeWebViewModel
     let webView = WKWebView()
     
     func makeCoordinator() -> Coordinator {
@@ -62,9 +62,9 @@ struct WebView: UIViewRepresentable {
     }
     
     class Coordinator: NSObject, WKNavigationDelegate {
-        private var viewModel: WebViewModel
+        private var viewModel: YouTubeWebViewModel
         
-        init(_ viewModel: WebViewModel) {
+        init(_ viewModel: YouTubeWebViewModel) {
             self.viewModel = viewModel
         }
         
@@ -73,9 +73,10 @@ struct WebView: UIViewRepresentable {
         }
     }
     
-    func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<WebView>) { }
+    func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<YouTubeWebView>) { }
     
     func makeUIView(context: Context) -> UIView {
+        self.webView.scrollView.isScrollEnabled = false
         self.webView.navigationDelegate = context.coordinator
         
         if let url = URL(string: self.viewModel.url) {

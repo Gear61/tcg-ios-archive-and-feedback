@@ -29,4 +29,8 @@ class Lesson: Identifiable, ObservableObject {
         self.isCompleted = isCompleted
         self.questions = questions
     }
+    
+    func getYouTubeUrl() -> String {
+        return "https://www.youtube.com/embed/" + youtubeVideoId
+    }
 }

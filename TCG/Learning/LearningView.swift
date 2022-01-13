@@ -19,7 +19,10 @@ struct LearningView: View {
         VStack {
             switch viewModel.state {
             case LearningState.WatchingContent:
-                WatchingContentView(viewModel: self.viewModel)
+                WatchingContentView(
+                    viewModel: self.viewModel,
+                    youTubeViewModel: YouTubeWebViewModel(url: viewModel.lesson.getYouTubeUrl())
+                )
             case LearningState.TakingQuiz:
                 QuizView()
             case LearningState.ReportingScore:
