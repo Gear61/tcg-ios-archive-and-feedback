@@ -11,6 +11,10 @@ struct LearningView: View {
     
     @ObservedObject var viewModel: LearningViewModel
     
+    func reset() {
+        viewModel.reset()
+    }
+    
     var body: some View {
         VStack {
             switch viewModel.state {
@@ -29,5 +33,6 @@ struct LearningView: View {
                 }
             }
         }
+        .onDisappear(perform: reset)
     }
 }

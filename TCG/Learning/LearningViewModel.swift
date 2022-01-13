@@ -36,4 +36,9 @@ class LearningViewModel: ObservableObject {
             state = LearningState.ReportingScore
         }
     }
+    
+    func reset() {
+        state = LearningState.WatchingContent
+        quizAnswers.removeAll()
+    }
 }

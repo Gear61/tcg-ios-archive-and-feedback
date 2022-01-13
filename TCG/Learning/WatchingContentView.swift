@@ -34,6 +34,7 @@ struct WatchingContentView: View {
                     .padding()
                     .background(RoundedRectangle(cornerRadius: 4).fill(Color.blue))
             }
+            .padding(.top, 8)
             Spacer()
         }
         .padding()
