@@ -15,7 +15,7 @@ struct LearningView: View {
         VStack {
             switch viewModel.state {
             case LearningState.WatchingContent:
-                WatchingContentView(lesson: viewModel.lesson)
+                WatchingContentView(viewModel: self.viewModel)
             case LearningState.TakingQuiz:
                 QuizView()
             case LearningState.ReportingScore:
