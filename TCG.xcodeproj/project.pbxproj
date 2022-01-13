@@ -140,6 +140,32 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		81674461278FF40500AB7B32 /* WatchingContent */ = {
+			isa = PBXGroup;
+			children = (
+				81B280F2278FA76300DCB425 /* WatchingContentView.swift */,
+				8167445A278FC53800AB7B32 /* YouTubePlayerKit.swift */,
+			);
+			path = WatchingContent;
+			sourceTree = "<group>";
+		};
+		81674462278FF41300AB7B32 /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				81B280F4278FA77700DCB425 /* QuizView.swift */,
+				8167445C278FE76800AB7B32 /* RadioButtonField.swift */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
+		81674463278FF42500AB7B32 /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				81B280F6278FA78700DCB425 /* ScoreReportView.swift */,
+			);
+			path = Score;
+			sourceTree = "<group>";
+		};
 		81B280CD278D0BCA00DCB425 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,13 +216,11 @@
 		81B280ED278FA20A00DCB425 /* Learning */ = {
 			isa = PBXGroup;
 			children = (
+				81674463278FF42500AB7B32 /* Score */,
+				81674462278FF41300AB7B32 /* Quiz */,
+				81674461278FF40500AB7B32 /* WatchingContent */,
 				81B280EE278FA22100DCB425 /* LearningView.swift */,
 				81B280F0278FA25000DCB425 /* LearningViewModel.swift */,
-				81B280F2278FA76300DCB425 /* WatchingContentView.swift */,
-				81B280F4278FA77700DCB425 /* QuizView.swift */,
-				81B280F6278FA78700DCB425 /* ScoreReportView.swift */,
-				8167445A278FC53800AB7B32 /* YouTubePlayerKit.swift */,
-				8167445C278FE76800AB7B32 /* RadioButtonField.swift */,
 			);
 			path = Learning;
 			sourceTree = "<group>";
