@@ -12,6 +12,7 @@
 		813AD89F278CFE7400C03B2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813AD89E278CFE7400C03B2C /* Assets.xcassets */; };
 		813AD8A2278CFE7400C03B2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813AD8A1278CFE7400C03B2C /* Preview Assets.xcassets */; };
 		8167445B278FC53800AB7B32 /* YouTubePlayerKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8167445A278FC53800AB7B32 /* YouTubePlayerKit.swift */; };
+		8167445D278FE76800AB7B32 /* RadioButtonField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8167445C278FE76800AB7B32 /* RadioButtonField.swift */; };
 		81B280CC278D074700DCB425 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81B280CB278D074700DCB425 /* Launch Screen.storyboard */; };
 		81B280CF278D0BDD00DCB425 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280CE278D0BDD00DCB425 /* SettingsView.swift */; };
 		81B280D1278D0C0A00DCB425 /* SettingsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280D0278D0C0A00DCB425 /* SettingsRow.swift */; };
@@ -43,6 +44,7 @@
 		813AD89E278CFE7400C03B2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		813AD8A1278CFE7400C03B2C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8167445A278FC53800AB7B32 /* YouTubePlayerKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubePlayerKit.swift; sourceTree = "<group>"; };
+		8167445C278FE76800AB7B32 /* RadioButtonField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonField.swift; sourceTree = "<group>"; };
 		81B280CB278D074700DCB425 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		81B280CE278D0BDD00DCB425 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		81B280D0278D0C0A00DCB425 /* SettingsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRow.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				81B280F4278FA77700DCB425 /* QuizView.swift */,
 				81B280F6278FA78700DCB425 /* ScoreReportView.swift */,
 				8167445A278FC53800AB7B32 /* YouTubePlayerKit.swift */,
+				8167445C278FE76800AB7B32 /* RadioButtonField.swift */,
 			);
 			path = Learning;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				81B280F3278FA76300DCB425 /* WatchingContentView.swift in Sources */,
 				813AD89B278CFE6F00C03B2C /* TCGApp.swift in Sources */,
 				81B280EA278EC23D00DCB425 /* LessonRowView.swift in Sources */,
+				8167445D278FE76800AB7B32 /* RadioButtonField.swift in Sources */,
 				81B280F1278FA25000DCB425 /* LearningViewModel.swift in Sources */,
 				81B280E8278EA16600DCB425 /* TitleNavBarItem.swift in Sources */,
 			);

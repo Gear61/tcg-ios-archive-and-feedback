@@ -18,10 +18,12 @@ class LearningViewModel: ObservableObject {
     var lesson: Lesson
     
     @Published var state: LearningState = LearningState.WatchingContent
+    @Published var currentQuestion: Question
     var quizAnswers: [String]
     
     init(lesson: Lesson) {
         self.lesson = lesson
+        self.currentQuestion = lesson.questions[0]
         self.quizAnswers = [String]()
     }
     
@@ -34,6 +36,8 @@ class LearningViewModel: ObservableObject {
         if (quizAnswers.count == lesson.questions.count) {
             // Evaluate the score and generate some sort of result object
             state = LearningState.ReportingScore
+        } else {
+            currentQuestion = lesson.questions[quizAnswers.count]
         }
     }
     

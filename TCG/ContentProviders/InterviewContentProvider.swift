@@ -18,7 +18,19 @@ class InterviewContentProvider: ObservableObject {
     }
     
     private func makeLesson1() -> Lesson {
-        let questions = [Question]()
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "Which of these are the core build block of data structures and algorithms problems?",
+                options: [
+                    Question.Option(id: "Graphs"),
+                    Question.Option(id: "Patterns"),
+                    Question.Option(id: "Code"),
+                    Question.Option(id: "Trees")
+                ],
+                correctAnswer: "Patterns"
+            )
+        )
         
         return Lesson(
             id: "interviewing-1",
@@ -31,7 +43,19 @@ class InterviewContentProvider: ObservableObject {
     }
     
     private func makeLesson2() -> Lesson {
-        let questions = [Question]()
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "Which of these are the core build block of data structures and algorithms problems?",
+                options: [
+                    Question.Option(id: "Graphs"),
+                    Question.Option(id: "Patterns"),
+                    Question.Option(id: "Code"),
+                    Question.Option(id: "Trees")
+                ],
+                correctAnswer: "Patterns"
+            )
+        )
         
         return Lesson(
             id: "interviewing-2",

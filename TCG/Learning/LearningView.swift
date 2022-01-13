@@ -32,7 +32,7 @@ struct LearningView: View, WatchingContentDelegate {
                     youTubeViewModel: YouTubeWebViewModel(url: viewModel.lesson.getYouTubeUrl())
                 )
             case LearningState.TakingQuiz:
-                QuizView()
+                QuizView(viewModel: self.viewModel)
             case LearningState.ReportingScore:
                 ScoreReportView()
             }
