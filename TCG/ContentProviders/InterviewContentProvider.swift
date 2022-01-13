@@ -21,7 +21,7 @@ class InterviewContentProvider: ObservableObject {
         var questions = [Question]()
         questions.append(
             Question(
-                text: "Which of these are the core build block of data structures and algorithms problems?",
+                text: "Which of these is the core build block of data structures and algorithms problems?",
                 options: [
                     Question.Option(id: "Graphs"),
                     Question.Option(id: "Patterns"),

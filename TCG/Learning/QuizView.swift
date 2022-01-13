@@ -21,7 +21,7 @@ struct QuizView: View {
     }
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Text(viewModel.currentQuestion.text)
                 .font(.system(size: 21))
                 .foregroundColor(Colors.normalText)
