@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LearningView: View {
+struct LearningView: View, WatchingContentDelegate {
     
     @ObservedObject var viewModel: LearningViewModel
     var lessonType: String
@@ -16,12 +16,19 @@ struct LearningView: View {
         viewModel.reset()
     }
     
+    func onContentFinished() {
+        withAnimation {
+            viewModel.onContentFinished()
+        }
+    }
+    
     var body: some View {
         VStack {
             switch viewModel.state {
             case LearningState.WatchingContent:
                 WatchingContentView(
                     viewModel: self.viewModel,
+                    delegate: self,
                     youTubeViewModel: YouTubeWebViewModel(url: viewModel.lesson.getYouTubeUrl())
                 )
             case LearningState.TakingQuiz:
