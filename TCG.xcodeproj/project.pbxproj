@@ -61,6 +61,7 @@
 		81B280F4278FA77700DCB425 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		81B280F6278FA78700DCB425 /* ScoreReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreReportView.swift; sourceTree = "<group>"; };
 		81B280F8278FAA0E00DCB425 /* YouTubePlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubePlayerView.swift; sourceTree = "<group>"; };
+		81B280FA278FAE1D00DCB425 /* TCG.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TCG.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +114,7 @@
 		813AD899278CFE6F00C03B2C /* TCG */ = {
 			isa = PBXGroup;
 			children = (
+				81B280FA278FAE1D00DCB425 /* TCG.entitlements */,
 				81B280ED278FA20A00DCB425 /* Learning */,
 				81B280E2278D625600DCB425 /* Home */,
 				81B280DC278D5EA600DCB425 /* ContentProviders */,
@@ -459,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TCG/TCG.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TCG/Preview Content\"";
@@ -490,6 +493,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TCG/TCG.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TCG/Preview Content\"";
