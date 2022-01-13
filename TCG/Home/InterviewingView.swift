@@ -9,7 +9,7 @@ import SwiftUI
 
 struct InterviewingView: View {
 
-    var dataModel = InterviewContentProvider()
+    @EnvironmentObject var dataModel: InterviewContentProvider
     
     var body: some View {
         LazyVStack() {

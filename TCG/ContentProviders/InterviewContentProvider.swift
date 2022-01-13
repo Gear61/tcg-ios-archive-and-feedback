@@ -7,7 +7,7 @@
 
 import Foundation
 
-class InterviewContentProvider {
+class InterviewContentProvider: ObservableObject {
     
     var lessons: [Lesson]
     

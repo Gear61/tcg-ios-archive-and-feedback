@@ -12,6 +12,7 @@ struct TCGApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(InterviewContentProvider())
         }
     }
 }
