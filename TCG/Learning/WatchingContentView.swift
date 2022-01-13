@@ -16,7 +16,7 @@ struct WatchingContentView: View {
             Text(lesson.name)
                 .foregroundColor(Colors.titleText)
                 .font(.title2)
-                .padding(.bottom, 8)
+                .padding(.bottom, 4)
             Text("To learn the contents of this lesson, watch the video below. After you are done, click the \"Quiz Me!\" button to see if you have truly mastered the content. Happy learning!")
                 .foregroundColor(Colors.normalText)
                 .font(.body)

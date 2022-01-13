@@ -29,6 +29,7 @@
 		81B280F3278FA76300DCB425 /* WatchingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280F2278FA76300DCB425 /* WatchingContentView.swift */; };
 		81B280F5278FA77700DCB425 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280F4278FA77700DCB425 /* QuizView.swift */; };
 		81B280F7278FA78700DCB425 /* ScoreReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280F6278FA78700DCB425 /* ScoreReportView.swift */; };
+		81B280F9278FAA0E00DCB425 /* YouTubePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280F8278FAA0E00DCB425 /* YouTubePlayerView.swift */; };
 		A0B13811264EACE818262661 /* Pods_TCG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4369D5D0A613E86BD977D652 /* Pods_TCG.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		81B280F2278FA76300DCB425 /* WatchingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchingContentView.swift; sourceTree = "<group>"; };
 		81B280F4278FA77700DCB425 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		81B280F6278FA78700DCB425 /* ScoreReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreReportView.swift; sourceTree = "<group>"; };
+		81B280F8278FAA0E00DCB425 /* YouTubePlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubePlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 				81B280F2278FA76300DCB425 /* WatchingContentView.swift */,
 				81B280F4278FA77700DCB425 /* QuizView.swift */,
 				81B280F6278FA78700DCB425 /* ScoreReportView.swift */,
+				81B280F8278FAA0E00DCB425 /* YouTubePlayerView.swift */,
 			);
 			path = Learning;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				81B280F5278FA77700DCB425 /* QuizView.swift in Sources */,
 				81B280EC278EC72A00DCB425 /* InterviewContentProvider.swift in Sources */,
 				81B280F3278FA76300DCB425 /* WatchingContentView.swift in Sources */,
+				81B280F9278FAA0E00DCB425 /* YouTubePlayerView.swift in Sources */,
 				813AD89B278CFE6F00C03B2C /* TCGApp.swift in Sources */,
 				81B280EA278EC23D00DCB425 /* LessonRowView.swift in Sources */,
 				81B280F1278FA25000DCB425 /* LearningViewModel.swift in Sources */,

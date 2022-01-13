@@ -23,7 +23,7 @@ class InterviewContentProvider: ObservableObject {
         return Lesson(
             id: "interviewing-1",
             name: "Properly Learning Data Structures And Algorithms",
-            youtubeUrl: "https://www.youtube.com/watch?v=j9FD_Y5JTbw",
+            youtubeVideoId: "j9FD_Y5JTbw",
             isCompleted: false,
             questions: questions
         )
@@ -35,7 +35,7 @@ class InterviewContentProvider: ObservableObject {
         return Lesson(
             id: "interviewing-2",
             name: "Having The Proper Mindset",
-            youtubeUrl: "https://www.youtube.com/watch?v=guxFTl_qIRg",
+            youtubeVideoId: "guxFTl_qIRg",
             isCompleted: true,
             questions: questions
         )
