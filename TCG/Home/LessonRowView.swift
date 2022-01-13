@@ -12,7 +12,7 @@ struct LessonRowView: View {
     @ObservedObject var lesson: Lesson
     
     var body: some View {
-        NavigationLink(destination: LearningView(viewModel: LearningViewModel(lesson: self.lesson))) {
+        NavigationLink(destination: LearningView(viewModel: LearningViewModel(lesson: self.lesson), lessonType: lesson.type)) {
             HStack() {
                 Text(lesson.name)
                     .foregroundColor(Colors.normalText)

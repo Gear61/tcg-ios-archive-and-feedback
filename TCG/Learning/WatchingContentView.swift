@@ -28,6 +28,10 @@ struct WatchingContentView: View {
             LoadingView(isShowing: self.$youTubeViewModel.isLoading) {
                 YouTubeWebView(viewModel: self.youTubeViewModel)
             }
+            .overlay(
+                RoundedRectangle(cornerRadius: 4)
+                    .stroke(Colors.normalText, lineWidth: 1)
+            )
             .frame(minHeight: 0, maxHeight: UIScreen.main.bounds.height * 0.3)
             .cornerRadius(4)
             Button(action: takeQuiz) {

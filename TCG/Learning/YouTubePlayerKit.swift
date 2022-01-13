@@ -35,9 +35,6 @@ struct LoadingView<Content>: View where Content: View {
                 VStack {
                     ActivityIndicatorView(isAnimating: .constant(true), style: .large)
                 }
-                .frame(width: geometry.size.width / 2, height: geometry.size.height / 5)
-                .background(Color.secondary.colorInvert())
-                .cornerRadius(20)
                 .opacity(self.isShowing ? 1 : 0)
             }
         }

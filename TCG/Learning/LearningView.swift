@@ -10,6 +10,7 @@ import SwiftUI
 struct LearningView: View {
     
     @ObservedObject var viewModel: LearningViewModel
+    var lessonType: String
     
     func reset() {
         viewModel.reset()
@@ -32,7 +33,7 @@ struct LearningView: View {
         .toolbar {
             ToolbarItem(placement: .principal) {
                 HStack {
-                    Text("Lesson Page").font(.headline)
+                    Text(lessonType + " Lesson").font(.headline)
                 }
             }
         }
