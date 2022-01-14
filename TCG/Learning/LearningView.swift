@@ -13,6 +13,7 @@ struct LearningView: View, LearningDelegate {
     var lessonType: String
     
     func reset() {
+        viewModel.delegate = nil
         viewModel.reset()
     }
     
