@@ -11,6 +11,14 @@ struct LessonRowView: View {
     
     @ObservedObject var lesson: Lesson
     
+    func checkCompletion() {
+        if (!lesson.isCompleted) {
+            if (UserDefaults.standard.bool(forKey: lesson.id)) {
+                lesson.isCompleted = true
+            }
+        }
+    }
+    
     var body: some View {
         NavigationLink(destination: LearningView(viewModel: LearningViewModel(lesson: self.lesson), lessonType: lesson.type)) {
             HStack() {
@@ -27,5 +35,6 @@ struct LessonRowView: View {
             .padding(.horizontal)
             .padding(.top, 4)
         }
+        .onAppear(perform: checkCompletion)
     }
 }
