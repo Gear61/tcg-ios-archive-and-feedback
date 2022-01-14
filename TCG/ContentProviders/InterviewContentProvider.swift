@@ -21,7 +21,7 @@ class InterviewContentProvider: ObservableObject {
         var questions = [Question]()
         questions.append(
             Question(
-                text: "Which of these is the core build block of data structures and algorithms problems?",
+                text: "Which of these is the core building block of data structures and algorithms problems?",
                 options: [
                     Question.Option(id: "Graphs"),
                     Question.Option(id: "Patterns"),
@@ -48,7 +48,7 @@ class InterviewContentProvider: ObservableObject {
         return Lesson(
             id: lessonId,
             type: "Interviewing",
-            name: "Properly Learning Data Structures And Algorithms",
+            name: "Effectively Learning Data Structures And Algorithms",
             youtubeVideoId: "j9FD_Y5JTbw",
             isCompleted: completionStatus,
             questions: questions
