@@ -53,7 +53,7 @@ struct LearningView: View, LearningDelegate {
                 WatchingContentView(
                     viewModel: self.viewModel,
                     youTubeViewModel: YouTubeWebViewModel(url: viewModel.lesson.getYouTubeUrl())
-                )
+                ).supportedOrientations(.portrait)
             case LearningState.TakingQuiz:
                 QuizView(viewModel: self.viewModel)
             case LearningState.ReportingScore:
