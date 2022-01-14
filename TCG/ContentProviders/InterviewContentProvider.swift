@@ -43,12 +43,14 @@ class InterviewContentProvider: ObservableObject {
             )
         )
         
+        let lessonId = "interviewing-1"
+        let completionStatus = UserDefaults.standard.bool(forKey: lessonId)
         return Lesson(
-            id: "interviewing-1",
+            id: lessonId,
             type: "Interviewing",
             name: "Properly Learning Data Structures And Algorithms",
             youtubeVideoId: "j9FD_Y5JTbw",
-            isCompleted: false,
+            isCompleted: completionStatus,
             questions: questions
         )
     }
@@ -68,12 +70,14 @@ class InterviewContentProvider: ObservableObject {
             )
         )
         
+        let lessonId = "interviewing-2"
+        let completionStatus = UserDefaults.standard.bool(forKey: lessonId)
         return Lesson(
-            id: "interviewing-2",
+            id: lessonId,
             type: "Interviewing",
             name: "Having The Proper Mindset",
             youtubeVideoId: "guxFTl_qIRg",
-            isCompleted: true,
+            isCompleted: completionStatus,
             questions: questions
         )
     }
