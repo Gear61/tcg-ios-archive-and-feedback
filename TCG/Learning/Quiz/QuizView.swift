@@ -17,7 +17,9 @@ struct QuizView: View {
     }
     
     func submitAnswer() {
-        
+        withAnimation {
+            viewModel.onAnswerSubmitted(answer: selectedOption)
+        }
     }
     
     var body: some View {

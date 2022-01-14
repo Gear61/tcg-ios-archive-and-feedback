@@ -43,6 +43,7 @@ class LearningViewModel: ObservableObject {
     
     func reset() {
         state = LearningState.WatchingContent
+        currentQuestion = lesson.questions[0]
         quizAnswers.removeAll()
     }
 }

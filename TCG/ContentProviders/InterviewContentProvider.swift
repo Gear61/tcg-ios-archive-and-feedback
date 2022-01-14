@@ -32,6 +32,17 @@ class InterviewContentProvider: ObservableObject {
             )
         )
         
+        questions.append(
+            Question(
+                text: "True or false: The most effective way to be prepared for data structures and algorithms interview problems is to memorize the code of each problem's solution line by line.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "False"
+            )
+        )
+        
         return Lesson(
             id: "interviewing-1",
             type: "Interviewing",
