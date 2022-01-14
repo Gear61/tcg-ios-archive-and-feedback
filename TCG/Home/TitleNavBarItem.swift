@@ -25,20 +25,16 @@ struct TitleNavBarItem: View, PagerTabViewDelegate {
                 .font(.system(size: 17))
                 .padding(.horizontal)
         }
-        .background(theme.backgroundColor)
     }
     
     func setState(state: PagerTabViewState) {
         switch state {
         case .selected:
             self.theme.textColor = Colors.titleText
-            self.theme.backgroundColor = Colors.tabBackground
         case .highlighted:
             self.theme.textColor = Colors.highlightedText
-            self.theme.backgroundColor = Colors.tabBackground
         default:
             self.theme.textColor = Colors.footerText
-            self.theme.backgroundColor = Colors.tabBackground
         }
     }
 }
