@@ -26,42 +26,44 @@ struct ScoreReportView: View {
     }
     
     var body: some View {
-        VStack {
-            Text(viewModel.scoreMessage)
-                .foregroundColor(Colors.normalText)
-                .font(.title3)
-                .padding(.bottom, 8)
-            Text(viewModel.scoreText)
-                .foregroundColor(Colors.titleText)
-                .font(.title)
-            if (!viewModel.gotPerfectScore) {
-                Button(action: retakeQuiz) {
-                    Text("Retake Quiz")
+        ScrollView {
+            VStack {
+                Text(viewModel.scoreMessage)
+                    .foregroundColor(Colors.normalText)
+                    .font(.title3)
+                    .padding(.bottom, 8)
+                Text(viewModel.scoreText)
+                    .foregroundColor(Colors.titleText)
+                    .font(.title)
+                if (!viewModel.gotPerfectScore) {
+                    Button(action: retakeQuiz) {
+                        Text("Retake Quiz")
+                            .foregroundColor(Color.white)
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(RoundedRectangle(cornerRadius: 4).fill(Color.blue))
+                    }
+                    .padding(.top, 8)
+                    Button(action: relearnContent) {
+                        Text("Relearn Content")
+                            .foregroundColor(Color.white)
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(RoundedRectangle(cornerRadius: 4).fill(Color.blue))
+                    }
+                    .padding(.top, 8)
+                }
+                Button(action: returnHome) {
+                    Text("Exit")
                         .foregroundColor(Color.white)
                         .frame(maxWidth: .infinity)
                         .padding()
                         .background(RoundedRectangle(cornerRadius: 4).fill(Color.blue))
                 }
                 .padding(.top, 8)
-                Button(action: relearnContent) {
-                    Text("Relearn Content")
-                        .foregroundColor(Color.white)
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(RoundedRectangle(cornerRadius: 4).fill(Color.blue))
-                }
-                .padding(.top, 8)
+                Spacer()
             }
-            Button(action: returnHome) {
-                Text("Exit")
-                    .foregroundColor(Color.white)
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(RoundedRectangle(cornerRadius: 4).fill(Color.blue))
-            }
-            .padding(.top, 8)
-            Spacer()
+            .padding()
         }
-        .padding()
     }
 }
