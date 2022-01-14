@@ -9,12 +9,14 @@ import SwiftUI
 
 struct ResumeView: View {
 
+    @EnvironmentObject var dataModel: ResumeContentProvider
+    
     var body: some View {
-        VStack{
-            Spacer()
-            Text("Resume")
-            Spacer()
+        LazyVStack() {
+            ForEach(dataModel.lessons) { lesson in
+                LessonRowView(lesson: lesson).id(UUID())
+                Divider()
+            }
         }
-        .padding()
     }
 }

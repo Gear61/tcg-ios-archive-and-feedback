@@ -15,6 +15,7 @@
 		8167445D278FE76800AB7B32 /* RadioButtonField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8167445C278FE76800AB7B32 /* RadioButtonField.swift */; };
 		816744652791462800AB7B32 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816744642791462800AB7B32 /* Extensions.swift */; };
 		81674467279146FD00AB7B32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81674466279146FD00AB7B32 /* AppDelegate.swift */; };
+		8167446927915B4900AB7B32 /* ResumeContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8167446827915B4900AB7B32 /* ResumeContentProvider.swift */; };
 		81B280CC278D074700DCB425 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81B280CB278D074700DCB425 /* Launch Screen.storyboard */; };
 		81B280CF278D0BDD00DCB425 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280CE278D0BDD00DCB425 /* SettingsView.swift */; };
 		81B280D1278D0C0A00DCB425 /* SettingsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280D0278D0C0A00DCB425 /* SettingsRow.swift */; };
@@ -49,6 +50,7 @@
 		8167445C278FE76800AB7B32 /* RadioButtonField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonField.swift; sourceTree = "<group>"; };
 		816744642791462800AB7B32 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		81674466279146FD00AB7B32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8167446827915B4900AB7B32 /* ResumeContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeContentProvider.swift; sourceTree = "<group>"; };
 		81B280CB278D074700DCB425 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		81B280CE278D0BDD00DCB425 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		81B280D0278D0C0A00DCB425 /* SettingsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRow.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				81B280EB278EC72A00DCB425 /* InterviewContentProvider.swift */,
+				8167446827915B4900AB7B32 /* ResumeContentProvider.swift */,
 			);
 			path = ContentProviders;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				81B280EF278FA22100DCB425 /* LearningView.swift in Sources */,
 				813AD89D278CFE6F00C03B2C /* ContentView.swift in Sources */,
 				81B280E4278D62BF00DCB425 /* InterviewingView.swift in Sources */,
+				8167446927915B4900AB7B32 /* ResumeContentProvider.swift in Sources */,
 				81B280D9278D5CED00DCB425 /* Lesson.swift in Sources */,
 				81B280F5278FA77700DCB425 /* QuizView.swift in Sources */,
 				81B280EC278EC72A00DCB425 /* InterviewContentProvider.swift in Sources */,

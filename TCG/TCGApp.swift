@@ -16,6 +16,7 @@ struct TCGApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(InterviewContentProvider())
+                .environmentObject(ResumeContentProvider())
         }
     }
 }
