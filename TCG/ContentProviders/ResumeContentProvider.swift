@@ -22,20 +22,7 @@ class ResumeContentProvider: ObservableObject {
         var questions = [Question]()
         questions.append(
             Question(
-                text: "Which of these is the core building block of data structures and algorithms problems?",
-                options: [
-                    Question.Option(id: "Graphs"),
-                    Question.Option(id: "Patterns"),
-                    Question.Option(id: "Code"),
-                    Question.Option(id: "Trees")
-                ],
-                correctAnswer: "Patterns"
-            )
-        )
-        
-        questions.append(
-            Question(
-                text: "True or false: The most effective way to be prepared for data structures and algorithms interview problems is to memorize the code of each problem's solution line by line.",
+                text: "True or false: As long as you have basic proficiency with everything on a job posting, you will get an interview for that job.",
                 options: [
                     Question.Option(id: "True"),
                     Question.Option(id: "False")
@@ -46,82 +33,20 @@ class ResumeContentProvider: ObservableObject {
         
         questions.append(
             Question(
-                text: "Why should you comment your solutions to data structures and algorithms problems?",
+                text: "How much time does a recruiter spend reading a resume, on average?",
                 options: [
-                    Question.Option(id: "To explain what every line of code does"),
-                    Question.Option(id: "Because comments make good code"),
-                    Question.Option(id: "It makes the code faster"),
-                    Question.Option(id: "To capture the core insight behind the problem and the high-level approach")
+                    Question.Option(id: "Less than 10 seconds"),
+                    Question.Option(id: "Around 2 minutes"),
+                    Question.Option(id: "Just 5 minutes"),
+                    Question.Option(id: "15+ minutes, resumes are complex and important")
                 ],
-                correctAnswer: "To capture the core insight behind the problem and the high-level approach"
+                correctAnswer: "Less than 10 seconds"
             )
         )
         
         questions.append(
             Question(
-                text: "True or false: When you are completely stuck, you should just look at the entire solution in order to learn it.",
-                options: [
-                    Question.Option(id: "True"),
-                    Question.Option(id: "False")
-                ],
-                correctAnswer: "False"
-            )
-        )
-        
-        questions.append(
-            Question(
-                text: "Why is it healthy to struggle on data stuctures and algorithms problems?",
-                options: [
-                    Question.Option(id: "That's just how data structures and algorithms are"),
-                    Question.Option(id: "You can tell your interviewer about it so they go easier on you"),
-                    Question.Option(id: "Because that's when your mind is able to do true learning"),
-                    Question.Option(id: "So you can complain about it on LinkedIn")
-                ],
-                correctAnswer: "Because that's when your mind is able to do true learning"
-            )
-        )
-        
-        let lessonId = "resume-1"
-        let completionStatus = UserDefaults.standard.bool(forKey: lessonId)
-        return Lesson(
-            id: lessonId,
-            type: "Resume",
-            name: "Effectively Learning Data Structures And Algorithms",
-            youtubeVideoId: "j9FD_Y5JTbw",
-            isCompleted: completionStatus,
-            questions: questions
-        )
-    }
-    
-    private func makeLesson2() -> Lesson {
-        var questions = [Question]()
-        questions.append(
-            Question(
-                text: "True or false: You need to care a lot about your Big Tech interview, because passing it will drastically improve your life. The more prominent it is in your brain, the more likely you are to pass it.",
-                options: [
-                    Question.Option(id: "True"),
-                    Question.Option(id: "False")
-                ],
-                correctAnswer: "False"
-            )
-        )
-        
-        questions.append(
-            Question(
-                text: "How should you view interviews?",
-                options: [
-                    Question.Option(id: "Make or break opportunities"),
-                    Question.Option(id: "Lottery tickets to make a lot more money"),
-                    Question.Option(id: "Opportunities to hang out with some talented tech people"),
-                    Question.Option(id: "Big tests, similar to final exams in school")
-                ],
-                correctAnswer: "Opportunities to hang out with some talented tech people"
-            )
-        )
-        
-        questions.append(
-            Question(
-                text: "True or false: Your input is much more important than the output and results you achieve.",
+                text: "True or false: Your resume should be boring and straightforward, especially with its format.",
                 options: [
                     Question.Option(id: "True"),
                     Question.Option(id: "False")
@@ -132,20 +57,20 @@ class ResumeContentProvider: ObservableObject {
         
         questions.append(
             Question(
-                text: "Why should you not view interviews as a test?",
+                text: "What's the main reason you should avoid the paid flashy resume formats you find online?",
                 options: [
-                    Question.Option(id: "Because they aren't"),
-                    Question.Option(id: "To reduce your anxiety and care less about the result"),
-                    Question.Option(id: "So they don't remind you of school"),
-                    Question.Option(id: "It takes too much mental capacity")
+                    Question.Option(id: "To save money"),
+                    Question.Option(id: "The format will probably make your resume harder to read"),
+                    Question.Option(id: "To protect your privacy"),
+                    Question.Option(id: "Other people have probably bought and used those formats already")
                 ],
-                correctAnswer: "To reduce your anxiety and care less about the result"
+                correctAnswer: "The format will probably make your resume harder to read"
             )
         )
         
         questions.append(
             Question(
-                text: "True or false: You shouldn't take any breaks when studying for interviews, because the relentless focus will help you learn the material better.",
+                text: "True or false: In order to stand out from other applicants, you can use a very unique format to make your resume more memorable to the recruiter, thus increasing your chances.",
                 options: [
                     Question.Option(id: "True"),
                     Question.Option(id: "False")
@@ -154,13 +79,86 @@ class ResumeContentProvider: ObservableObject {
             )
         )
         
+        let lessonId = "resume-1"
+        let completionStatus = UserDefaults.standard.bool(forKey: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: "Resume",
+            name: "Understanding The Resume Process And Formats",
+            youtubeVideoId: "MByD2CTwfmM",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson2() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "Is this a good resume snippet: \"Worked on the SIVAD system, using Room, AndroidX, Activities, And Java\"",
+                options: [
+                    Question.Option(id: "Yes"),
+                    Question.Option(id: "No")
+                ],
+                correctAnswer: "No"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "How do you make the experience portions of your resume stand out?",
+                options: [
+                    Question.Option(id: "Mention all the technologies you used"),
+                    Question.Option(id: "Highlighting the business impact"),
+                    Question.Option(id: "Using flashy formatting"),
+                    Question.Option(id: "Point out that you built within cutting edge product spaces like NFTs")
+                ],
+                correctAnswer: "Highlighting the business impact"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Is this a good resume snippet: \"Champion for unit test coverage for Cool Company's iOS app, increasing it by 20% and reducing the amount of new iOS user issues by 10%\"",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "True"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "What is the main way people struggle with their resumes?",
+                options: [
+                    Question.Option(id: "Telling instead of showing"),
+                    Question.Option(id: "Formatting"),
+                    Question.Option(id: "Length"),
+                    Question.Option(id: "Getting past the ATS")
+                ],
+                correctAnswer: "Telling instead of showing"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Is this a good resume snippet: \"Led the JavaScript migration effort with strong communication, architectural, and code quality skills\"",
+                options: [
+                    Question.Option(id: "Yes"),
+                    Question.Option(id: "No")
+                ],
+                correctAnswer: "No"
+            )
+        )
+        
         let lessonId = "resume-2"
         let completionStatus = UserDefaults.standard.bool(forKey: lessonId)
         return Lesson(
             id: lessonId,
             type: "Resume",
-            name: "Having The Proper Mindset",
-            youtubeVideoId: "guxFTl_qIRg",
+            name: "Explaining Your Experience In A Meaningful Way",
+            youtubeVideoId: "sDbK84GEE94",
             isCompleted: completionStatus,
             questions: questions
         )
