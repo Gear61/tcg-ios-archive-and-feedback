@@ -7,19 +7,13 @@
 
 import SwiftUI
 
-protocol WatchingContentDelegate {
-    
-    func onContentFinished()
-}
-
 struct WatchingContentView: View {
     
     var viewModel: LearningViewModel
-    var delegate: WatchingContentDelegate
     @ObservedObject var youTubeViewModel: YouTubeWebViewModel
     
     func takeQuiz() {
-        delegate.onContentFinished()
+        viewModel.onContentFinished()
     }
     
     var body: some View {

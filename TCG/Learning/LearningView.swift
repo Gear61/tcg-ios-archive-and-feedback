@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LearningView: View, WatchingContentDelegate {
+struct LearningView: View, LearningDelegate {
     
     @ObservedObject var viewModel: LearningViewModel
     var lessonType: String
@@ -16,9 +16,20 @@ struct LearningView: View, WatchingContentDelegate {
         viewModel.reset()
     }
     
+    func attachListener() {
+        viewModel.delegate = self
+    }
+    
     func onContentFinished() {
         withAnimation {
-            viewModel.onContentFinished()
+            viewModel.state = LearningState.TakingQuiz
+        }
+    }
+    
+    func onQuizFinished() {
+        withAnimation {
+            viewModel.evaluateQuiz()
+            viewModel.state = LearningState.ReportingScore
         }
     }
     
@@ -28,7 +39,6 @@ struct LearningView: View, WatchingContentDelegate {
             case LearningState.WatchingContent:
                 WatchingContentView(
                     viewModel: self.viewModel,
-                    delegate: self,
                     youTubeViewModel: YouTubeWebViewModel(url: viewModel.lesson.getYouTubeUrl())
                 )
             case LearningState.TakingQuiz:
@@ -44,6 +54,7 @@ struct LearningView: View, WatchingContentDelegate {
                 }
             }
         }
+        .onAppear(perform: attachListener)
         .onDisappear(perform: reset)
     }
 }
