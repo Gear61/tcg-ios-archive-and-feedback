@@ -168,7 +168,20 @@ class ResumeContentProvider: ObservableObject {
         var questions = [Question]()
         questions.append(
             Question(
-                text: "True or false: Interviewing is all about how much you know. As long as you study a lot and understand enough material, you will pass the interview.",
+                text: "What's the best way to juice up your resume after you have gotten the basics?",
+                options: [
+                    Question.Option(id: "Certifications"),
+                    Question.Option(id: "Competitive Programming"),
+                    Question.Option(id: "Serious Side Projects"),
+                    Question.Option(id: "Building Clones Of Popular Websites")
+                ],
+                correctAnswer: "Serious Side Projects"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: As long as you can code and have a polished resume, that is enough to comfortably find a job.",
                 options: [
                     Question.Option(id: "True"),
                     Question.Option(id: "False")
@@ -179,20 +192,20 @@ class ResumeContentProvider: ObservableObject {
         
         questions.append(
             Question(
-                text: "For almost everyone, what does the learning curve look like for data structures and algorithms?",
+                text: "Why are side projects such an effective tactic?",
                 options: [
-                    Question.Option(id: "Linear"),
-                    Question.Option(id: "Logarithmic"),
-                    Question.Option(id: "Quadratic"),
-                    Question.Option(id: "Exponential")
+                    Question.Option(id: "There's a lot of technlogy now that makes publicly deploying and sharing projects very easy"),
+                    Question.Option(id: "They build up important non-coding skills that make you a more complete engineer"),
+                    Question.Option(id: "They're extremely cheap and in most cases, free"),
+                    Question.Option(id: "All of the above")
                 ],
-                correctAnswer: "Exponential"
+                correctAnswer: "All of the above"
             )
         )
         
         questions.append(
             Question(
-                text: "True or false: It's completely normal and even a good sign when you feel dumb while studying data structures and algorithms.",
+                text: "True or false: You can get something extremely close to work experience without having a formal job, all from the comfort of your own home.",
                 options: [
                     Question.Option(id: "True"),
                     Question.Option(id: "False")
@@ -201,37 +214,13 @@ class ResumeContentProvider: ObservableObject {
             )
         )
         
-        questions.append(
-            Question(
-                text: "What's the most important piece when you're learning data structures and algorithms material?",
-                options: [
-                    Question.Option(id: "How many GitHub green boxes you can get"),
-                    Question.Option(id: "The quality of your learning system"),
-                    Question.Option(id: "How often you post to LinkedIn about your progress"),
-                    Question.Option(id: "The specs of your computer as many problems require a lot of compute and RAM")
-                ],
-                correctAnswer: "The quality of your learning system"
-            )
-        )
-        
-        questions.append(
-            Question(
-                text: "True or false: If you aren't making progress on data structures and algorithms understanding after 2 months, your mind probably just isn't geared to understand them. At this point, you should be practical and just look for interviews that don't have these kinds of problems.",
-                options: [
-                    Question.Option(id: "True"),
-                    Question.Option(id: "False")
-                ],
-                correctAnswer: "False"
-            )
-        )
-        
         let lessonId = "resume-3"
         let completionStatus = UserDefaults.standard.bool(forKey: lessonId)
         return Lesson(
             id: lessonId,
             type: "Resume",
-            name: "How To Mentally Prepare For Interviews With Data Structures And Algorithms",
-            youtubeVideoId: "LSLyly2GJo4",
+            name: "How To Supercharge Your Resume As A Junior Engineer",
+            youtubeVideoId: "9Wb-gHEO9ug",
             isCompleted: completionStatus,
             questions: questions
         )
