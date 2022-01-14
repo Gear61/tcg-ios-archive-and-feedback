@@ -33,6 +33,18 @@ struct LearningView: View, LearningDelegate {
         }
     }
     
+    func retakeQuiz() {
+        withAnimation {
+            viewModel.state = LearningState.TakingQuiz
+        }
+    }
+    
+    func relearnContent() {
+        withAnimation {
+            viewModel.state = LearningState.WatchingContent
+        }
+    }
+    
     var body: some View {
         VStack {
             switch viewModel.state {

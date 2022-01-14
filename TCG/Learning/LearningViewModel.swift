@@ -18,6 +18,10 @@ protocol LearningDelegate {
     func onContentFinished()
     
     func onQuizFinished()
+    
+    func retakeQuiz()
+    
+    func relearnContent()
 }
 
 class LearningViewModel: ObservableObject {
@@ -26,6 +30,7 @@ class LearningViewModel: ObservableObject {
     var quizAnswers: [String]
     var scoreMessage: String = ""
     var scoreText: String = ""
+    var gotPerfectScore = false
     var delegate: LearningDelegate? = nil
     
     @Published var state: LearningState = LearningState.WatchingContent
@@ -63,11 +68,13 @@ class LearningViewModel: ObservableObject {
         scoreText = String(numRight) + "/" + String(quizAnswers.count) + " for " + percentText
         
         var prefix = ""
+        gotPerfectScore = false
         if (percent == 100.0) {
             if (!lesson.isCompleted) {
                 lesson.isCompleted = true
                 UserDefaults.standard.set(true, forKey: lesson.id)
             }
+            gotPerfectScore = true
             prefix = "Congratulations!"
         } else if (percent >= 80.0) {
             prefix = "Not bad!"
@@ -75,6 +82,18 @@ class LearningViewModel: ObservableObject {
             prefix = "Better luck next time!"
         }
         scoreMessage = prefix + " Your score was:"
+    }
+    
+    func retakeQuiz() {
+        currentQuestion = lesson.questions[0]
+        quizAnswers.removeAll()
+        delegate?.retakeQuiz()
+    }
+    
+    func relearnContent() {
+        currentQuestion = lesson.questions[0]
+        quizAnswers.removeAll()
+        delegate?.relearnContent()
     }
     
     func reset() {
