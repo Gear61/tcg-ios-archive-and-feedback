@@ -15,6 +15,7 @@ class InterviewContentProvider: ObservableObject {
         self.lessons = []
         lessons.append(makeLesson1())
         lessons.append(makeLesson2())
+        lessons.append(makeLesson3())
     }
     
     private func makeLesson1() -> Lesson {
@@ -160,6 +161,79 @@ class InterviewContentProvider: ObservableObject {
             type: "Interviewing",
             name: "Having The Proper Mindset",
             youtubeVideoId: "guxFTl_qIRg",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson3() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "True or false: Interviewing is all about how much you know. As long as you study a lot and understand enough material, you will pass the interview.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "False"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "For almost everyone, what does the learning curve look like for data structures and algorithms?",
+                options: [
+                    Question.Option(id: "Linear"),
+                    Question.Option(id: "Logarithmic"),
+                    Question.Option(id: "Quadratic"),
+                    Question.Option(id: "Exponential")
+                ],
+                correctAnswer: "Exponential"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: It's completely normal and even a good sign when you feel dumb while studying data structures and algorithms.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "True"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "What's the most important piece when you're learning data structures and algorithms material?",
+                options: [
+                    Question.Option(id: "How many GitHub green boxes you can get"),
+                    Question.Option(id: "The quality of your learning system"),
+                    Question.Option(id: "How often you post to LinkedIn about your progress"),
+                    Question.Option(id: "The specs of your computer as many problems require a lot of compute and RAM")
+                ],
+                correctAnswer: "The quality of your learning system"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: If you aren't making progress on data structures and algorithms understanding after 2 months, your mind probably just isn't geared to understand them. At this point, you should be practical and just look for interviews that don't have these kinds of problems.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "False"
+            )
+        )
+        
+        let lessonId = "interviewing-3"
+        let completionStatus = UserDefaults.standard.bool(forKey: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: "Interviewing",
+            name: "How To Mentally Prepare For Interviews With Data Structures And Algorithms",
+            youtubeVideoId: "LSLyly2GJo4",
             isCompleted: completionStatus,
             questions: questions
         )
