@@ -52,14 +52,14 @@ class LearningViewModel: ObservableObject {
     
     func evaluateQuiz() {
         // Evaluate the score and generate necessary fields for score report
-        var numRight: Float = 0.0
+        var numRight = 0
         for (index, element) in quizAnswers.enumerated() {
             if (lesson.questions[index].correctAnswer == element) {
                 numRight += 1
             }
         }
-        let percent: Float = (numRight / Float(quizAnswers.count)) * 100.0
-        let percentText = String(format: "%.2f%", percent)
+        let percent: Float = (Float(numRight) / Float(quizAnswers.count)) * 100.0
+        let percentText = String(format: "%.2f", percent) + "%"
         scoreText = String(numRight) + "/" + String(quizAnswers.count) + " for " + percentText
         
         var prefix = ""

@@ -8,7 +8,20 @@
 import SwiftUI
 
 struct ScoreReportView: View {
+    
+    var viewModel: LearningViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text(viewModel.scoreMessage)
+                .foregroundColor(Colors.normalText)
+                .font(.title3)
+                .padding(.bottom, 8)
+            Text(viewModel.scoreText)
+                .foregroundColor(Colors.titleText)
+                .font(.title)
+            Spacer()
+        }
+        .padding()
     }
 }

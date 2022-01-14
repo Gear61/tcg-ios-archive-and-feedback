@@ -44,7 +44,7 @@ struct LearningView: View, LearningDelegate {
             case LearningState.TakingQuiz:
                 QuizView(viewModel: self.viewModel)
             case LearningState.ReportingScore:
-                ScoreReportView()
+                ScoreReportView(viewModel: self.viewModel)
             }
         }
         .toolbar {
