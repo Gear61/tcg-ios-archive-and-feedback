@@ -84,7 +84,7 @@ class ResumeContentProvider: ObservableObject {
         return Lesson(
             id: lessonId,
             type: "Resume",
-            name: "Understanding The Resume Process And Formats",
+            name: "Understanding The Resume Review Process And Formats",
             youtubeVideoId: "MByD2CTwfmM",
             isCompleted: completionStatus,
             questions: questions
@@ -173,7 +173,7 @@ class ResumeContentProvider: ObservableObject {
                     Question.Option(id: "Certifications"),
                     Question.Option(id: "Competitive Programming"),
                     Question.Option(id: "Serious Side Projects"),
-                    Question.Option(id: "Building Clones Of Popular Websites")
+                    Question.Option(id: "Building Clones Of Popular Products")
                 ],
                 correctAnswer: "Serious Side Projects"
             )
