@@ -71,7 +71,7 @@ class LearningViewModel: ObservableObject {
         gotPerfectScore = false
         if (percent == 100.0) {
             if (!lesson.isCompleted) {
-                UserDefaults.standard.set(true, forKey: lesson.id)
+                UserDefaultUtil.markLessonCompleted(lessonId: lesson.id)
             }
             gotPerfectScore = true
             prefix = "Congratulations!"

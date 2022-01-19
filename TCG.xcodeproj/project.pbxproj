@@ -34,6 +34,7 @@
 		81B280F3278FA76300DCB425 /* WatchingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280F2278FA76300DCB425 /* WatchingContentView.swift */; };
 		81B280F5278FA77700DCB425 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280F4278FA77700DCB425 /* QuizView.swift */; };
 		81B280F7278FA78700DCB425 /* ScoreReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280F6278FA78700DCB425 /* ScoreReportView.swift */; };
+		81C7DF1E27978CA800B99335 /* UserDefaultUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C7DF1D27978CA800B99335 /* UserDefaultUtil.swift */; };
 		A0B13811264EACE818262661 /* Pods_TCG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4369D5D0A613E86BD977D652 /* Pods_TCG.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		81B280F4278FA77700DCB425 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		81B280F6278FA78700DCB425 /* ScoreReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreReportView.swift; sourceTree = "<group>"; };
 		81B280FA278FAE1D00DCB425 /* TCG.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TCG.entitlements; sourceTree = "<group>"; };
+		81C7DF1D27978CA800B99335 /* UserDefaultUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				81B280D7278D576A00DCB425 /* Models */,
 				81B280D2278D0C2800DCB425 /* Common */,
 				81B280CD278D0BCA00DCB425 /* Settings */,
+				81C7DF1C27978C5F00B99335 /* Persistence */,
 				813AD89A278CFE6F00C03B2C /* TCGApp.swift */,
 				81674466279146FD00AB7B32 /* AppDelegate.swift */,
 				813AD89C278CFE6F00C03B2C /* ContentView.swift */,
@@ -232,6 +235,14 @@
 				81B280F0278FA25000DCB425 /* LearningViewModel.swift */,
 			);
 			path = Learning;
+			sourceTree = "<group>";
+		};
+		81C7DF1C27978C5F00B99335 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				81C7DF1D27978CA800B99335 /* UserDefaultUtil.swift */,
+			);
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,6 +364,7 @@
 				81B280E1278D625000DCB425 /* HomepageView.swift in Sources */,
 				81B280CF278D0BDD00DCB425 /* SettingsView.swift in Sources */,
 				81B280F7278FA78700DCB425 /* ScoreReportView.swift in Sources */,
+				81C7DF1E27978CA800B99335 /* UserDefaultUtil.swift in Sources */,
 				81B280DB278D5CFE00DCB425 /* Question.swift in Sources */,
 				8167445B278FC53800AB7B32 /* YouTubePlayerKit.swift in Sources */,
 				81B280D6278D0C9600DCB425 /* MailView.swift in Sources */,

@@ -82,7 +82,7 @@ class InterviewContentProvider: ObservableObject {
         )
         
         let lessonId = "interviewing-1"
-        let completionStatus = UserDefaults.standard.bool(forKey: lessonId)
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
             type: "Interviewing",
@@ -155,7 +155,7 @@ class InterviewContentProvider: ObservableObject {
         )
         
         let lessonId = "interviewing-2"
-        let completionStatus = UserDefaults.standard.bool(forKey: lessonId)
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
             type: "Interviewing",
@@ -228,7 +228,7 @@ class InterviewContentProvider: ObservableObject {
         )
         
         let lessonId = "interviewing-3"
-        let completionStatus = UserDefaults.standard.bool(forKey: lessonId)
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
             type: "Interviewing",

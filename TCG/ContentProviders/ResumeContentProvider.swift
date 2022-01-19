@@ -80,7 +80,7 @@ class ResumeContentProvider: ObservableObject {
         )
         
         let lessonId = "resume-1"
-        let completionStatus = UserDefaults.standard.bool(forKey: lessonId)
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
             type: "Resume",
@@ -153,7 +153,7 @@ class ResumeContentProvider: ObservableObject {
         )
         
         let lessonId = "resume-2"
-        let completionStatus = UserDefaults.standard.bool(forKey: lessonId)
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
             type: "Resume",
@@ -215,7 +215,7 @@ class ResumeContentProvider: ObservableObject {
         )
         
         let lessonId = "resume-3"
-        let completionStatus = UserDefaults.standard.bool(forKey: lessonId)
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
             type: "Resume",
