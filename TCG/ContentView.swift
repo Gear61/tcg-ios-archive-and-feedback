@@ -6,10 +6,26 @@
 //
 
 import SwiftUI
+import StoreKit
 
 struct ContentView: View {
 
     @State private var action: Int? = 0
+    @State private var showRatingUpsell: Bool = false
+    
+    func checkForRatingUpsell() {
+        if (UserDefaultUtil.logAppOpenAndCheckForRatingUpsell()) {
+            showRatingUpsell = true
+        }
+    }
+    
+    func requestReview() {
+        DispatchQueue.main.async {
+            if let scene = UIApplication.shared.connectedScenes.first(where: { $0.activationState == .foregroundActive }) as? UIWindowScene {
+                SKStoreReviewController.requestReview(in: scene)
+            }
+        }
+    }
     
     var body: some View {
         NavigationView {
@@ -43,6 +59,17 @@ struct ContentView: View {
         .onAppear {
             UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
             AppDelegate.orientationLock = .portrait
+            checkForRatingUpsell()
+        }
+        .alert(isPresented: $showRatingUpsell) {
+            Alert(
+                title: Text("Help Us Lower Barriers In Tech For All"),
+                message: Text("Hey, it looks like you're a frequent user of Tech Career Growth! If you have a couple seconds, please rate this app in the App Store. Every rating goes a long way towards motivating us to continue improving the app!"),
+                primaryButton: .default(Text("Sure, I'll help"), action: {
+                    requestReview()
+                }),
+                secondaryButton: .default(Text("No, I'm good"), action: {})
+            )
         }
     }
 }
