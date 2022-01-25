@@ -16,6 +16,7 @@ class InterviewContentProvider: ObservableObject {
         lessons.append(makeLesson1())
         lessons.append(makeLesson2())
         lessons.append(makeLesson3())
+        lessons.append(makeLesson4())
     }
     
     private func makeLesson1() -> Lesson {
@@ -234,6 +235,66 @@ class InterviewContentProvider: ObservableObject {
             type: "Interviewing",
             name: "How To Mentally Prepare For Interviews With Data Structures And Algorithms",
             youtubeVideoId: "LSLyly2GJo4",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson4() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "Why is the following not a good way to remember the solution to 2 Sum?" +
+                " \n\ndef twoSum(self, nums, target):" +
+                " \n    required = {} " +
+                " \n    for i in range(len(nums)):" +
+                " \n        if target - nums[i] in required: " +
+                " \n            return [required[target - nums[i]],i]" +
+                " \n        else:" +
+                " \n            required[nums[i]] = i",
+                options: [
+                    Question.Option(id: "It's written in Python, which isn't a good interviewing language"),
+                    Question.Option(id: "The space usage isn't optimal"),
+                    Question.Option(id: "It's inefficient; humans don't naturally think in terms of code"),
+                    Question.Option(id: "The solution is incomplete")
+                ],
+                correctAnswer: "It's inefficient; humans don't naturally think in terms of code"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Why is \"Look for the difference and use a HashSet\" a great way to remember the solution to 2 Sum?",
+                options: [
+                    Question.Option(id: "It is compact"),
+                    Question.Option(id: "It trains your brain to convert high-level ideas into implementation"),
+                    Question.Option(id: "It captures the core of the problem"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "What more general higher-level learning principle is also exercised alongside the proper mastery of data structures and algorithms problems?",
+                options: [
+                    Question.Option(id: "Memorization"),
+                    Question.Option(id: "Thinking in terms of abstractions"),
+                    Question.Option(id: "Perseverance"),
+                    Question.Option(id: "Repetition"),
+                ],
+                correctAnswer: "Thinking in terms of abstractions"
+            )
+        )
+        
+        let lessonId = "interviewing-4"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: "Interviewing",
+            name: "Truly Mastering A Data Structures And Algorithms Problem - 2 Sum Example",
+            youtubeVideoId: "tfqPGGdS8Tk",
             isCompleted: completionStatus,
             questions: questions
         )
