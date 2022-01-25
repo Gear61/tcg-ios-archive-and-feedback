@@ -10,7 +10,6 @@ import PagerTabStripView
 
 private class NavTabViewTheme: ObservableObject {
     @Published var textColor = Color.gray
-    @Published var backgroundColor = Color.white
 }
 
 struct TitleNavBarItem: View, PagerTabViewDelegate {
