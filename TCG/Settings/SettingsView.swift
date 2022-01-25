@@ -7,6 +7,7 @@
 
 import SwiftUI
 import MessageUI
+import StoreKit
 
 struct SettingsView: View {
     
@@ -36,6 +37,14 @@ struct SettingsView: View {
         }
     }
     
+    func rateApp() {
+        DispatchQueue.main.async {
+            if let scene = UIApplication.shared.connectedScenes.first(where: { $0.activationState == .foregroundActive }) as? UIWindowScene {
+                SKStoreReviewController.requestReview(in: scene)
+            }
+        }
+    }
+    
     var body: some View {
         ScrollView {
             LazyVStack {
@@ -45,6 +54,9 @@ struct SettingsView: View {
                 }
                 Button(action: sendFeedbackEmail) {
                     SettingsRow(imagePath: "envelope", text: "Send feedback")
+                }
+                Button(action: rateApp) {
+                    SettingsRow(imagePath: "hand.thumbsup", text: "Rate this app")
                 }
                 Button(action: {openURL(urlString: TERMS_AND_CONDITIONS_URL)}) {
                     SettingsRow(imagePath: "doc.text", text: "Terms and conditions")
