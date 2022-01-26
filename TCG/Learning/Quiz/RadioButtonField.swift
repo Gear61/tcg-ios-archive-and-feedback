@@ -37,6 +37,8 @@ struct RadioButtonField: View {
                     .font(.system(size: 17))
                     .foregroundColor(Colors.normalText)
                     .multilineTextAlignment(.leading)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .frame(maxHeight: .infinity)
                 Spacer()
             }
         }

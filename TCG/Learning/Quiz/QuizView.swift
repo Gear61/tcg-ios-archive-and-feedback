@@ -29,6 +29,8 @@ struct QuizView: View {
                     .font(.system(size: 21))
                     .foregroundColor(Colors.normalText)
                     .multilineTextAlignment(.leading)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .frame(maxHeight: .infinity)
                 VStack {
                     ForEach(viewModel.currentQuestion.options) { option in
                         RadioButtonField(
