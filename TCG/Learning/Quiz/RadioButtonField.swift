@@ -29,10 +29,10 @@ struct RadioButtonField: View {
         }) {
             HStack(alignment: .center, spacing: 8) {
                 Image(systemName: self.isMarked ? "largecircle.fill.circle" : "circle")
-                    .renderingMode(.original)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 24, height: 24)
+                    .foregroundColor(Colors.accentColor)
                 Text(label)
                     .font(.system(size: 17))
                     .foregroundColor(Colors.normalText)
@@ -42,5 +42,8 @@ struct RadioButtonField: View {
                 Spacer()
             }
         }
+        .padding(.top, 4)
+        .padding(.bottom, 4)
+        .buttonStyle(PlainButtonStyle())
     }
 }
