@@ -17,6 +17,7 @@ class InterviewContentProvider: ObservableObject {
         lessons.append(makeLesson2())
         lessons.append(makeLesson3())
         lessons.append(makeLesson4())
+        lessons.append(makeLesson5())
     }
     
     private func makeLesson1() -> Lesson {
@@ -295,6 +296,81 @@ class InterviewContentProvider: ObservableObject {
             type: "Interviewing",
             name: "Truly Mastering A Data Structures And Algorithms Problem - 2 Sum Example",
             youtubeVideoId: "tfqPGGdS8Tk",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson5() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "What is the main extra axis that Big Tech companies will grade interview candidates on?",
+                options: [
+                    Question.Option(id: "Space complexity"),
+                    Question.Option(id: "Cleanliness of the code"),
+                    Question.Option(id: "Communication skill"),
+                    Question.Option(id: "Programming language choice")
+                ],
+                correctAnswer: "Communication skill"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: As long as you get the correct, optimal solution, that is enough to pass a Big Tech interview round. ",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "False"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Why is communication so important in Big Tech companies?",
+                options: [
+                    Question.Option(id: "There are a lot more stakeholders on every project, making the relevant audience at every point quite large"),
+                    Question.Option(id: "Their internal architecture is very custom, making your ability to learn new things much more important"),
+                    Question.Option(id: "Software engineers there are expected to be much more well-rounded and not just coding all the time"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: Big Tech companies don't really care about what specific technologies and programming languages you have worked with.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "True"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "What's the core high-level asset Big Tech interviewers look for?",
+                options: [
+                    Question.Option(id: "Years of experience"),
+                    Question.Option(id: "Open-source contributions"),
+                    Question.Option(id: "Fundamentals"),
+                    Question.Option(id: "Usage of modern programming languages and frameworks")
+                ],
+                correctAnswer: "Fundamentals"
+            )
+        )
+        
+        let lessonId = "interviewing-5"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: "Interviewing",
+            name: "How Big Tech Judges Interview Performance Differently",
+            youtubeVideoId: "TqjiQbyomx4",
             isCompleted: completionStatus,
             questions: questions
         )
