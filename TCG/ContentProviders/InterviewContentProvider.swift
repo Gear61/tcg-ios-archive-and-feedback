@@ -18,6 +18,7 @@ class InterviewContentProvider: ObservableObject {
         lessons.append(makeLesson3())
         lessons.append(makeLesson4())
         lessons.append(makeLesson5())
+        lessons.append(makeLesson6())
     }
     
     private func makeLesson1() -> Lesson {
@@ -234,7 +235,7 @@ class InterviewContentProvider: ObservableObject {
         return Lesson(
             id: lessonId,
             type: "Interviewing",
-            name: "How To Mentally Prepare For Interviews With Data Structures And Algorithms",
+            name: "Mentally Preparing For Interviews With Data Structures And Algorithms",
             youtubeVideoId: "LSLyly2GJo4",
             isCompleted: completionStatus,
             questions: questions
@@ -318,7 +319,7 @@ class InterviewContentProvider: ObservableObject {
         
         questions.append(
             Question(
-                text: "True or false: As long as you get the correct, optimal solution, that is enough to pass a Big Tech interview round. ",
+                text: "True or false: As long as you get the correct, optimal solution, that is enough to pass a Big Tech interview round.",
                 options: [
                     Question.Option(id: "True"),
                     Question.Option(id: "False")
@@ -371,6 +372,79 @@ class InterviewContentProvider: ObservableObject {
             type: "Interviewing",
             name: "How Big Tech Judges Interview Performance Differently",
             youtubeVideoId: "TqjiQbyomx4",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson6() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "True or false: You should tackle the easiest, most trivial parts of a data structures and algorithms problem first, just to get it out of the way and boost your confidence.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "False"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "What does it mean to \"Invent the API\"?",
+                options: [
+                    Question.Option(id: "Describing what AWS server you would host your solution on"),
+                    Question.Option(id: "Talking about the REST interface your endpoint will have"),
+                    Question.Option(id: "Figuring out the run-time and space complexity of your code"),
+                    Question.Option(id: "Creating a method that you assume accomplishes some very straightforward piece of logic you need")
+                ],
+                correctAnswer: "Creating a method that you assume accomplishes some very straightforward piece of logic you need"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: A lot of the time, the interviewer won\'t care if you don\'t code out every single piece of the entire solution.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "True"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Why shouldn\'t you prioritize writing the simple utility methods your overall solution needs?",
+                options: [
+                    Question.Option(id: "To save time"),
+                    Question.Option(id: "The interviewer doesn\'t get much signal watching you code these"),
+                    Question.Option(id: "So you can tackle the essence of the problem first instead"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: If you are 100% confident that your solution doesn\'t have bugs, just tell your interviewer you are done and kick the conversation back to them to save time and move on to the next problem.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "False"
+            )
+        )
+        
+        let lessonId = "interviewing-6"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: "Interviewing",
+            name: "Inventing The API And Analyzing Your Solution",
+            youtubeVideoId: "XuOXRBYlidg",
             isCompleted: completionStatus,
             questions: questions
         )
