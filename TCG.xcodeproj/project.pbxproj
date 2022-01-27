@@ -35,6 +35,7 @@
 		81B280F5278FA77700DCB425 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280F4278FA77700DCB425 /* QuizView.swift */; };
 		81B280F7278FA78700DCB425 /* ScoreReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280F6278FA78700DCB425 /* ScoreReportView.swift */; };
 		81C7DF1E27978CA800B99335 /* UserDefaultUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C7DF1D27978CA800B99335 /* UserDefaultUtil.swift */; };
+		81E1924027A2483F00E9DE3E /* Toaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1923F27A2483F00E9DE3E /* Toaster.swift */; };
 		A0B13811264EACE818262661 /* Pods_TCG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4369D5D0A613E86BD977D652 /* Pods_TCG.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		81B280F6278FA78700DCB425 /* ScoreReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreReportView.swift; sourceTree = "<group>"; };
 		81B280FA278FAE1D00DCB425 /* TCG.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TCG.entitlements; sourceTree = "<group>"; };
 		81C7DF1D27978CA800B99335 /* UserDefaultUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultUtil.swift; sourceTree = "<group>"; };
+		81E1923F27A2483F00E9DE3E /* Toaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toaster.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 			children = (
 				81B280D3278D0C3500DCB425 /* Colors.swift */,
 				816744642791462800AB7B32 /* Extensions.swift */,
+				81E1923F27A2483F00E9DE3E /* Toaster.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				81B280DB278D5CFE00DCB425 /* Question.swift in Sources */,
 				8167445B278FC53800AB7B32 /* YouTubePlayerKit.swift in Sources */,
 				81B280D6278D0C9600DCB425 /* MailView.swift in Sources */,
+				81E1924027A2483F00E9DE3E /* Toaster.swift in Sources */,
 				81B280D4278D0C3500DCB425 /* Colors.swift in Sources */,
 				81B280D1278D0C0A00DCB425 /* SettingsRow.swift in Sources */,
 				816744652791462800AB7B32 /* Extensions.swift in Sources */,
@@ -515,7 +519,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TCG/TCG.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"TCG/Preview Content\"";
 				DEVELOPMENT_TEAM = 6G9RAHBVQN;
 				ENABLE_PREVIEWS = YES;
@@ -531,7 +535,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.randomappsinc.tcgapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -548,7 +552,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TCG/TCG.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"TCG/Preview Content\"";
 				DEVELOPMENT_TEAM = 6G9RAHBVQN;
 				ENABLE_PREVIEWS = YES;
@@ -564,7 +568,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.randomappsinc.tcgapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

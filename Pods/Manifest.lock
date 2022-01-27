@@ -1,16 +1,20 @@
 PODS:
+  - AlertToast (1.3.7)
   - PagerTabStripView (3.0.0)
 
 DEPENDENCIES:
+  - AlertToast
   - PagerTabStripView (~> 3.0)
 
 SPEC REPOS:
   trunk:
+    - AlertToast
     - PagerTabStripView
 
 SPEC CHECKSUMS:
+  AlertToast: 8c9d5efb2df6ea728b32b62bce99d876ec3e5393
   PagerTabStripView: 39ff1bb8cb1bee877c7a21740cede99b45fd3355
 
-PODFILE CHECKSUM: ef1ea2185eb297b181418b00d2fa163d982018f3
+PODFILE CHECKSUM: 97c2f7e81cbc074aa5fe3f6cd7432fc3c278209d
 
 COCOAPODS: 1.11.2

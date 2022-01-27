@@ -7,30 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		015A0553599B89A6811D62F9F768A837 /* PagerTabStripView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A971B74517DFD9EA5B8A3171196FE6 /* PagerTabStripView-dummy.m */; };
+		015A0553599B89A6811D62F9F768A837 /* PagerTabStripView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CDE9EA9F89C2360B5B567B3315F2B8 /* PagerTabStripView-dummy.m */; };
 		041DE0DDCBBA114B00348ABC80859242 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20094AF9A05B5AFEE065EFE5403128D1 /* SwiftUI.framework */; };
-		0C33053FD40CE568F9860E1C1D794330 /* PagerTabItemModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9CD8761AB9F9765AD95E084574D937 /* PagerTabItemModifier.swift */; };
-		0CDAA9F94913DAE4B1CBB4C906D1B65D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7C7CBF4366B196F4F8B133C8319AB1 /* Foundation.framework */; };
-		14F5BDF8B101FD04B257961EE222BE67 /* ScrollableNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62D79E0D17FF2DF578D27E743FD7DC7 /* ScrollableNavBarView.swift */; };
-		2A237D248764E67AB701944D64FB54AB /* PagerTabStripView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C496FD5324B01E7B10DE1E94ADC4926F /* PagerTabStripView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		331F3E96A7B907E1A8FAFB4B7756A173 /* SegmentedNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB32351C0C64BBDC39761DBE782839B /* SegmentedNavBarView.swift */; };
-		3FD27A5CCC26A760DA551F31EFD63D9E /* NavBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32ECC010590DD3C328A92E701BD5AF0 /* NavBarItem.swift */; };
-		639CBC85CBC7C61D324AB935DEE6873B /* IndicatorBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B823CA022D677A968AD6B2E510617F9 /* IndicatorBarView.swift */; };
-		8726C0F0B8F51ED0E994DBB373FCD7A1 /* View+Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166457566C1CD1A97CBB7843832B1AF1 /* View+Modifiers.swift */; };
-		899BAF02BF65A9F3121E45699B8304F8 /* Pods-TCG-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC1EAF8DA91AC064EF946EA7A34FF3FB /* Pods-TCG-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8EF7C282A54D8D1BCB390EF8B824A05E /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A041AD7372D69C666D3D707CB72328E7 /* DataStore.swift */; };
-		A4261D2681FA03873F73C9A37A736291 /* PagerTabStripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6E6170C70F5C1502FAB4750FBFCF8C /* PagerTabStripView.swift */; };
-		A4E859695D0ADE8B10D2CB5AA726EFC1 /* PagerSetAppearModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D181C8260FD4B003AC4221DCF340FC40 /* PagerSetAppearModifier.swift */; };
-		B1495FD8381EACAE6FEA29ABFF272401 /* PagerTabViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621EFE3033D05E93EDBFDF403397092F /* PagerTabViewStyle.swift */; };
-		C650684F0B75C0451423BA7F8CA9B8E4 /* FixedSizeNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB693E931CB776D201BDB2D78D63C7 /* FixedSizeNavBarView.swift */; };
+		0C33053FD40CE568F9860E1C1D794330 /* PagerTabItemModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6665D532E584D46588EA2A86C23073A /* PagerTabItemModifier.swift */; };
+		14F5BDF8B101FD04B257961EE222BE67 /* ScrollableNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE74A1028925C6659CCCE71A3309B62 /* ScrollableNavBarView.swift */; };
+		2A237D248764E67AB701944D64FB54AB /* PagerTabStripView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DFA6CC95BB55FB3D0B2F40598C630190 /* PagerTabStripView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		331F3E96A7B907E1A8FAFB4B7756A173 /* SegmentedNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99670F51043E7585BD1254DF9B48DFB5 /* SegmentedNavBarView.swift */; };
+		3A1D3243706A6701B42ABCEDB7E121D6 /* Pods-TCG-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC1EAF8DA91AC064EF946EA7A34FF3FB /* Pods-TCG-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FD27A5CCC26A760DA551F31EFD63D9E /* NavBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD66A3BBF4FA0B8C4DC774A04601590C /* NavBarItem.swift */; };
+		481F3BE2185022F134DFD932BBD79A40 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFE046F664A1F30217820170172C5D0 /* BlurView.swift */; };
+		5C7E1FD0252DFA6033E7E08D5984D7B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7C7CBF4366B196F4F8B133C8319AB1 /* Foundation.framework */; };
+		639CBC85CBC7C61D324AB935DEE6873B /* IndicatorBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CAF2AFF1339ABD0DCF4D1240D76CA1 /* IndicatorBarView.swift */; };
+		6EA08F424ACCD3B0D6222BEF90912961 /* AlertToast-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DF8A715556470EB5FCC1D95B4CF77B2 /* AlertToast-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8726C0F0B8F51ED0E994DBB373FCD7A1 /* View+Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720E481AE6B775B1AA46842DB579ED36 /* View+Modifiers.swift */; };
+		89068BEF39B046B28FD6DA14201044DE /* AlertToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5236E2EBACF1D3658E55742B5B412BB7 /* AlertToast.swift */; };
+		8E563A912D966BEBE40BC316E3F9A190 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7C7CBF4366B196F4F8B133C8319AB1 /* Foundation.framework */; };
+		8EF7C282A54D8D1BCB390EF8B824A05E /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEFD4CA90B91967F5C7102289B723A /* DataStore.swift */; };
+		A144E7D5682927B096F9053F3FE1B18E /* Pods-TCG-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C58E242CF03D8E7727F2F274F4BC6164 /* Pods-TCG-dummy.m */; };
+		A4261D2681FA03873F73C9A37A736291 /* PagerTabStripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C510B41AE1ABE559611B48D3F3D50386 /* PagerTabStripView.swift */; };
+		A4E859695D0ADE8B10D2CB5AA726EFC1 /* PagerSetAppearModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803B10104D7D0B81572CC3857DB6D12 /* PagerSetAppearModifier.swift */; };
+		ABCC96A3F5A122791DAB8A1CFA9BD50D /* AlertToast-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F83D4AD6755BB1FED6C06522371A2B0C /* AlertToast-dummy.m */; };
+		B1495FD8381EACAE6FEA29ABFF272401 /* PagerTabViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20449F5DB9CA0EA1B6C2E4E2746D830 /* PagerTabViewStyle.swift */; };
+		C650684F0B75C0451423BA7F8CA9B8E4 /* FixedSizeNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678A52237D1D15EA135979F0E57ADD8 /* FixedSizeNavBarView.swift */; };
 		D2BE4DECCFFDB724B85E1FEBB3363649 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7C7CBF4366B196F4F8B133C8319AB1 /* Foundation.framework */; };
-		DC6EE5E268206E858AC9EA291CBE95E8 /* PagerTabViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D883BAC06B6C2CA835A446CB650A6FC /* PagerTabViewDelegate.swift */; };
-		EF0173F267B4320E9F75B5557427A634 /* Pods-TCG-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C58E242CF03D8E7727F2F274F4BC6164 /* Pods-TCG-dummy.m */; };
-		FC6ADD3D6E4ACCFBDD894171349866F8 /* NavBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889CBD058B6AF1AF400BBACAA0201B5E /* NavBarModifier.swift */; };
+		DAE75918F0786809E98E99512119DF8D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D4C8CB5093C35721C965A9B02FE022 /* ActivityIndicator.swift */; };
+		DC6EE5E268206E858AC9EA291CBE95E8 /* PagerTabViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DBC210643461A22AE1F83C22867F1E /* PagerTabViewDelegate.swift */; };
+		FC6ADD3D6E4ACCFBDD894171349866F8 /* NavBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33206B24981E2E96EFD3246299E977EB /* NavBarModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1D4E0D35D8E10A7029B952C2A614B0FB /* PBXContainerItemProxy */ = {
+		2D8F0892C133D0CBF8EAF7C84C7F0BC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD9F52E07CA8CCC9E5112A7D8C1CE821;
+			remoteInfo = AlertToast;
+		};
+		AF0547FE71034F1446555C17388CF5F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -40,57 +53,76 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		100DF87585A44D92E77D91FAA0DCEBE5 /* PagerTabStripView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PagerTabStripView.modulemap; sourceTree = "<group>"; };
-		166457566C1CD1A97CBB7843832B1AF1 /* View+Modifiers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+Modifiers.swift"; path = "Sources/View+Modifiers.swift"; sourceTree = "<group>"; };
-		1B6E6170C70F5C1502FAB4750FBFCF8C /* PagerTabStripView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripView.swift; path = Sources/PagerTabStripView.swift; sourceTree = "<group>"; };
+		0DDF482D0370609721B2DB451EEC98A8 /* PagerTabStripView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PagerTabStripView-Info.plist"; sourceTree = "<group>"; };
+		0DF8A715556470EB5FCC1D95B4CF77B2 /* AlertToast-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlertToast-umbrella.h"; sourceTree = "<group>"; };
+		12D4C8CB5093C35721C965A9B02FE022 /* ActivityIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActivityIndicator.swift; path = Sources/AlertToast/ActivityIndicator.swift; sourceTree = "<group>"; };
+		1678A52237D1D15EA135979F0E57ADD8 /* FixedSizeNavBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FixedSizeNavBarView.swift; path = Sources/NavigationBarStyles/FixedSizeNavBarView.swift; sourceTree = "<group>"; };
 		1C0ED253C814B1730738986E1C6EC5A3 /* Pods-TCG-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TCG-Info.plist"; sourceTree = "<group>"; };
 		20094AF9A05B5AFEE065EFE5403128D1 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SwiftUI.framework; sourceTree = DEVELOPER_DIR; };
 		2732DEB9EF7B2BD7357359120DA60A65 /* Pods-TCG-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TCG-acknowledgements.plist"; sourceTree = "<group>"; };
-		27C8BD6D4036EDD83553817CECCF5BE7 /* PagerTabStripView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PagerTabStripView-Info.plist"; sourceTree = "<group>"; };
-		38A971B74517DFD9EA5B8A3171196FE6 /* PagerTabStripView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PagerTabStripView-dummy.m"; sourceTree = "<group>"; };
-		621EFE3033D05E93EDBFDF403397092F /* PagerTabViewStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabViewStyle.swift; path = Sources/PagerTabViewStyle.swift; sourceTree = "<group>"; };
+		33206B24981E2E96EFD3246299E977EB /* NavBarModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavBarModifier.swift; path = Sources/NavBarModifier.swift; sourceTree = "<group>"; };
+		5236E2EBACF1D3658E55742B5B412BB7 /* AlertToast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertToast.swift; path = Sources/AlertToast/AlertToast.swift; sourceTree = "<group>"; };
+		58A410177D2FF98E35AF73C3CA6A5AED /* PagerTabStripView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PagerTabStripView.release.xcconfig; sourceTree = "<group>"; };
+		629DC61C22482169AE8EF8932F0905DA /* AlertToast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlertToast.release.xcconfig; sourceTree = "<group>"; };
+		67CAF2AFF1339ABD0DCF4D1240D76CA1 /* IndicatorBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndicatorBarView.swift; path = Sources/NavigationBarStyles/IndicatorBarView.swift; sourceTree = "<group>"; };
 		68E60D989838E166B9FC33902AE02795 /* Pods-TCG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCG.debug.xcconfig"; sourceTree = "<group>"; };
+		69971438C6CF1FF289A17DE0E27E20ED /* PagerTabStripView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PagerTabStripView.debug.xcconfig; sourceTree = "<group>"; };
 		6AF917A7396EB3D3762B820A93790A8A /* Pods-TCG-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TCG-frameworks.sh"; sourceTree = "<group>"; };
-		6B823CA022D677A968AD6B2E510617F9 /* IndicatorBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndicatorBarView.swift; path = Sources/NavigationBarStyles/IndicatorBarView.swift; sourceTree = "<group>"; };
-		6D883BAC06B6C2CA835A446CB650A6FC /* PagerTabViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabViewDelegate.swift; path = Sources/PagerTabViewDelegate.swift; sourceTree = "<group>"; };
-		6D9CD8761AB9F9765AD95E084574D937 /* PagerTabItemModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabItemModifier.swift; path = Sources/PagerTabItemModifier.swift; sourceTree = "<group>"; };
-		7645C88CA07F560196C0346F434CF575 /* PagerTabStripView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PagerTabStripView.release.xcconfig; sourceTree = "<group>"; };
+		6F171ED7F2C51D6BD91E80499B7D8877 /* AlertToast-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AlertToast-Info.plist"; sourceTree = "<group>"; };
+		704B784B10D61A93530F57F486328382 /* PagerTabStripView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PagerTabStripView-prefix.pch"; sourceTree = "<group>"; };
+		720E481AE6B775B1AA46842DB579ED36 /* View+Modifiers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+Modifiers.swift"; path = "Sources/View+Modifiers.swift"; sourceTree = "<group>"; };
 		8662FE9A43D16715D13D152D2F879D25 /* Pods-TCG.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TCG.modulemap"; sourceTree = "<group>"; };
-		889CBD058B6AF1AF400BBACAA0201B5E /* NavBarModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavBarModifier.swift; path = Sources/NavBarModifier.swift; sourceTree = "<group>"; };
+		8899EAACB604DD3098C2CAC42EC7C9B9 /* PagerTabStripView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PagerTabStripView.modulemap; sourceTree = "<group>"; };
+		99670F51043E7585BD1254DF9B48DFB5 /* SegmentedNavBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SegmentedNavBarView.swift; path = Sources/NavigationBarStyles/SegmentedNavBarView.swift; sourceTree = "<group>"; };
+		9AEEFD4CA90B91967F5C7102289B723A /* DataStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataStore.swift; path = Sources/DataStore.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F6E08443D9584634494F92E556CEAC9 /* AlertToast.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AlertToast.modulemap; sourceTree = "<group>"; };
 		9FF37491ED4B59538C4D37FA3173A5DE /* PagerTabStripView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PagerTabStripView; path = PagerTabStripView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A041AD7372D69C666D3D707CB72328E7 /* DataStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataStore.swift; path = Sources/DataStore.swift; sourceTree = "<group>"; };
-		A32ECC010590DD3C328A92E701BD5AF0 /* NavBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavBarItem.swift; path = Sources/NavBarItem.swift; sourceTree = "<group>"; };
-		A7BCBE0B71CD85718CB8B11DEBDF51C7 /* PagerTabStripView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PagerTabStripView-prefix.pch"; sourceTree = "<group>"; };
+		A50F036BE0BFE618C67FA52B80377F3B /* AlertToast */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AlertToast; path = AlertToast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A803B10104D7D0B81572CC3857DB6D12 /* PagerSetAppearModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerSetAppearModifier.swift; path = Sources/PagerSetAppearModifier.swift; sourceTree = "<group>"; };
 		A96191C90B7E5E3C6559466754D7E48A /* Pods-TCG-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TCG-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AD66A3BBF4FA0B8C4DC774A04601590C /* NavBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavBarItem.swift; path = Sources/NavBarItem.swift; sourceTree = "<group>"; };
 		AEC17476B1B2D8C908097C6A2C224340 /* Pods-TCG */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TCG"; path = Pods_TCG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEDB693E931CB776D201BDB2D78D63C7 /* FixedSizeNavBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FixedSizeNavBarView.swift; path = Sources/NavigationBarStyles/FixedSizeNavBarView.swift; sourceTree = "<group>"; };
-		C496FD5324B01E7B10DE1E94ADC4926F /* PagerTabStripView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PagerTabStripView-umbrella.h"; sourceTree = "<group>"; };
+		B6CDE9EA9F89C2360B5B567B3315F2B8 /* PagerTabStripView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PagerTabStripView-dummy.m"; sourceTree = "<group>"; };
+		C510B41AE1ABE559611B48D3F3D50386 /* PagerTabStripView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripView.swift; path = Sources/PagerTabStripView.swift; sourceTree = "<group>"; };
 		C58E242CF03D8E7727F2F274F4BC6164 /* Pods-TCG-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TCG-dummy.m"; sourceTree = "<group>"; };
-		D181C8260FD4B003AC4221DCF340FC40 /* PagerSetAppearModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerSetAppearModifier.swift; path = Sources/PagerSetAppearModifier.swift; sourceTree = "<group>"; };
-		D530972A682258A0FDE11E8171300C3D /* PagerTabStripView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PagerTabStripView.debug.xcconfig; sourceTree = "<group>"; };
-		D62D79E0D17FF2DF578D27E743FD7DC7 /* ScrollableNavBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableNavBarView.swift; path = Sources/NavigationBarStyles/ScrollableNavBarView.swift; sourceTree = "<group>"; };
+		C6665D532E584D46588EA2A86C23073A /* PagerTabItemModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabItemModifier.swift; path = Sources/PagerTabItemModifier.swift; sourceTree = "<group>"; };
 		DC7C7CBF4366B196F4F8B133C8319AB1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		EAB32351C0C64BBDC39761DBE782839B /* SegmentedNavBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SegmentedNavBarView.swift; path = Sources/NavigationBarStyles/SegmentedNavBarView.swift; sourceTree = "<group>"; };
+		DDFE046F664A1F30217820170172C5D0 /* BlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = Sources/AlertToast/BlurView.swift; sourceTree = "<group>"; };
+		DE68C277710D7C2B044B98CFFFF01026 /* AlertToast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlertToast.debug.xcconfig; sourceTree = "<group>"; };
+		DFA6CC95BB55FB3D0B2F40598C630190 /* PagerTabStripView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PagerTabStripView-umbrella.h"; sourceTree = "<group>"; };
+		E2DBC210643461A22AE1F83C22867F1E /* PagerTabViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabViewDelegate.swift; path = Sources/PagerTabViewDelegate.swift; sourceTree = "<group>"; };
 		F0CE9CD3149D8454C3DBBB7BF4141CBB /* Pods-TCG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCG.release.xcconfig"; sourceTree = "<group>"; };
+		F20449F5DB9CA0EA1B6C2E4E2746D830 /* PagerTabViewStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabViewStyle.swift; path = Sources/PagerTabViewStyle.swift; sourceTree = "<group>"; };
+		F83D4AD6755BB1FED6C06522371A2B0C /* AlertToast-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlertToast-dummy.m"; sourceTree = "<group>"; };
 		FC1EAF8DA91AC064EF946EA7A34FF3FB /* Pods-TCG-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TCG-umbrella.h"; sourceTree = "<group>"; };
+		FC94AB7AE81050F48B1141FC0D1A8C33 /* AlertToast-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlertToast-prefix.pch"; sourceTree = "<group>"; };
+		FCE74A1028925C6659CCCE71A3309B62 /* ScrollableNavBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableNavBarView.swift; path = Sources/NavigationBarStyles/ScrollableNavBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		26B4F1F0F2D94B9B8A42DDFDEC2E3F19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E563A912D966BEBE40BC316E3F9A190 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		347779031190EDC071A4F2E9073598F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C7E1FD0252DFA6033E7E08D5984D7B0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3618601349C5112C2D778892AD841284 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D2BE4DECCFFDB724B85E1FEBB3363649 /* Foundation.framework in Frameworks */,
 				041DE0DDCBBA114B00348ABC80859242 /* SwiftUI.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACDC0D13164EA83E553B39B184C83E44 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0CDAA9F94913DAE4B1CBB4C906D1B65D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,41 +154,38 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		46ED4F6386F5A34FE99A13A6C8FD20C7 /* PagerTabStripView */ = {
+		5BEA5C798FD6B478B770BC64B0C59F70 /* AlertToast */ = {
 			isa = PBXGroup;
 			children = (
-				A041AD7372D69C666D3D707CB72328E7 /* DataStore.swift */,
-				AEDB693E931CB776D201BDB2D78D63C7 /* FixedSizeNavBarView.swift */,
-				6B823CA022D677A968AD6B2E510617F9 /* IndicatorBarView.swift */,
-				A32ECC010590DD3C328A92E701BD5AF0 /* NavBarItem.swift */,
-				889CBD058B6AF1AF400BBACAA0201B5E /* NavBarModifier.swift */,
-				D181C8260FD4B003AC4221DCF340FC40 /* PagerSetAppearModifier.swift */,
-				6D9CD8761AB9F9765AD95E084574D937 /* PagerTabItemModifier.swift */,
-				1B6E6170C70F5C1502FAB4750FBFCF8C /* PagerTabStripView.swift */,
-				6D883BAC06B6C2CA835A446CB650A6FC /* PagerTabViewDelegate.swift */,
-				621EFE3033D05E93EDBFDF403397092F /* PagerTabViewStyle.swift */,
-				D62D79E0D17FF2DF578D27E743FD7DC7 /* ScrollableNavBarView.swift */,
-				EAB32351C0C64BBDC39761DBE782839B /* SegmentedNavBarView.swift */,
-				166457566C1CD1A97CBB7843832B1AF1 /* View+Modifiers.swift */,
-				47A3F018A041CF56E6BD545E2682C5B0 /* Support Files */,
+				12D4C8CB5093C35721C965A9B02FE022 /* ActivityIndicator.swift */,
+				5236E2EBACF1D3658E55742B5B412BB7 /* AlertToast.swift */,
+				DDFE046F664A1F30217820170172C5D0 /* BlurView.swift */,
+				8EE2C70B840BB145DA943E5BBF68EACC /* Support Files */,
+			);
+			name = AlertToast;
+			path = AlertToast;
+			sourceTree = "<group>";
+		};
+		6D60CBF86A5141F7572C2D4AF9DEAC68 /* PagerTabStripView */ = {
+			isa = PBXGroup;
+			children = (
+				9AEEFD4CA90B91967F5C7102289B723A /* DataStore.swift */,
+				1678A52237D1D15EA135979F0E57ADD8 /* FixedSizeNavBarView.swift */,
+				67CAF2AFF1339ABD0DCF4D1240D76CA1 /* IndicatorBarView.swift */,
+				AD66A3BBF4FA0B8C4DC774A04601590C /* NavBarItem.swift */,
+				33206B24981E2E96EFD3246299E977EB /* NavBarModifier.swift */,
+				A803B10104D7D0B81572CC3857DB6D12 /* PagerSetAppearModifier.swift */,
+				C6665D532E584D46588EA2A86C23073A /* PagerTabItemModifier.swift */,
+				C510B41AE1ABE559611B48D3F3D50386 /* PagerTabStripView.swift */,
+				E2DBC210643461A22AE1F83C22867F1E /* PagerTabViewDelegate.swift */,
+				F20449F5DB9CA0EA1B6C2E4E2746D830 /* PagerTabViewStyle.swift */,
+				FCE74A1028925C6659CCCE71A3309B62 /* ScrollableNavBarView.swift */,
+				99670F51043E7585BD1254DF9B48DFB5 /* SegmentedNavBarView.swift */,
+				720E481AE6B775B1AA46842DB579ED36 /* View+Modifiers.swift */,
+				C2E117CEBD42A97792C1B6E8E0ECE55D /* Support Files */,
 			);
 			name = PagerTabStripView;
 			path = PagerTabStripView;
-			sourceTree = "<group>";
-		};
-		47A3F018A041CF56E6BD545E2682C5B0 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				100DF87585A44D92E77D91FAA0DCEBE5 /* PagerTabStripView.modulemap */,
-				38A971B74517DFD9EA5B8A3171196FE6 /* PagerTabStripView-dummy.m */,
-				27C8BD6D4036EDD83553817CECCF5BE7 /* PagerTabStripView-Info.plist */,
-				A7BCBE0B71CD85718CB8B11DEBDF51C7 /* PagerTabStripView-prefix.pch */,
-				C496FD5324B01E7B10DE1E94ADC4926F /* PagerTabStripView-umbrella.h */,
-				D530972A682258A0FDE11E8171300C3D /* PagerTabStripView.debug.xcconfig */,
-				7645C88CA07F560196C0346F434CF575 /* PagerTabStripView.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/PagerTabStripView";
 			sourceTree = "<group>";
 		};
 		7FED95BD1010D1E0B7AB4769F0F3F690 /* Pods-TCG */ = {
@@ -176,21 +205,43 @@
 			path = "Target Support Files/Pods-TCG";
 			sourceTree = "<group>";
 		};
-		B84A6EB4C553ECEF729EC84B3B6B0E28 /* Products */ = {
+		87A6CC5E0DDB3739004C13F06AA506B0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9FF37491ED4B59538C4D37FA3173A5DE /* PagerTabStripView */,
-				AEC17476B1B2D8C908097C6A2C224340 /* Pods-TCG */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C2E8CA926D0B504153134E8EBDED1CAF /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				46ED4F6386F5A34FE99A13A6C8FD20C7 /* PagerTabStripView */,
+				5BEA5C798FD6B478B770BC64B0C59F70 /* AlertToast */,
+				6D60CBF86A5141F7572C2D4AF9DEAC68 /* PagerTabStripView */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8EE2C70B840BB145DA943E5BBF68EACC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F6E08443D9584634494F92E556CEAC9 /* AlertToast.modulemap */,
+				F83D4AD6755BB1FED6C06522371A2B0C /* AlertToast-dummy.m */,
+				6F171ED7F2C51D6BD91E80499B7D8877 /* AlertToast-Info.plist */,
+				FC94AB7AE81050F48B1141FC0D1A8C33 /* AlertToast-prefix.pch */,
+				0DF8A715556470EB5FCC1D95B4CF77B2 /* AlertToast-umbrella.h */,
+				DE68C277710D7C2B044B98CFFFF01026 /* AlertToast.debug.xcconfig */,
+				629DC61C22482169AE8EF8932F0905DA /* AlertToast.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AlertToast";
+			sourceTree = "<group>";
+		};
+		C2E117CEBD42A97792C1B6E8E0ECE55D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8899EAACB604DD3098C2CAC42EC7C9B9 /* PagerTabStripView.modulemap */,
+				B6CDE9EA9F89C2360B5B567B3315F2B8 /* PagerTabStripView-dummy.m */,
+				0DDF482D0370609721B2DB451EEC98A8 /* PagerTabStripView-Info.plist */,
+				704B784B10D61A93530F57F486328382 /* PagerTabStripView-prefix.pch */,
+				DFA6CC95BB55FB3D0B2F40598C630190 /* PagerTabStripView-umbrella.h */,
+				69971438C6CF1FF289A17DE0E27E20ED /* PagerTabStripView.debug.xcconfig */,
+				58A410177D2FF98E35AF73C3CA6A5AED /* PagerTabStripView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PagerTabStripView";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -198,20 +249,30 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				C2E8CA926D0B504153134E8EBDED1CAF /* Pods */,
-				B84A6EB4C553ECEF729EC84B3B6B0E28 /* Products */,
+				87A6CC5E0DDB3739004C13F06AA506B0 /* Pods */,
+				E4C538CBA3145CA9A49F122C3E998E57 /* Products */,
 				305A41E6D7CF398B1BE13E208E334565 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		E4C538CBA3145CA9A49F122C3E998E57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A50F036BE0BFE618C67FA52B80377F3B /* AlertToast */,
+				9FF37491ED4B59538C4D37FA3173A5DE /* PagerTabStripView */,
+				AEC17476B1B2D8C908097C6A2C224340 /* Pods-TCG */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		238EDAB9BDC3E67F9D4FCE4B4E35F8EE /* Headers */ = {
+		44A84C91FAC6DAD40F1A43DEF8DDCA81 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				899BAF02BF65A9F3121E45699B8304F8 /* Pods-TCG-umbrella.h in Headers */,
+				6EA08F424ACCD3B0D6222BEF90912961 /* AlertToast-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,22 +284,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CC20647A660434A3438A095C2FD08B7F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A1D3243706A6701B42ABCEDB7E121D6 /* Pods-TCG-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		5F53CCF004C69F4D151F8DB5F0B36375 /* Pods-TCG */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 89DF2953463E4E6D2FFA0ED11B58797E /* Build configuration list for PBXNativeTarget "Pods-TCG" */;
+			buildConfigurationList = BD5E998E51FFAA6643CD404DDE96E2D6 /* Build configuration list for PBXNativeTarget "Pods-TCG" */;
 			buildPhases = (
-				238EDAB9BDC3E67F9D4FCE4B4E35F8EE /* Headers */,
-				0C6892343FE7CBA30E3DC617F799AD82 /* Sources */,
-				ACDC0D13164EA83E553B39B184C83E44 /* Frameworks */,
-				0F55081CE285961AEBFB8D8036F06E90 /* Resources */,
+				CC20647A660434A3438A095C2FD08B7F /* Headers */,
+				167A59421A4299C37109E38B8CDF81C2 /* Sources */,
+				26B4F1F0F2D94B9B8A42DDFDEC2E3F19 /* Frameworks */,
+				E9805FCC5B4C6FD0E84EC9B9B040B264 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A466E4CC105D65455A9282BEBC4077D1 /* PBXTargetDependency */,
+				759AD7D66F51BD301E967D74A55B80F3 /* PBXTargetDependency */,
+				D3A0FEB08AF23DE8ABFDAAB95AB96E19 /* PBXTargetDependency */,
 			);
 			name = "Pods-TCG";
 			productName = Pods_TCG;
@@ -263,6 +333,24 @@
 			productReference = 9FF37491ED4B59538C4D37FA3173A5DE /* PagerTabStripView */;
 			productType = "com.apple.product-type.framework";
 		};
+		BD9F52E07CA8CCC9E5112A7D8C1CE821 /* AlertToast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 058CF4B13CD220E4F99FC2BAEA8B57E3 /* Build configuration list for PBXNativeTarget "AlertToast" */;
+			buildPhases = (
+				44A84C91FAC6DAD40F1A43DEF8DDCA81 /* Headers */,
+				E433AAB9933A759630771F55C9A60EBF /* Sources */,
+				347779031190EDC071A4F2E9073598F0 /* Frameworks */,
+				59FC49F4186BE3B64D14966824FEF367 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlertToast;
+			productName = AlertToast;
+			productReference = A50F036BE0BFE618C67FA52B80377F3B /* AlertToast */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -281,10 +369,11 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = B84A6EB4C553ECEF729EC84B3B6B0E28 /* Products */;
+			productRefGroup = E4C538CBA3145CA9A49F122C3E998E57 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				BD9F52E07CA8CCC9E5112A7D8C1CE821 /* AlertToast */,
 				7BA23BF48A37E07B01A898EA392A734A /* PagerTabStripView */,
 				5F53CCF004C69F4D151F8DB5F0B36375 /* Pods-TCG */,
 			);
@@ -292,7 +381,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0F55081CE285961AEBFB8D8036F06E90 /* Resources */ = {
+		59FC49F4186BE3B64D14966824FEF367 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -306,14 +395,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E9805FCC5B4C6FD0E84EC9B9B040B264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0C6892343FE7CBA30E3DC617F799AD82 /* Sources */ = {
+		167A59421A4299C37109E38B8CDF81C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF0173F267B4320E9F75B5557427A634 /* Pods-TCG-dummy.m in Sources */,
+				A144E7D5682927B096F9053F3FE1B18E /* Pods-TCG-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,21 +434,74 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E433AAB9933A759630771F55C9A60EBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE75918F0786809E98E99512119DF8D /* ActivityIndicator.swift in Sources */,
+				89068BEF39B046B28FD6DA14201044DE /* AlertToast.swift in Sources */,
+				ABCC96A3F5A122791DAB8A1CFA9BD50D /* AlertToast-dummy.m in Sources */,
+				481F3BE2185022F134DFD932BBD79A40 /* BlurView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A466E4CC105D65455A9282BEBC4077D1 /* PBXTargetDependency */ = {
+		759AD7D66F51BD301E967D74A55B80F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlertToast;
+			target = BD9F52E07CA8CCC9E5112A7D8C1CE821 /* AlertToast */;
+			targetProxy = 2D8F0892C133D0CBF8EAF7C84C7F0BC4 /* PBXContainerItemProxy */;
+		};
+		D3A0FEB08AF23DE8ABFDAAB95AB96E19 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PagerTabStripView;
 			target = 7BA23BF48A37E07B01A898EA392A734A /* PagerTabStripView */;
-			targetProxy = 1D4E0D35D8E10A7029B952C2A614B0FB /* PBXContainerItemProxy */;
+			targetProxy = AF0547FE71034F1446555C17388CF5F0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		048AFB9BE277D96ECBD14AF2F4DFDCB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 629DC61C22482169AE8EF8932F0905DA /* AlertToast.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AlertToast/AlertToast-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AlertToast/AlertToast-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AlertToast/AlertToast.modulemap";
+				PRODUCT_MODULE_NAME = AlertToast;
+				PRODUCT_NAME = AlertToast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		2C38EDE9C151C7DE4E3B3826192377BF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D530972A682258A0FDE11E8171300C3D /* PagerTabStripView.debug.xcconfig */;
+			baseConfigurationReference = 69971438C6CF1FF289A17DE0E27E20ED /* PagerTabStripView.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -385,7 +534,7 @@
 			};
 			name = Debug;
 		};
-		3DE6E8853F83ABB67D32E4596B3DE0C3 /* Release */ = {
+		456F499C6BB6B4040CA64F84F2E53DE3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F0CE9CD3149D8454C3DBBB7BF4141CBB /* Pods-TCG.release.xcconfig */;
 			buildSettings = {
@@ -491,7 +640,7 @@
 		};
 		6B57FAA20879BDE9780BDAD848F6B7EE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7645C88CA07F560196C0346F434CF575 /* PagerTabStripView.release.xcconfig */;
+			baseConfigurationReference = 58A410177D2FF98E35AF73C3CA6A5AED /* PagerTabStripView.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -524,43 +673,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		6FB8E332F2CF13DDEA2E2C39B69E811F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68E60D989838E166B9FC33902AE02795 /* Pods-TCG.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TCG/Pods-TCG-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TCG/Pods-TCG.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -624,9 +736,90 @@
 			};
 			name = Release;
 		};
+		B7C854466008CDE402EC68A4D7263738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE68C277710D7C2B044B98CFFFF01026 /* AlertToast.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AlertToast/AlertToast-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AlertToast/AlertToast-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AlertToast/AlertToast.modulemap";
+				PRODUCT_MODULE_NAME = AlertToast;
+				PRODUCT_NAME = AlertToast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EC76FE705F3E6D4807EBCEA042A0756E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68E60D989838E166B9FC33902AE02795 /* Pods-TCG.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TCG/Pods-TCG-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TCG/Pods-TCG.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		058CF4B13CD220E4F99FC2BAEA8B57E3 /* Build configuration list for PBXNativeTarget "AlertToast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7C854466008CDE402EC68A4D7263738 /* Debug */,
+				048AFB9BE277D96ECBD14AF2F4DFDCB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -645,11 +838,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		89DF2953463E4E6D2FFA0ED11B58797E /* Build configuration list for PBXNativeTarget "Pods-TCG" */ = {
+		BD5E998E51FFAA6643CD404DDE96E2D6 /* Build configuration list for PBXNativeTarget "Pods-TCG" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6FB8E332F2CF13DDEA2E2C39B69E811F /* Debug */,
-				3DE6E8853F83ABB67D32E4596B3DE0C3 /* Release */,
+				EC76FE705F3E6D4807EBCEA042A0756E /* Debug */,
+				456F499C6BB6B4040CA64F84F2E53DE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

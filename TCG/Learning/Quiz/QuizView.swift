@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import AlertToast
 
 struct QuizView: View {
     
     @ObservedObject var viewModel: LearningViewModel
+    @ObservedObject private var toaster = Toaster()
     @State var selectedOption: String = ""
     
     func radioGroupCallback(id: String) {
@@ -17,8 +19,14 @@ struct QuizView: View {
     }
     
     func submitAnswer() {
+        if (selectedOption.isEmpty) {
+            toaster.showErrorToast(title: "You need to select an option.")
+            return
+        }
+        
         withAnimation {
             viewModel.onAnswerSubmitted(answer: selectedOption)
+            selectedOption = ""
         }
     }
     
@@ -51,6 +59,9 @@ struct QuizView: View {
                 Spacer()
             }
             .padding()
+        }
+        .toast(isPresenting: $toaster.show, duration: toaster.duration) {
+            toaster.alertToast
         }
     }
 }
