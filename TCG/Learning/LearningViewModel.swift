@@ -28,6 +28,7 @@ class LearningViewModel: ObservableObject {
     
     var lesson: Lesson
     var quizAnswers: [String]
+    var scoreEmoji: String = "🥳"
     var scoreMessage: String = ""
     var scoreText: String = ""
     var gotPerfectScore = false
@@ -74,10 +75,13 @@ class LearningViewModel: ObservableObject {
                 UserDefaultUtil.markLessonCompleted(lessonId: lesson.id)
             }
             gotPerfectScore = true
+            scoreEmoji = "🥳"
             prefix = "Congratulations!"
         } else if (percent >= 80.0) {
+            scoreEmoji = "🙂"
             prefix = "Not bad!"
         } else {
+            scoreEmoji = "😢"
             prefix = "Better luck next time!"
         }
         scoreMessage = prefix + " Your score was:"
