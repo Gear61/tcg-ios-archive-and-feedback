@@ -36,6 +36,7 @@
 		81B280F7278FA78700DCB425 /* ScoreReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280F6278FA78700DCB425 /* ScoreReportView.swift */; };
 		81C7DF1E27978CA800B99335 /* UserDefaultUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C7DF1D27978CA800B99335 /* UserDefaultUtil.swift */; };
 		81E1924027A2483F00E9DE3E /* Toaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1923F27A2483F00E9DE3E /* Toaster.swift */; };
+		81E7776F27A37E8200DA3244 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 81E7776E27A37E8200DA3244 /* ConfettiSwiftUI */; };
 		A0B13811264EACE818262661 /* Pods_TCG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4369D5D0A613E86BD977D652 /* Pods_TCG.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E7776F27A37E8200DA3244 /* ConfettiSwiftUI in Frameworks */,
 				A0B13811264EACE818262661 /* Pods_TCG.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +268,9 @@
 			dependencies = (
 			);
 			name = TCG;
+			packageProductDependencies = (
+				81E7776E27A37E8200DA3244 /* ConfettiSwiftUI */,
+			);
 			productName = TCG;
 			productReference = 813AD897278CFE6F00C03B2C /* TCG.app */;
 			productType = "com.apple.product-type.application";
@@ -294,6 +299,9 @@
 				Base,
 			);
 			mainGroup = 813AD88E278CFE6F00C03B2C;
+			packageReferences = (
+				81E7776D27A37E8200DA3244 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+			);
 			productRefGroup = 813AD898278CFE6F00C03B2C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -599,6 +607,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		81E7776D27A37E8200DA3244 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		81E7776E27A37E8200DA3244 /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81E7776D27A37E8200DA3244 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 813AD88F278CFE6F00C03B2C /* Project object */;
 }

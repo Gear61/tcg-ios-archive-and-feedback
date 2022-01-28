@@ -310,7 +310,7 @@ class InterviewContentProvider: ObservableObject {
                 options: [
                     Question.Option(id: "Space complexity"),
                     Question.Option(id: "Cleanliness of the code"),
-                    Question.Option(id: "Communication skill"),
+                    Question.Option(id: "Communication skills"),
                     Question.Option(id: "Programming language choice")
                 ],
                 correctAnswer: "Communication skill"
@@ -319,7 +319,7 @@ class InterviewContentProvider: ObservableObject {
         
         questions.append(
             Question(
-                text: "True or false: As long as you get the correct, optimal solution, that is enough to pass a Big Tech interview round.",
+                text: "True or false: As long as you get a correct, optimal solution, that is enough to pass a Big Tech interview round.",
                 options: [
                     Question.Option(id: "True"),
                     Question.Option(id: "False")
