@@ -31,7 +31,7 @@
 		81B280EC278EC72A00DCB425 /* InterviewContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280EB278EC72A00DCB425 /* InterviewContentProvider.swift */; };
 		81B280EF278FA22100DCB425 /* LearningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280EE278FA22100DCB425 /* LearningView.swift */; };
 		81B280F1278FA25000DCB425 /* LearningViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280F0278FA25000DCB425 /* LearningViewModel.swift */; };
-		81B280F3278FA76300DCB425 /* WatchingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280F2278FA76300DCB425 /* WatchingContentView.swift */; };
+		81B280F3278FA76300DCB425 /* WatchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280F2278FA76300DCB425 /* WatchContentView.swift */; };
 		81B280F5278FA77700DCB425 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280F4278FA77700DCB425 /* QuizView.swift */; };
 		81B280F7278FA78700DCB425 /* ScoreReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280F6278FA78700DCB425 /* ScoreReportView.swift */; };
 		81C7DF1E27978CA800B99335 /* UserDefaultUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C7DF1D27978CA800B99335 /* UserDefaultUtil.swift */; };
@@ -71,7 +71,7 @@
 		81B280EB278EC72A00DCB425 /* InterviewContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewContentProvider.swift; sourceTree = "<group>"; };
 		81B280EE278FA22100DCB425 /* LearningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningView.swift; sourceTree = "<group>"; };
 		81B280F0278FA25000DCB425 /* LearningViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningViewModel.swift; sourceTree = "<group>"; };
-		81B280F2278FA76300DCB425 /* WatchingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchingContentView.swift; sourceTree = "<group>"; };
+		81B280F2278FA76300DCB425 /* WatchContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchContentView.swift; sourceTree = "<group>"; };
 		81B280F4278FA77700DCB425 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		81B280F6278FA78700DCB425 /* ScoreReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreReportView.swift; sourceTree = "<group>"; };
 		81B280FA278FAE1D00DCB425 /* TCG.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TCG.entitlements; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 		81674461278FF40500AB7B32 /* WatchingContent */ = {
 			isa = PBXGroup;
 			children = (
-				81B280F2278FA76300DCB425 /* WatchingContentView.swift */,
+				81B280F2278FA76300DCB425 /* WatchContentView.swift */,
 				8167445A278FC53800AB7B32 /* YouTubePlayerKit.swift */,
 			);
 			path = WatchingContent;
@@ -398,7 +398,7 @@
 				81B280D9278D5CED00DCB425 /* Lesson.swift in Sources */,
 				81B280F5278FA77700DCB425 /* QuizView.swift in Sources */,
 				81B280EC278EC72A00DCB425 /* InterviewContentProvider.swift in Sources */,
-				81B280F3278FA76300DCB425 /* WatchingContentView.swift in Sources */,
+				81B280F3278FA76300DCB425 /* WatchContentView.swift in Sources */,
 				813AD89B278CFE6F00C03B2C /* TCGApp.swift in Sources */,
 				81B280EA278EC23D00DCB425 /* LessonRowView.swift in Sources */,
 				8167445D278FE76800AB7B32 /* RadioButtonField.swift in Sources */,

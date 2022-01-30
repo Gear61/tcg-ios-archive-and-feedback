@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct WatchingContentView: View {
+struct WatchContentView: View {
     
     var viewModel: LearningViewModel
     @ObservedObject var youTubeViewModel: YouTubeWebViewModel

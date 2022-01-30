@@ -50,7 +50,7 @@ struct LearningView: View, LearningDelegate {
         VStack {
             switch viewModel.state {
             case LearningState.WatchingContent:
-                WatchingContentView(
+                WatchContentView(
                     viewModel: self.viewModel,
                     youTubeViewModel: YouTubeWebViewModel(url: viewModel.lesson.getYouTubeUrl())
                 ).supportedOrientations(.portrait)
