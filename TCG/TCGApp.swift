@@ -17,6 +17,7 @@ struct TCGApp: App {
             ContentView()
                 .environmentObject(InterviewContentProvider())
                 .environmentObject(ResumeContentProvider())
+                .environmentObject(ProductivityContentProvider())
         }
     }
 }

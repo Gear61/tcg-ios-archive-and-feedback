@@ -35,6 +35,8 @@
 		81B280F5278FA77700DCB425 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280F4278FA77700DCB425 /* QuizView.swift */; };
 		81B280F7278FA78700DCB425 /* ScoreReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280F6278FA78700DCB425 /* ScoreReportView.swift */; };
 		81C7DF1E27978CA800B99335 /* UserDefaultUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C7DF1D27978CA800B99335 /* UserDefaultUtil.swift */; };
+		81C8891427A60F5A003F3FF5 /* ProductivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C8891327A60F5A003F3FF5 /* ProductivityView.swift */; };
+		81C8891627A60FA7003F3FF5 /* ProductivityContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C8891527A60FA7003F3FF5 /* ProductivityContentProvider.swift */; };
 		81E1924027A2483F00E9DE3E /* Toaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1923F27A2483F00E9DE3E /* Toaster.swift */; };
 		81E7776F27A37E8200DA3244 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 81E7776E27A37E8200DA3244 /* ConfettiSwiftUI */; };
 		A0B13811264EACE818262661 /* Pods_TCG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4369D5D0A613E86BD977D652 /* Pods_TCG.framework */; };
@@ -74,6 +76,8 @@
 		81B280F6278FA78700DCB425 /* ScoreReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreReportView.swift; sourceTree = "<group>"; };
 		81B280FA278FAE1D00DCB425 /* TCG.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TCG.entitlements; sourceTree = "<group>"; };
 		81C7DF1D27978CA800B99335 /* UserDefaultUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultUtil.swift; sourceTree = "<group>"; };
+		81C8891327A60F5A003F3FF5 /* ProductivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductivityView.swift; sourceTree = "<group>"; };
+		81C8891527A60FA7003F3FF5 /* ProductivityContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductivityContentProvider.swift; sourceTree = "<group>"; };
 		81E1923F27A2483F00E9DE3E /* Toaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toaster.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -214,6 +218,7 @@
 			children = (
 				81B280EB278EC72A00DCB425 /* InterviewContentProvider.swift */,
 				8167446827915B4900AB7B32 /* ResumeContentProvider.swift */,
+				81C8891527A60FA7003F3FF5 /* ProductivityContentProvider.swift */,
 			);
 			path = ContentProviders;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 				81B280E5278D62D300DCB425 /* ResumeView.swift */,
 				81B280E7278EA16600DCB425 /* TitleNavBarItem.swift */,
 				81B280E9278EC23D00DCB425 /* LessonRowView.swift */,
+				81C8891327A60F5A003F3FF5 /* ProductivityView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -386,6 +392,8 @@
 				81B280EF278FA22100DCB425 /* LearningView.swift in Sources */,
 				813AD89D278CFE6F00C03B2C /* ContentView.swift in Sources */,
 				81B280E4278D62BF00DCB425 /* InterviewingView.swift in Sources */,
+				81C8891427A60F5A003F3FF5 /* ProductivityView.swift in Sources */,
+				81C8891627A60FA7003F3FF5 /* ProductivityContentProvider.swift in Sources */,
 				8167446927915B4900AB7B32 /* ResumeContentProvider.swift in Sources */,
 				81B280D9278D5CED00DCB425 /* Lesson.swift in Sources */,
 				81B280F5278FA77700DCB425 /* QuizView.swift in Sources */,
@@ -527,7 +535,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TCG/TCG.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"TCG/Preview Content\"";
 				DEVELOPMENT_TEAM = 6G9RAHBVQN;
 				ENABLE_PREVIEWS = YES;
@@ -543,7 +551,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.5;
+				MARKETING_VERSION = 1.0.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.randomappsinc.tcgapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -560,7 +568,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TCG/TCG.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"TCG/Preview Content\"";
 				DEVELOPMENT_TEAM = 6G9RAHBVQN;
 				ENABLE_PREVIEWS = YES;
@@ -576,7 +584,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.5;
+				MARKETING_VERSION = 1.0.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.randomappsinc.tcgapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

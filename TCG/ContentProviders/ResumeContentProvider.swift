@@ -226,4 +226,3 @@ class ResumeContentProvider: ObservableObject {
         )
     }
 }
-

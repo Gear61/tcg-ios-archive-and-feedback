@@ -24,6 +24,10 @@ struct HomepageView: View {
                     .pagerTabItem {
                         TitleNavBarItem(title: "Resume")
                     }
+                ProductivityView()
+                    .pagerTabItem {
+                        TitleNavBarItem(title: "Productivity")
+                    }
             }
             .pagerTabStripViewStyle(.scrollableBarButton(
                 indicatorBarColor: Color.blue,
