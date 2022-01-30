@@ -16,6 +16,11 @@ struct WatchContentView: View {
         viewModel.onContentFinished()
     }
     
+    func getVideoHeight() -> CGFloat {
+        let screenWidth = UIScreen.main.bounds.size.width
+        return (screenWidth - 32) * (9.0 / 16.0)
+    }
+    
     var body: some View {
         VStack(alignment: .leading) {
             Text(viewModel.lesson.name)
@@ -32,7 +37,7 @@ struct WatchContentView: View {
                 RoundedRectangle(cornerRadius: 4)
                     .stroke(Colors.normalText, lineWidth: 1)
             )
-            .frame(minHeight: 0, maxHeight: UIScreen.main.bounds.height * 0.3)
+            .frame(minHeight: 0, maxHeight: getVideoHeight())
             .cornerRadius(4)
             Button(action: takeQuiz) {
                 Text("Quiz Me!")
@@ -44,6 +49,6 @@ struct WatchContentView: View {
             .padding(.top, 8)
             Spacer()
         }
-        .padding()
+        .padding(16)
     }
 }

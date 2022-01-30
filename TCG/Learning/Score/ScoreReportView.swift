@@ -89,7 +89,7 @@ struct ScoreReportView: View {
                     repetitionInterval: 1
                 )
             }
-            .padding()
+            .padding(16)
         }
         .onAppear(perform: onAppear)
     }

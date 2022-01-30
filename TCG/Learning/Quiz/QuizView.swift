@@ -58,7 +58,7 @@ struct QuizView: View {
                 .padding(.top)
                 Spacer()
             }
-            .padding()
+            .padding(16)
         }
         .toast(isPresenting: $toaster.show, duration: toaster.duration) {
             toaster.alertToast
