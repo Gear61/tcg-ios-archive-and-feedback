@@ -86,7 +86,7 @@ class ProductivityContentProvider: ObservableObject {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: "Productivity",
+            type: LessonType.PRODUCTIVITY,
             name: "Setting Up Your Mindset For Long-Term Success And What Separates The Top Engineers From The Rest",
             youtubeVideoId: "XqBA2fkvUTg",
             isCompleted: completionStatus,
@@ -161,7 +161,7 @@ class ProductivityContentProvider: ObservableObject {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: "Productivity",
+            type: LessonType.PRODUCTIVITY,
             name: "How To Accomplish Something Every Single Day",
             youtubeVideoId: "3gvjpMhhfnY",
             isCompleted: completionStatus,
@@ -212,7 +212,7 @@ class ProductivityContentProvider: ObservableObject {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: "Productivity",
+            type: LessonType.PRODUCTIVITY,
             name: "Why Time Is 100x More Valuable Than Money In Tech",
             youtubeVideoId: "7VwKfMZUFxk",
             isCompleted: completionStatus,
@@ -287,7 +287,7 @@ class ProductivityContentProvider: ObservableObject {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: "Productivity",
+            type: LessonType.PRODUCTIVITY,
             name: "The Best Gift You Can Give Yourself",
             youtubeVideoId: "L8a4Sc17DLw",
             isCompleted: completionStatus,

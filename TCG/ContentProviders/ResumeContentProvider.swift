@@ -83,7 +83,7 @@ class ResumeContentProvider: ObservableObject {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: "Resume",
+            type: LessonType.RESUME,
             name: "Understanding The Resume Review Process And Formats",
             youtubeVideoId: "MByD2CTwfmM",
             isCompleted: completionStatus,
@@ -156,7 +156,7 @@ class ResumeContentProvider: ObservableObject {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: "Resume",
+            type: LessonType.RESUME,
             name: "Explaining Your Experience In A Meaningful Way",
             youtubeVideoId: "sDbK84GEE94",
             isCompleted: completionStatus,
@@ -218,7 +218,7 @@ class ResumeContentProvider: ObservableObject {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: "Resume",
+            type: LessonType.RESUME,
             name: "How To Supercharge Your Resume As A Junior Engineer",
             youtubeVideoId: "9Wb-gHEO9ug",
             isCompleted: completionStatus,

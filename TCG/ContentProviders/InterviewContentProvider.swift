@@ -88,7 +88,7 @@ class InterviewContentProvider: ObservableObject {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: "Interviewing",
+            type: LessonType.INTERVIEWING,
             name: "Effectively Learning Data Structures And Algorithms",
             youtubeVideoId: "j9FD_Y5JTbw",
             isCompleted: completionStatus,
@@ -161,7 +161,7 @@ class InterviewContentProvider: ObservableObject {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: "Interviewing",
+            type: LessonType.INTERVIEWING,
             name: "Having The Proper Mindset",
             youtubeVideoId: "guxFTl_qIRg",
             isCompleted: completionStatus,
@@ -234,7 +234,7 @@ class InterviewContentProvider: ObservableObject {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: "Interviewing",
+            type: LessonType.INTERVIEWING,
             name: "Mentally Preparing For Interviews With Data Structures And Algorithms",
             youtubeVideoId: "LSLyly2GJo4",
             isCompleted: completionStatus,
@@ -294,7 +294,7 @@ class InterviewContentProvider: ObservableObject {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: "Interviewing",
+            type: LessonType.INTERVIEWING,
             name: "Truly Mastering A Data Structures And Algorithms Problem - 2 Sum Example",
             youtubeVideoId: "tfqPGGdS8Tk",
             isCompleted: completionStatus,
@@ -369,7 +369,7 @@ class InterviewContentProvider: ObservableObject {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: "Interviewing",
+            type: LessonType.INTERVIEWING,
             name: "How Big Tech Judges Interview Performance Differently",
             youtubeVideoId: "TqjiQbyomx4",
             isCompleted: completionStatus,
@@ -442,7 +442,7 @@ class InterviewContentProvider: ObservableObject {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: "Interviewing",
+            type: LessonType.INTERVIEWING,
             name: "Inventing The API And Analyzing Your Solution",
             youtubeVideoId: "XuOXRBYlidg",
             isCompleted: completionStatus,

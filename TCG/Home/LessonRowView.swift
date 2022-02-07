@@ -20,7 +20,7 @@ struct LessonRowView: View {
     }
     
     var body: some View {
-        NavigationLink(destination: LearningView(viewModel: LearningViewModel(lesson: self.lesson), lessonType: lesson.type)) {
+        NavigationLink(destination: LearningView(viewModel: LearningViewModel(lesson: self.lesson))) {
             HStack() {
                 Text(lesson.name)
                     .foregroundColor(Colors.normalText)

@@ -59,7 +59,7 @@ class PromotionContentProvider: ObservableObject {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: "Promotion",
+            type: LessonType.PROMOTION,
             name: "The One Thing You Need To Know About Promotion In Tech",
             youtubeVideoId: "8a-ZMCGg4rc",
             isCompleted: completionStatus,
