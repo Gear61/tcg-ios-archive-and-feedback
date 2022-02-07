@@ -28,6 +28,10 @@ struct HomepageView: View {
                     .pagerTabItem {
                         TitleNavBarItem(title: "Productivity")
                     }
+                PromotionView()
+                    .pagerTabItem {
+                        TitleNavBarItem(title: "Promotion")
+                    }
             }
             .pagerTabStripViewStyle(.scrollableBarButton(
                 indicatorBarColor: Color.blue,

@@ -38,6 +38,8 @@
 		81C8891427A60F5A003F3FF5 /* ProductivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C8891327A60F5A003F3FF5 /* ProductivityView.swift */; };
 		81C8891627A60FA7003F3FF5 /* ProductivityContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C8891527A60FA7003F3FF5 /* ProductivityContentProvider.swift */; };
 		81E1924027A2483F00E9DE3E /* Toaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1923F27A2483F00E9DE3E /* Toaster.swift */; };
+		81E4683627B1C6F80051BB0A /* PromotionContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4683527B1C6F80051BB0A /* PromotionContentProvider.swift */; };
+		81E4683827B1C7A80051BB0A /* PromotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4683727B1C7A80051BB0A /* PromotionView.swift */; };
 		81E7776F27A37E8200DA3244 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 81E7776E27A37E8200DA3244 /* ConfettiSwiftUI */; };
 		A0B13811264EACE818262661 /* Pods_TCG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4369D5D0A613E86BD977D652 /* Pods_TCG.framework */; };
 /* End PBXBuildFile section */
@@ -79,6 +81,8 @@
 		81C8891327A60F5A003F3FF5 /* ProductivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductivityView.swift; sourceTree = "<group>"; };
 		81C8891527A60FA7003F3FF5 /* ProductivityContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductivityContentProvider.swift; sourceTree = "<group>"; };
 		81E1923F27A2483F00E9DE3E /* Toaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toaster.swift; sourceTree = "<group>"; };
+		81E4683527B1C6F80051BB0A /* PromotionContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionContentProvider.swift; sourceTree = "<group>"; };
+		81E4683727B1C7A80051BB0A /* PromotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +223,7 @@
 				81B280EB278EC72A00DCB425 /* InterviewContentProvider.swift */,
 				8167446827915B4900AB7B32 /* ResumeContentProvider.swift */,
 				81C8891527A60FA7003F3FF5 /* ProductivityContentProvider.swift */,
+				81E4683527B1C6F80051BB0A /* PromotionContentProvider.swift */,
 			);
 			path = ContentProviders;
 			sourceTree = "<group>";
@@ -232,6 +237,7 @@
 				81B280E7278EA16600DCB425 /* TitleNavBarItem.swift */,
 				81B280E9278EC23D00DCB425 /* LessonRowView.swift */,
 				81C8891327A60F5A003F3FF5 /* ProductivityView.swift */,
+				81E4683727B1C7A80051BB0A /* PromotionView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -377,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E4683827B1C7A80051BB0A /* PromotionView.swift in Sources */,
 				81B280E6278D62D300DCB425 /* ResumeView.swift in Sources */,
 				81B280E1278D625000DCB425 /* HomepageView.swift in Sources */,
 				81B280CF278D0BDD00DCB425 /* SettingsView.swift in Sources */,
@@ -391,6 +398,7 @@
 				816744652791462800AB7B32 /* Extensions.swift in Sources */,
 				81B280EF278FA22100DCB425 /* LearningView.swift in Sources */,
 				813AD89D278CFE6F00C03B2C /* ContentView.swift in Sources */,
+				81E4683627B1C6F80051BB0A /* PromotionContentProvider.swift in Sources */,
 				81B280E4278D62BF00DCB425 /* InterviewingView.swift in Sources */,
 				81C8891427A60F5A003F3FF5 /* ProductivityView.swift in Sources */,
 				81C8891627A60FA7003F3FF5 /* ProductivityContentProvider.swift in Sources */,
@@ -535,7 +543,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TCG/TCG.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"TCG/Preview Content\"";
 				DEVELOPMENT_TEAM = 6G9RAHBVQN;
 				ENABLE_PREVIEWS = YES;
@@ -551,7 +559,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.7;
+				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.randomappsinc.tcgapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -568,7 +576,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TCG/TCG.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"TCG/Preview Content\"";
 				DEVELOPMENT_TEAM = 6G9RAHBVQN;
 				ENABLE_PREVIEWS = YES;
@@ -584,7 +592,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.7;
+				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.randomappsinc.tcgapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
