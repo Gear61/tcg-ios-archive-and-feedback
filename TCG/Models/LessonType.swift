@@ -7,9 +7,14 @@
 
 import Foundation
 
-enum LessonType {
-    case INTERVIEWING
-    case RESUME
-    case PRODUCTIVITY
-    case PROMOTION
+enum LessonType: String, CustomStringConvertible {
+
+    case INTERVIEWING = "Interviewing"
+    case RESUME = "Resume"
+    case PRODUCTIVITY = "Productivity"
+    case PROMOTION = "Promotion"
+    
+    var description: String {
+        return self.rawValue
+    }
 }

@@ -18,19 +18,19 @@ struct HomepageView: View {
             PagerTabStripView(selection: $selection) {
                 LessonListView(lessonType: LessonType.INTERVIEWING)
                     .pagerTabItem {
-                        TitleNavBarItem(title: "Interviewing")
+                        TitleNavBarItem(title: LessonType.INTERVIEWING.description)
                     }
                 LessonListView(lessonType: LessonType.RESUME)
                     .pagerTabItem {
-                        TitleNavBarItem(title: "Resume")
+                        TitleNavBarItem(title: LessonType.RESUME.description)
                     }
                 LessonListView(lessonType: LessonType.PRODUCTIVITY)
                     .pagerTabItem {
-                        TitleNavBarItem(title: "Productivity")
+                        TitleNavBarItem(title: LessonType.PRODUCTIVITY.description)
                     }
                 LessonListView(lessonType: LessonType.PROMOTION)
                     .pagerTabItem {
-                        TitleNavBarItem(title: "Promotion")
+                        TitleNavBarItem(title: LessonType.PROMOTION.description)
                     }
             }
             .pagerTabStripViewStyle(.scrollableBarButton(
