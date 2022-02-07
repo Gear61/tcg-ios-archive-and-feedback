@@ -16,19 +16,19 @@ struct HomepageView: View {
         VStack {
             Divider()
             PagerTabStripView(selection: $selection) {
-                InterviewingView()
+                LessonListView(lessonType: LessonType.INTERVIEWING)
                     .pagerTabItem {
                         TitleNavBarItem(title: "Interviewing")
                     }
-                ResumeView()
+                LessonListView(lessonType: LessonType.RESUME)
                     .pagerTabItem {
                         TitleNavBarItem(title: "Resume")
                     }
-                ProductivityView()
+                LessonListView(lessonType: LessonType.PRODUCTIVITY)
                     .pagerTabItem {
                         TitleNavBarItem(title: "Productivity")
                     }
-                PromotionView()
+                LessonListView(lessonType: LessonType.PROMOTION)
                     .pagerTabItem {
                         TitleNavBarItem(title: "Promotion")
                     }
