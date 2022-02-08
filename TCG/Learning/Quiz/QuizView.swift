@@ -33,6 +33,12 @@ struct QuizView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
+                Text(viewModel.getCurrentQuestionHeader())
+                    .font(.title2)
+                    .foregroundColor(Colors.titleText)
+                    .multilineTextAlignment(.leading)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .frame(maxHeight: .infinity)
                 Text(viewModel.getCurrentQuestion().text)
                     .font(.system(size: 21))
                     .foregroundColor(Colors.normalText)

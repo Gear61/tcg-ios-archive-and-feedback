@@ -56,6 +56,12 @@ class LearningViewModel: ObservableObject {
         }
     }
     
+    func getCurrentQuestionHeader() -> String {
+        let currentQuestionNum = String(currentQuestionIndex + 1)
+        let totalQuestionsNum = String(lesson.questions.count)
+        return "Question " + currentQuestionNum + " of " + totalQuestionsNum
+    }
+    
     func getCurrentQuestion() -> Question {
         return lesson.questions[currentQuestionIndex]
     }
