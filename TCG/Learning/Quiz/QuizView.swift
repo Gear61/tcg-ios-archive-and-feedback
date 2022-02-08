@@ -33,14 +33,14 @@ struct QuizView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
-                Text(viewModel.currentQuestionIndex.text)
+                Text(viewModel.getCurrentQuestion().text)
                     .font(.system(size: 21))
                     .foregroundColor(Colors.normalText)
                     .multilineTextAlignment(.leading)
                     .fixedSize(horizontal: false, vertical: true)
                     .frame(maxHeight: .infinity)
                 VStack {
-                    ForEach(viewModel.currentQuestionIndex.options) { option in
+                    ForEach(viewModel.getCurrentQuestion().options) { option in
                         RadioButtonField(
                             label: option.id,
                             isMarked: selectedOption == option.id,
