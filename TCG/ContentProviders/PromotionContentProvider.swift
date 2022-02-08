@@ -15,6 +15,7 @@ class PromotionContentProvider: ObservableObject {
         self.lessons = []
         lessons.append(makeLesson1())
         lessons.append(makeLesson2())
+        lessons.append(makeLesson3())
     }
     
     private func makeLesson1() -> Lesson {
@@ -114,6 +115,79 @@ class PromotionContentProvider: ObservableObject {
             type: LessonType.PROMOTION,
             name: "Understanding The Differences Between Engineering Levels",
             youtubeVideoId: "tdfXpFZriFI",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson3() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "True or false: What is built by a very senior engineer is more important than how they built it.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "False"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "When observing very senior engineers, what should you look for to properly learn from them?",
+                options: [
+                    Question.Option(id: "How many lines of code they write"),
+                    Question.Option(id: "The number of monitors they have"),
+                    Question.Option(id: "The decisions they make and the behaviors they exhibit to achieve impact"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "The decisions they make and the behaviors they exhibit to achieve impact"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: At the top tech companies, the very senior engineers make 5-10x more than their very junior counterparts because they work 5-10x harder than they do.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False"),
+                ],
+                correctAnswer: "False"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Which are good examples of questions you can ask when understanding a very senior engineer's behavior?",
+                options: [
+                    Question.Option(id: "Why did they choose the specific projects they are building?"),
+                    Question.Option(id: "What did they do to get the entire team behind their idea?"),
+                    Question.Option(id: "How did they convert the initial idea into a fully functional product?"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: At the top tech companies, you are told less and less what to do as you grow more senior, working on more ambiguous projects while having greater freedom to choose what you work on.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False"),
+                ],
+                correctAnswer: "True"
+            )
+        )
+        
+        let lessonId = "promotion-3"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.PROMOTION,
+            name: "How To Learn From The Rockstar Engineers You Work With",
+            youtubeVideoId: "wgCDDE_WAJ8",
             isCompleted: completionStatus,
             questions: questions
         )
