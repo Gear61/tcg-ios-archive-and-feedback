@@ -35,11 +35,11 @@ class LearningViewModel: ObservableObject {
     var delegate: LearningDelegate? = nil
     
     @Published var state: LearningState = LearningState.WatchingContent
-    @Published var currentQuestion: Question
+    @Published var currentQuestionIndex: Question
     
     init(lesson: Lesson) {
         self.lesson = lesson
-        self.currentQuestion = lesson.questions[0]
+        self.currentQuestionIndex = lesson.questions[0]
         self.quizAnswers = [String]()
     }
     
@@ -52,7 +52,7 @@ class LearningViewModel: ObservableObject {
         if (quizAnswers.count == lesson.questions.count) {
             delegate?.onQuizFinished()
         } else {
-            currentQuestion = lesson.questions[quizAnswers.count]
+            currentQuestionIndex = lesson.questions[quizAnswers.count]
         }
     }
     
@@ -88,20 +88,20 @@ class LearningViewModel: ObservableObject {
     }
     
     func retakeQuiz() {
-        currentQuestion = lesson.questions[0]
+        currentQuestionIndex = lesson.questions[0]
         quizAnswers.removeAll()
         delegate?.retakeQuiz()
     }
     
     func relearnContent() {
-        currentQuestion = lesson.questions[0]
+        currentQuestionIndex = lesson.questions[0]
         quizAnswers.removeAll()
         delegate?.relearnContent()
     }
     
     func reset() {
         state = LearningState.WatchingContent
-        currentQuestion = lesson.questions[0]
+        currentQuestionIndex = lesson.questions[0]
         quizAnswers.removeAll()
     }
 }
