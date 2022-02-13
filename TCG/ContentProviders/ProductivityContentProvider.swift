@@ -19,6 +19,7 @@ class ProductivityContentProvider: ObservableObject {
         lessons.append(makeLesson4())
         lessons.append(makeLesson5())
         lessons.append(makeLesson6())
+        lessons.append(makeLesson7())
     }
     
     private func makeLesson1() -> Lesson {
@@ -394,6 +395,57 @@ class ProductivityContentProvider: ObservableObject {
             type: LessonType.PRODUCTIVITY,
             name: "Easy Tactics You Can Apply Today To Increase Your Focus",
             youtubeVideoId: "PMUyZ7VoowE",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson7() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "When it comes to productivity, what is eating the frog?",
+                options: [
+                    Question.Option(id: "Having a healthy breakfast"),
+                    Question.Option(id: "Doing the hardest part of your main task at the start of your day"),
+                    Question.Option(id: "Responding to all your emails and messages"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "Doing the hardest part of your main task at the start of your day"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: To ease into your day, the best thing to do when you wake up is something easy and fun like checking your Instagram.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "False"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Why is it important to eat the frog?",
+                options: [
+                    Question.Option(id: "It makes you write higher quality code"),
+                    Question.Option(id: "It puts you immediately into a proactive mindset instead of a reactive one"),
+                    Question.Option(id: "It helps maintain work/life balance"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "It puts you immediately into a proactive mindset instead of a reactive one"
+            )
+        )
+
+        let lessonId = "productivity-7"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.PRODUCTIVITY,
+            name: "Eat The Frog",
+            youtubeVideoId: "nrg02T8VSDY",
             isCompleted: completionStatus,
             questions: questions
         )
