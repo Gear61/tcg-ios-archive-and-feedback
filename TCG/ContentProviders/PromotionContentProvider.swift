@@ -192,4 +192,56 @@ class PromotionContentProvider: ObservableObject {
             questions: questions
         )
     }
+    
+    private func makeLesson4() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "What's the main change in expectations when growing into senior engineering levels?",
+                options: [
+                    Question.Option(id: "You need to become full-stack instead of only knowing 1 thing"),
+                    Question.Option(id: "Your proficiency in coding becomes far less important"),
+                    Question.Option(id: "You need to spend more time in meetings"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "Your proficiency in coding becomes far less important"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: Hustling (i.e. working extremely hard) is a common, healthy way to get promoted.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "False"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Why is it bad if you are able to get promoted to senior levels through sheer ultra-hard work and very high raw productivity?",
+                options: [
+                    Question.Option(id: "It is not sustainable; you will eventually burn out."),
+                    Question.Option(id: "It creates a very awkward situation once you start missing expectations, and you are likely to be put on a PIP or let go."),
+                    Question.Option(id: "You are not truly operating at the next level doing this."),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+        
+        let lessonId = "promotion-4"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.PROMOTION,
+            name: "Junior Engineers, Avoid This Fake Growth Trap",
+            youtubeVideoId: "6ss9oQWn2K8",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
 }
