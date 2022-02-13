@@ -16,6 +16,8 @@ class PromotionContentProvider: ObservableObject {
         lessons.append(makeLesson1())
         lessons.append(makeLesson2())
         lessons.append(makeLesson3())
+        lessons.append(makeLesson4())
+        lessons.append(makeLesson5())
     }
     
     private func makeLesson1() -> Lesson {
@@ -244,4 +246,100 @@ class PromotionContentProvider: ObservableObject {
         )
     }
     
+    private func makeLesson5() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "What does additive value look like for a software engineer?",
+                options: [
+                    Question.Option(id: "Code that meets the requirements of a fairly well-defined problem"),
+                    Question.Option(id: "Work that is only directly applicable to 1 person in the company, the person doing it"),
+                    Question.Option(id: "A one-off implementation on a project"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "What\'s the main metric used to evaluate engineers for promotion and their overall seniority?",
+                options: [
+                    Question.Option(id: "Years of experience at the company and overall"),
+                    Question.Option(id: "Lines of code written"),
+                    Question.Option(id: "Scope"),
+                    Question.Option(id: "Hours worked")
+                ],
+                correctAnswer: "Scope"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "How does a person's scope become larger?",
+                options: [
+                    Question.Option(id: "They have more meetings with company executives"),
+                    Question.Option(id: "More decisions need to be approved by them"),
+                    Question.Option(id: "Their work has a positive impact on more employees within the company"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "Their work has a positive impact on more employees within the company"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "What kind of value is the following: Creating a team-wide initiative to write more unit tests, organizing regular hackathons to write hundreds of tests at once alongside creating a dashboard to measure which tests catch the most bugs.",
+                options: [
+                    Question.Option(id: "Additive value"),
+                    Question.Option(id: "Multiplicative value")
+                ],
+                correctAnswer: "Multiplicative value"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "What kind of value is the following: Helping the company's ambitious hiring goal for web engineers by interviewing dozens of React developers in just a few weeks.",
+                options: [
+                    Question.Option(id: "Additive value"),
+                    Question.Option(id: "Multiplicative value")
+                ],
+                correctAnswer: "Additive value"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "What kind of value is the following: Taking an incredibly vague product idea and refining it into a well-defined product spec by bringing together dozens of engineers, product managers, data scientists, and designers and getting alignment on what the value proposition is and how that manifests as a product experience.",
+                options: [
+                    Question.Option(id: "Additive value"),
+                    Question.Option(id: "Multiplicative value")
+                ],
+                correctAnswer: "Multiplicative value"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "What kind of value is the following: Building out the iOS portion of adding Twitter login to onboarding flow for your company's core app after getting high-quality mocks and requirements for it.",
+                options: [
+                    Question.Option(id: "Additive value"),
+                    Question.Option(id: "Multiplicative value")
+                ],
+                correctAnswer: "Additive value"
+            )
+        )
+        
+        let lessonId = "promotion-5"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.PROMOTION,
+            name: "This Is How Engineers Are Measured For Promotion",
+            youtubeVideoId: "nHwHnNwN6to",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
 }
