@@ -17,6 +17,8 @@ class ProductivityContentProvider: ObservableObject {
         lessons.append(makeLesson2())
         lessons.append(makeLesson3())
         lessons.append(makeLesson4())
+        lessons.append(makeLesson5())
+        lessons.append(makeLesson6())
     }
     
     private func makeLesson1() -> Lesson {
@@ -290,6 +292,108 @@ class ProductivityContentProvider: ObservableObject {
             type: LessonType.PRODUCTIVITY,
             name: "The Best Gift You Can Give Yourself",
             youtubeVideoId: "L8a4Sc17DLw",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson5() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "Why is reflection important when it comes to productivity?",
+                options: [
+                    Question.Option(id: "It helps you debug your unproductive periods of time"),
+                    Question.Option(id: "It allows you to learn more about yourself"),
+                    Question.Option(id: "It forces you to dig deep into the problems you faced and figure out what you can learn to become more efficient solving those problems"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: If you aren't getting as much done as you want, you should just work harder.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "False"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Which one of these is a concrete tactic you can use to shore up your reflection?",
+                options: [
+                    Question.Option(id: "Making a post on LinkedIn whenever you have a bad day"),
+                    Question.Option(id: "Scheduling a recurring meeting with yourself"),
+                    Question.Option(id: "Adding more comments to your code"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "Scheduling a recurring meeting with yourself"
+            )
+        )
+
+        let lessonId = "productivity-5"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.PRODUCTIVITY,
+            name: "The Importance of Reflection With Time Management",
+            youtubeVideoId: "Ntb5IvW869s",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson6() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "Which of these are valid tactics to minimize the distraction from your phone?",
+                options: [
+                    Question.Option(id: "Turning off notifications"),
+                    Question.Option(id: "Having a dedicated time where you go through all your app updates at once"),
+                    Question.Option(id: "Moving it out of arm's reach"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: As an engineer, it is important for you to attend every possible meeting so you can know everything that is going on, therefore empowering your productivity.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "False"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "As a software engineer, why is it crucial to reject meetings when possible?",
+                options: [
+                    Question.Option(id: "Software engineers are generally makers, so they need uninterrupted focus time"),
+                    Question.Option(id: "Because all meetings are a waste of time"),
+                    Question.Option(id: "So you can spend more time writing documentation, reducing the need for meetings"),
+                    Question.Option(id: "To show that your time is valuable, it is important to turn down meeting requests sometimes")
+                ],
+                correctAnswer: "Software engineers are generally makers, so they need uninterrupted focus time"
+            )
+        )
+
+        let lessonId = "productivity-6"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.PRODUCTIVITY,
+            name: "Easy Tactics You Can Apply Today To Increase Your Focus",
+            youtubeVideoId: "PMUyZ7VoowE",
             isCompleted: completionStatus,
             questions: questions
         )
