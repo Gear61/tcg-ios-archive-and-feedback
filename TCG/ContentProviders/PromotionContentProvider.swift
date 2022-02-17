@@ -19,6 +19,7 @@ class PromotionContentProvider: ObservableObject {
         lessons.append(makeLesson4())
         lessons.append(makeLesson5())
         lessons.append(makeLesson6())
+        lessons.append(makeLesson7())
     }
     
     private func makeLesson1() -> Lesson {
@@ -390,6 +391,57 @@ class PromotionContentProvider: ObservableObject {
             type: LessonType.PROMOTION,
             name: "The Resource You Need For Promotion That Few Understand",
             youtubeVideoId: "xDKjrf-tpZ4",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson7() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "Which of the following is a great way to increase your scope?",
+                options: [
+                    Question.Option(id: "Attending more meetings"),
+                    Question.Option(id: "Identifying and solving new problems"),
+                    Question.Option(id: "Writing more code"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "Identifying and solving new problems"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: It is good to work in a company where there are constantly too many problems to solve.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "True"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Why is there always a plentiful supply of problems to solve in high-growth tech companies?",
+                options: [
+                    Question.Option(id: "They build products with rough quality, so there are always bugs to fix"),
+                    Question.Option(id: "They do not hire enough people, so not all the necessary work can get done"),
+                    Question.Option(id: "Problems naturally crop up as a company grows as what works at a smaller scale often doesn\'t work at a larger one"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "Problems naturally crop up as a company grows as what works at a smaller scale often doesn\'t work at a larger one"
+            )
+        )
+        
+        let lessonId = "promotion-7"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.PROMOTION,
+            name: "What Makes A Good Growth Environment For Promotion",
+            youtubeVideoId: "s3Fq2xzZ8E0",
             isCompleted: completionStatus,
             questions: questions
         )
