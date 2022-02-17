@@ -18,6 +18,7 @@ class PromotionContentProvider: ObservableObject {
         lessons.append(makeLesson3())
         lessons.append(makeLesson4())
         lessons.append(makeLesson5())
+        lessons.append(makeLesson6())
     }
     
     private func makeLesson1() -> Lesson {
@@ -338,6 +339,57 @@ class PromotionContentProvider: ObservableObject {
             type: LessonType.PROMOTION,
             name: "This Is How Engineers Are Measured For Promotion",
             youtubeVideoId: "nHwHnNwN6to",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson6() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "Which of the following is the resource needed for promotion that many engineers don\'t understand or even realize exists, particularly more junior ones?",
+                options: [
+                    Question.Option(id: "Scroll performance"),
+                    Question.Option(id: "Social capital"),
+                    Question.Option(id: "SLAs"),
+                    Question.Option(id: "None of the above")
+                ],
+                correctAnswer: "Social capital"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: When you are onboarding as a software engineer, the one and only thing that matters is your ability to understand the codebase and extend it.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "False"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Why is social capital important for senior engineers?",
+                options: [
+                    Question.Option(id: "It is necessary for pushing big decisions and overall leadership"),
+                    Question.Option(id: "It allows them to not be blamed when things go poorly, like during a service outage"),
+                    Question.Option(id: "It lowers their chances of being cut during lay-offs"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "It is necessary for pushing big decisions and overall leadership"
+            )
+        )
+        
+        let lessonId = "promotion-6"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.PROMOTION,
+            name: "The Resource You Need For Promotion That Few Understand",
+            youtubeVideoId: "xDKjrf-tpZ4",
             isCompleted: completionStatus,
             questions: questions
         )
