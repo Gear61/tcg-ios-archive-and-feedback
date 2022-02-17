@@ -21,6 +21,7 @@ class ProductivityContentProvider: ObservableObject {
         lessons.append(makeLesson6())
         lessons.append(makeLesson7())
         lessons.append(makeLesson8())
+        lessons.append(makeLesson9())
     }
     
     private func makeLesson1() -> Lesson {
@@ -498,6 +499,57 @@ class ProductivityContentProvider: ObservableObject {
             type: LessonType.PRODUCTIVITY,
             name: "Accountability Partners",
             youtubeVideoId: "RPXLB8HH4Q4",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson9() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "What are the 2 underutilized but straightforward ways of becoming far more productive?",
+                options: [
+                    Question.Option(id: "High-end computer and LinkedIn usage"),
+                    Question.Option(id: "Performance coach and meditation"),
+                    Question.Option(id: "Good sleep and regular exercise"),
+                    Question.Option(id: "Competitive programming and reading architecture blogs")
+                ],
+                correctAnswer: "Good sleep and regular exercise"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: Often times you should sacrifice sleep and exercise in order to get more hours, thereby becoming more productive.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "False"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Why is it absolutely necessary to get in good sleep and regular exercise no matter what?",
+                options: [
+                    Question.Option(id: "They are the foundation to having a healthy physical core, which is necessary for longevity"),
+                    Question.Option(id: "Your productivity severely deteriorates without them, cancelling out any gained hours from sacrificing them"),
+                    Question.Option(id: "They are habits that you need to make time for"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+
+        let lessonId = "productivity-9"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.PRODUCTIVITY,
+            name: "The 2 Ways To Become 100x More Productive That Nobody Does",
+            youtubeVideoId: "JtpVI7dc-9A",
             isCompleted: completionStatus,
             questions: questions
         )
