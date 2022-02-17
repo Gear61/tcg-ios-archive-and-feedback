@@ -20,6 +20,7 @@ class PromotionContentProvider: ObservableObject {
         lessons.append(makeLesson5())
         lessons.append(makeLesson6())
         lessons.append(makeLesson7())
+        lessons.append(makeLesson8())
     }
     
     private func makeLesson1() -> Lesson {
@@ -442,6 +443,57 @@ class PromotionContentProvider: ObservableObject {
             type: LessonType.PROMOTION,
             name: "What Makes A Good Growth Environment For Promotion",
             youtubeVideoId: "s3Fq2xzZ8E0",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson8() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "On top of doing the work, what else do you need to do in order to get full credit for what you are doing?",
+                options: [
+                    Question.Option(id: "Making sure that you have 100% code coverage on whatever code you shipped"),
+                    Question.Option(id: "Writing lots of wikis explaining the architecture of your new codebase"),
+                    Question.Option(id: "Communicating and selling your work"),
+                    Question.Option(id: "None of the above")
+                ],
+                correctAnswer: "Communicating and selling your work"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: It is bad to give more public status updates for your project as it will come across as looking for attention.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "False"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Why should you not feel icky when you are properly broadcasting the status of your project?",
+                options: [
+                    Question.Option(id: "If your project were truly important, people will want to know how it is going"),
+                    Question.Option(id: "You can use it as a mechanism to thank others who have contributed to the project"),
+                    Question.Option(id: "People naturally fall out of sync in high-growth tech companies, so good status updates are a crucial alignment mechanism"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+        
+        let lessonId = "promotion-8"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.PROMOTION,
+            name: "Why Just Doing The Work Isn’t Enough For Promotion",
+            youtubeVideoId: "_w0VUTA7z2E",
             isCompleted: completionStatus,
             questions: questions
         )
