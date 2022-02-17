@@ -225,9 +225,9 @@ class PromotionContentProvider: ObservableObject {
             Question(
                 text: "Why is it bad if you are able to get promoted to senior levels through sheer ultra-hard work and very high raw productivity?",
                 options: [
-                    Question.Option(id: "It is not sustainable; you will eventually burn out."),
-                    Question.Option(id: "It creates a very awkward situation once you start missing expectations, and you are likely to be put on a PIP or let go."),
-                    Question.Option(id: "You are not truly operating at the next level doing this."),
+                    Question.Option(id: "It is not sustainable; you will eventually burn out"),
+                    Question.Option(id: "It creates a very awkward situation once you start missing expectations, and you are likely to be put on a PIP or let go"),
+                    Question.Option(id: "You are not truly operating at the next level doing this"),
                     Question.Option(id: "All of the above")
                 ],
                 correctAnswer: "All of the above"
@@ -289,7 +289,7 @@ class PromotionContentProvider: ObservableObject {
         
         questions.append(
             Question(
-                text: "What kind of value is the following: Creating a team-wide initiative to write more unit tests, organizing regular hackathons to write hundreds of tests at once alongside creating a dashboard to measure which tests catch the most bugs.",
+                text: "What kind of value is the following: Creating a team-wide initiative to write more unit tests, organizing regular hackathons to write hundreds of tests at once alongside creating a dashboard to measure which tests catch the most bugs",
                 options: [
                     Question.Option(id: "Additive value"),
                     Question.Option(id: "Multiplicative value")
@@ -300,7 +300,7 @@ class PromotionContentProvider: ObservableObject {
         
         questions.append(
             Question(
-                text: "What kind of value is the following: Helping the company's ambitious hiring goal for web engineers by interviewing dozens of React developers in just a few weeks.",
+                text: "What kind of value is the following: Helping the company's ambitious hiring goal for web engineers by interviewing dozens of React developers in just a few weeks",
                 options: [
                     Question.Option(id: "Additive value"),
                     Question.Option(id: "Multiplicative value")
@@ -311,7 +311,7 @@ class PromotionContentProvider: ObservableObject {
         
         questions.append(
             Question(
-                text: "What kind of value is the following: Taking an incredibly vague product idea and refining it into a well-defined product spec by bringing together dozens of engineers, product managers, data scientists, and designers and getting alignment on what the value proposition is and how that manifests as a product experience.",
+                text: "What kind of value is the following: Taking an incredibly vague product idea and refining it into a well-defined product spec by bringing together dozens of engineers, product managers, data scientists, and designers and getting alignment on what the value proposition is and how that manifests as a product experience",
                 options: [
                     Question.Option(id: "Additive value"),
                     Question.Option(id: "Multiplicative value")
@@ -322,7 +322,7 @@ class PromotionContentProvider: ObservableObject {
         
         questions.append(
             Question(
-                text: "What kind of value is the following: Building out the iOS portion of adding Twitter login to onboarding flow for your company's core app after getting high-quality mocks and requirements for it.",
+                text: "What kind of value is the following: Building out the iOS portion of adding Twitter login to onboarding flow for your company's core app after getting high-quality mocks and requirements for it",
                 options: [
                     Question.Option(id: "Additive value"),
                     Question.Option(id: "Multiplicative value")

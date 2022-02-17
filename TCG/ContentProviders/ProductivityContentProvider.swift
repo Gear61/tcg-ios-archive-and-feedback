@@ -20,6 +20,7 @@ class ProductivityContentProvider: ObservableObject {
         lessons.append(makeLesson5())
         lessons.append(makeLesson6())
         lessons.append(makeLesson7())
+        lessons.append(makeLesson8())
     }
     
     private func makeLesson1() -> Lesson {
@@ -446,6 +447,57 @@ class ProductivityContentProvider: ObservableObject {
             type: LessonType.PRODUCTIVITY,
             name: "Eat The Frog",
             youtubeVideoId: "nrg02T8VSDY",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson8() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "Why are accountability partners so helpful when it comes to productivity?",
+                options: [
+                    Question.Option(id: "They can unblock you when you are stuck"),
+                    Question.Option(id: "They provide an outside perspective on how you work"),
+                    Question.Option(id: "The social pressure is great for motivation"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: A good accountability partner is willing to shame you a bit sometimes.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "True"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "How do good accountability partners help with excuses?",
+                options: [
+                    Question.Option(id: "They force you to say them out loud"),
+                    Question.Option(id: "They call them out for being excuses"),
+                    Question.Option(id: "They make you see past the excuses and focus back on the work"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+
+        let lessonId = "productivity-8"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.PRODUCTIVITY,
+            name: "Accountability Partners",
+            youtubeVideoId: "RPXLB8HH4Q4",
             isCompleted: completionStatus,
             questions: questions
         )
