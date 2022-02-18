@@ -313,7 +313,7 @@ class InterviewContentProvider: ObservableObject {
                     Question.Option(id: "Communication skills"),
                     Question.Option(id: "Programming language choice")
                 ],
-                correctAnswer: "Communication skill"
+                correctAnswer: "Communication skills"
             )
         )
         
