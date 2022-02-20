@@ -19,6 +19,10 @@ struct QuizView: View {
         selectedOption = id
     }
     
+    func onAppear() {
+        viewModel.setInitialQuizProgress()
+    }
+    
     func submitAnswer() {
         progress += 0.2
         
@@ -36,7 +40,7 @@ struct QuizView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
-                HorizontalProgressBar(initialProgress: $progress, color: .green)
+                HorizontalProgressBar(initialProgress: $viewModel.currentQuizProgress, color: .green)
                     .frame(height: 12)
                     .padding(.bottom, 4)
                 Text(viewModel.getCurrentQuestionHeader())
@@ -75,5 +79,6 @@ struct QuizView: View {
         .toast(isPresenting: $toaster.show, duration: toaster.duration) {
             toaster.alertToast
         }
+        .onAppear(perform: onAppear)
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 enum LearningState {
     case WatchingContent
@@ -37,6 +38,9 @@ class LearningViewModel: ObservableObject {
     @Published var state: LearningState = LearningState.WatchingContent
     @Published var currentQuestionIndex: Int
     
+    // From 0.0 to 1.0
+    @Published var currentQuizProgress: CGFloat = 0
+    
     init(lesson: Lesson) {
         self.lesson = lesson
         self.currentQuestionIndex = 0
@@ -47,12 +51,17 @@ class LearningViewModel: ObservableObject {
         delegate?.onContentFinished()
     }
     
+    func setInitialQuizProgress() {
+        currentQuizProgress = (CGFloat(currentQuestionIndex + 1) / CGFloat(lesson.questions.count))
+    }
+    
     func onAnswerSubmitted(answer: String) {
         quizAnswers.append(answer)
         if (quizAnswers.count == lesson.questions.count) {
             delegate?.onQuizFinished()
         } else {
             currentQuestionIndex = quizAnswers.count
+            currentQuizProgress = (CGFloat(currentQuestionIndex + 1) / CGFloat(lesson.questions.count))
         }
     }
     
@@ -99,12 +108,14 @@ class LearningViewModel: ObservableObject {
     
     func retakeQuiz() {
         currentQuestionIndex = 0
+        currentQuizProgress = 0
         quizAnswers.removeAll()
         delegate?.retakeQuiz()
     }
     
     func relearnContent() {
         currentQuestionIndex = 0
+        currentQuizProgress = 0
         quizAnswers.removeAll()
         delegate?.relearnContent()
     }
@@ -112,6 +123,7 @@ class LearningViewModel: ObservableObject {
     func reset() {
         state = LearningState.WatchingContent
         currentQuestionIndex = 0
+        currentQuizProgress = 0
         quizAnswers.removeAll()
     }
 }
