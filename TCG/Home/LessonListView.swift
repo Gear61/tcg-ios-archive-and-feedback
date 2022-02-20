@@ -54,6 +54,19 @@ struct LessonListView: View {
             if (seenYouTubeIds.contains(lesson.youtubeVideoId)) {
                 fatalError("Duplicate YouTube video ID of " + lesson.youtubeVideoId + " || Lesson ID: " + lesson.id)
             }
+            
+            for question in lesson.questions {
+                var hasCorrectAnswer = false
+                for option in question.options {
+                    if (option.id == question.correctAnswer) {
+                        hasCorrectAnswer = true
+                    }
+                }
+                if (!hasCorrectAnswer) {
+                    fatalError("There is no correct answer for the question [" +  question.text + "] || Lesson ID: " + lesson.id)
+                }
+            }
+            
             seenYouTubeIds.insert(lesson.youtubeVideoId)
         }
     }
