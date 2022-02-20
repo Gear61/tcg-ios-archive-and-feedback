@@ -16,6 +16,7 @@
 		816744652791462800AB7B32 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816744642791462800AB7B32 /* Extensions.swift */; };
 		81674467279146FD00AB7B32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81674466279146FD00AB7B32 /* AppDelegate.swift */; };
 		8167446927915B4900AB7B32 /* ResumeContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8167446827915B4900AB7B32 /* ResumeContentProvider.swift */; };
+		81A2616C27C20D7900B73ED3 /* HorizontalProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A2616B27C20D7900B73ED3 /* HorizontalProgressBar.swift */; };
 		81B280CC278D074700DCB425 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81B280CB278D074700DCB425 /* Launch Screen.storyboard */; };
 		81B280CF278D0BDD00DCB425 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280CE278D0BDD00DCB425 /* SettingsView.swift */; };
 		81B280D1278D0C0A00DCB425 /* SettingsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280D0278D0C0A00DCB425 /* SettingsRow.swift */; };
@@ -56,6 +57,7 @@
 		816744642791462800AB7B32 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		81674466279146FD00AB7B32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8167446827915B4900AB7B32 /* ResumeContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeContentProvider.swift; sourceTree = "<group>"; };
+		81A2616B27C20D7900B73ED3 /* HorizontalProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalProgressBar.swift; sourceTree = "<group>"; };
 		81B280CB278D074700DCB425 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		81B280CE278D0BDD00DCB425 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		81B280D0278D0C0A00DCB425 /* SettingsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRow.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			children = (
 				81B280F4278FA77700DCB425 /* QuizView.swift */,
 				8167445C278FE76800AB7B32 /* RadioButtonField.swift */,
+				81A2616B27C20D7900B73ED3 /* HorizontalProgressBar.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				8167445D278FE76800AB7B32 /* RadioButtonField.swift in Sources */,
 				81B280F1278FA25000DCB425 /* LearningViewModel.swift in Sources */,
 				81B280E8278EA16600DCB425 /* TitleNavBarItem.swift in Sources */,
+				81A2616C27C20D7900B73ED3 /* HorizontalProgressBar.swift in Sources */,
 				81674467279146FD00AB7B32 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

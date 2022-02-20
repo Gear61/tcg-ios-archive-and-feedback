@@ -13,12 +13,15 @@ struct QuizView: View {
     @ObservedObject var viewModel: LearningViewModel
     @ObservedObject private var toaster = Toaster()
     @State var selectedOption: String = ""
+    @State var progress: CGFloat = 0.0
     
     func radioGroupCallback(id: String) {
         selectedOption = id
     }
     
     func submitAnswer() {
+        progress += 0.2
+        
         if (selectedOption.isEmpty) {
             toaster.showErrorToast(title: "You need to select an option.")
             return
@@ -33,6 +36,9 @@ struct QuizView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
+                HorizontalProgressBar(initialProgress: $progress, color: .green)
+                    .frame(height: 12)
+                    .padding(.bottom, 4)
                 Text(viewModel.getCurrentQuestionHeader())
                     .font(.title2)
                     .foregroundColor(Colors.titleText)
