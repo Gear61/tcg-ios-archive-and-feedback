@@ -20,7 +20,20 @@ class LearningQuicklyContentProvider: ObservableObject {
         var questions = [Question]()
         questions.append(
             Question(
-                text: "True or false: As long as you have basic proficiency with everything on a job posting, you will get an interview for that job.",
+                text: "What is a good amount of time to be stuck before asking a question?",
+                options: [
+                    Question.Option(id: "1 - 2 minutes"),
+                    Question.Option(id: "15 - 20 minutes"),
+                    Question.Option(id: "3 - 4 hours"),
+                    Question.Option(id: "1 - 2 days")
+                ],
+                correctAnswer: "15 - 20 minutes"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: To prove that you are a good engineer when joining a new team, you should ask as few questions as possible.",
                 options: [
                     Question.Option(id: "True"),
                     Question.Option(id: "False")
@@ -31,20 +44,20 @@ class LearningQuicklyContentProvider: ObservableObject {
         
         questions.append(
             Question(
-                text: "How much time does a recruiter spend reading a resume, on average?",
+                text: "What is the optimal amount of questions to ask per week as a junior engineer?",
                 options: [
-                    Question.Option(id: "Less than 10 seconds"),
-                    Question.Option(id: "Around 2 minutes"),
-                    Question.Option(id: "Just 5 minutes"),
-                    Question.Option(id: "15+ minutes, resumes are complex and important")
+                    Question.Option(id: "1 - 2"),
+                    Question.Option(id: "3 - 5"),
+                    Question.Option(id: "10 - 15"),
+                    Question.Option(id: "None of the above")
                 ],
-                correctAnswer: "Less than 10 seconds"
+                correctAnswer: "None of the above"
             )
         )
         
         questions.append(
             Question(
-                text: "True or false: Your resume should be boring and straightforward, especially with its format.",
+                text: "True or false: Asking a lot of questions can help other people in your company and increase your respect within your team.",
                 options: [
                     Question.Option(id: "True"),
                     Question.Option(id: "False")
@@ -55,25 +68,14 @@ class LearningQuicklyContentProvider: ObservableObject {
         
         questions.append(
             Question(
-                text: "What's the main reason you should avoid the paid flashy resume formats you find online?",
+                text: "What are the benefits of asking a lot of good questions?",
                 options: [
-                    Question.Option(id: "To save money"),
-                    Question.Option(id: "The format will probably make your resume harder to read"),
-                    Question.Option(id: "To protect your privacy"),
-                    Question.Option(id: "Other people have probably bought and used those formats already")
+                    Question.Option(id: "You learn faster"),
+                    Question.Option(id: "You help other people who have the same question"),
+                    Question.Option(id: "You are creating a useful piece of content via your question and answer pair"),
+                    Question.Option(id: "All of the above")
                 ],
-                correctAnswer: "The format will probably make your resume harder to read"
-            )
-        )
-        
-        questions.append(
-            Question(
-                text: "True or false: In order to stand out from other applicants, you can use a very unique format to make your resume more memorable to the recruiter, thus increasing your chances.",
-                options: [
-                    Question.Option(id: "True"),
-                    Question.Option(id: "False")
-                ],
-                correctAnswer: "False"
+                correctAnswer: "All of the above"
             )
         )
         
@@ -82,8 +84,8 @@ class LearningQuicklyContentProvider: ObservableObject {
         return Lesson(
             id: lessonId,
             type: LessonType.LEARNING_QUICKLY,
-            name: "Understanding The Resume Review Process And Formats",
-            youtubeVideoId: "MByD2CTwfmM",
+            name: "There Is No Such Thing As A Stupid Question",
+            youtubeVideoId: "fVgZBX0yinc",
             isCompleted: completionStatus,
             questions: questions
         )
