@@ -15,6 +15,7 @@ class LearningQuicklyContentProvider: ObservableObject {
         self.lessons = []
         lessons.append(makeLesson1())
         lessons.append(makeLesson2())
+        lessons.append(makeLesson3())
     }
     
     private func makeLesson1() -> Lesson {
@@ -162,6 +163,141 @@ class LearningQuicklyContentProvider: ObservableObject {
             type: LessonType.LEARNING_QUICKLY,
             name: "Asking Effective Questions That Get Great Answers Quickly",
             youtubeVideoId: "VS75nql2Csg",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson3() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "Is the following a good question: \"What are the best open-source projects to work on?\"",
+                options: [
+                    Question.Option(id: "Yes"),
+                    Question.Option(id: "No")
+                ],
+                correctAnswer: "No"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "\"What are the best open-source projects to work on?\" - How can the asker improve this question?",
+                options: [
+                    Question.Option(id: "Include context on why they want to work on open-source"),
+                    Question.Option(id: "Describe their current experience level working with open-source"),
+                    Question.Option(id: "Outline the programming languages and frameworks they are already familiar with"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Is the following a good question: \"Any Java developers here who have worked on ML?\"",
+                options: [
+                    Question.Option(id: "Yes"),
+                    Question.Option(id: "No")
+                ],
+                correctAnswer: "No"
+            )
+        )
+
+        questions.append(
+            Question(
+                text: "\"Any Java developers here who have worked on ML?\" - Why is this not a good question?",
+                options: [
+                    Question.Option(id: "Java is not a good language for machine learning"),
+                    Question.Option(id: "The true objective of the asker is not there"),
+                    Question.Option(id: "It should have a greeting like \"Hello\" to be polite"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "The true objective of the asker is not there"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Is the following a good question: \"Does anybody know what the front-end engineering interview for Amazon looks like?\"",
+                options: [
+                    Question.Option(id: "Yes"),
+                    Question.Option(id: "No")
+                ],
+                correctAnswer: "No"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "\"Does anybody know what the front-end engineering interview for Amazon looks like?\" - How can the asker improve this question?",
+                options: [
+                    Question.Option(id: "Include what they have found out through Glassdoor and their recruiter"),
+                    Question.Option(id: "Reframe this question to have their true intention, which is that they have this interview coming up and would like help with it. They can then add information like when the interview is and the office/team it is for"),
+                    Question.Option(id: "Preemptively thank those who take the time to answer this question as sharing interview material is dicey due to NDA"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Is the following a good question: \"Can someone recommend me resources for blockchain development?\"",
+                options: [
+                    Question.Option(id: "Yes"),
+                    Question.Option(id: "No")
+                ],
+                correctAnswer: "No"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "\"Can someone recommend me resources for blockchain development?\" - How can the asker improve this question?",
+                options: [
+                    Question.Option(id: "Explain why they are interested in blockchain"),
+                    Question.Option(id: "Include the preferred way they like to learn (video, article, etc)"),
+                    Question.Option(id: "Describe what kind of product they are looking to build with blockchain"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Is the following a good question: \"Is there anybody here who can refer me into FAANG?\"",
+                options: [
+                    Question.Option(id: "Yes"),
+                    Question.Option(id: "No")
+                ],
+                correctAnswer: "No"
+            )
+        )
+        
+        
+        questions.append(
+            Question(
+                text: "\"Is there anybody here who can refer me into FAANG?\" - Why is this not a good question?",
+                options: [
+                    Question.Option(id: "It is very unlikely somebody is willing to do such a massive favor for someone they do not know"),
+                    Question.Option(id: "Everybody wants to get into FAANG. It is hard to empathize with the asker, especially as they have not described any difficulties they have faced trying to get into FAANG"),
+                    Question.Option(id: "For an ask this large, it should definitely have a preemptive thanks"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+        
+        let lessonId = "learning-quickly-3"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.LEARNING_QUICKLY,
+            name: "Bad Question vs. Good Question Example",
+            youtubeVideoId: "24CGlaL5bXo",
             isCompleted: completionStatus,
             questions: questions
         )
