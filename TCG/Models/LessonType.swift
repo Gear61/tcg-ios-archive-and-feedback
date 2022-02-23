@@ -13,6 +13,7 @@ enum LessonType: String, CustomStringConvertible {
     case RESUME = "Resume"
     case PRODUCTIVITY = "Productivity"
     case PROMOTION = "Promotion"
+    case LEARNING_QUICKLY = "Learning Quickly"
     
     var description: String {
         return self.rawValue

@@ -32,6 +32,10 @@ struct HomepageView: View {
                     .pagerTabItem {
                         TitleNavBarItem(title: LessonType.PROMOTION.description)
                     }
+                LessonListView(lessonType: LessonType.LEARNING_QUICKLY)
+                    .pagerTabItem {
+                        TitleNavBarItem(title: LessonType.LEARNING_QUICKLY.description)
+                    }
             }
             .pagerTabStripViewStyle(.scrollableBarButton(
                 indicatorBarColor: Color.blue,
