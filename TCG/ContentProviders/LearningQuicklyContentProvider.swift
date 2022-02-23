@@ -16,6 +16,7 @@ class LearningQuicklyContentProvider: ObservableObject {
         lessons.append(makeLesson1())
         lessons.append(makeLesson2())
         lessons.append(makeLesson3())
+        lessons.append(makeLesson4())
     }
     
     private func makeLesson1() -> Lesson {
@@ -298,6 +299,57 @@ class LearningQuicklyContentProvider: ObservableObject {
             type: LessonType.LEARNING_QUICKLY,
             name: "Bad Question vs. Good Question Example",
             youtubeVideoId: "24CGlaL5bXo",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson4() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "True or false: If you ask for help on a coding issue, link the entire repo of the codebase you are working on to be safe. This guarantees that helpers have all the context they need.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "False"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "What can you do to really sharpen your question before asking it?",
+                options: [
+                    Question.Option(id: "Spend a couple extra hours trying to solve it yourself just to make extra sure you are blocked on a truly difficult issue"),
+                    Question.Option(id: "Do something else, so you can wait for someone else to hit your same issue and see how they solve it"),
+                    Question.Option(id: "Anticipate the questions you will get in response to your question and solve for those preemptively"),
+                    Question.Option(id: "None of the above")
+                ],
+                correctAnswer: "Anticipate the questions you will get in response to your question and solve for those preemptively"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "\"I am having trouble getting a button to appear above an image in my webpage. Can someone help with this?\" - Which of the following are questions that should have been anticipated beforehand for this question?",
+                options: [
+                    Question.Option(id: "What framework (React, Vue, etc) are you using to build your webpage?"),
+                    Question.Option(id: "What have you tried already to solve this problem?"),
+                    Question.Option(id: "Have you gone through the first couple StackOverflow results talking about this same problem?"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+        
+        let lessonId = "learning-quickly-4"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.LEARNING_QUICKLY,
+            name: "Make It Easy For You To Receive Help",
+            youtubeVideoId: "rfSy_MlMyfI",
             isCompleted: completionStatus,
             questions: questions
         )
