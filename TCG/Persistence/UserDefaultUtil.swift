@@ -11,6 +11,8 @@ struct UserDefaultUtil {
     
     static let NUM_APP_OPENS_KEY = "num-app-opens"
     static let OPENS_FOR_RATING_UPSELL = 5
+    
+    static let HAS_SEEN_SLIDESHOW_KEY = "has-seen-slideshow"
 
     static func markLessonCompleted(lessonId: String) {
         UserDefaults.standard.set(true, forKey: lessonId)
@@ -24,5 +26,13 @@ struct UserDefaultUtil {
         let numAppOpens = UserDefaults.standard.integer(forKey: NUM_APP_OPENS_KEY) + 1
         UserDefaults.standard.set(numAppOpens, forKey: NUM_APP_OPENS_KEY)
         return numAppOpens == OPENS_FOR_RATING_UPSELL
+    }
+    
+    static func hasSeenSlideshow() -> Bool {
+        return UserDefaults.standard.bool(forKey: HAS_SEEN_SLIDESHOW_KEY)
+    }
+    
+    static func markSlideshowAsSeen() {
+        UserDefaults.standard.set(true, forKey: HAS_SEEN_SLIDESHOW_KEY)
     }
 }
