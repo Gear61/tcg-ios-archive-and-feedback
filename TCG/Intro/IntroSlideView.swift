@@ -9,14 +9,18 @@ import SwiftUI
 
 struct IntroSlideView: View {
 
+    var animationName: String
+    var title: String
+    var slideText: String
+    
     var body: some View {
         VStack {
-            LottieView(animationName: "welcome")
+            LottieView(animationName: self.animationName)
                 .aspectRatio(1.0, contentMode: .fit)
-            Text("Welcome!")
+            Text(title)
                 .font(.title2)
                 .foregroundColor(Colors.titleText)
-            Text("Tech Career Growth is a 15,000+ person learning community designed to accelerate your career in tech. We are so happy to have you with us!")
+            Text(slideText)
                 .font(.body)
                 .foregroundColor(Colors.normalText)
                 .padding(.top, 0.1)
