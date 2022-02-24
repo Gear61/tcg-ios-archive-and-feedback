@@ -11,6 +11,8 @@ struct IntroSlideView: View {
 
     var body: some View {
         VStack {
+            LottieView(animationName: "welcome")
+                .aspectRatio(1.0, contentMode: .fit)
             Text("Welcome!")
                 .font(.title2)
                 .foregroundColor(Colors.titleText)

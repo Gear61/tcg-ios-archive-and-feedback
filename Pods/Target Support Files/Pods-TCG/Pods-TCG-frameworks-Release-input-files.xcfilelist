@@ -2,3 +2,4 @@ ${PODS_ROOT}/Target Support Files/Pods-TCG/Pods-TCG-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/AlertToast/AlertToast.framework
 ${BUILT_PRODUCTS_DIR}/PagerTabStripView/PagerTabStripView.framework
 ${BUILT_PRODUCTS_DIR}/SwiftUIPager/SwiftUIPager.framework
+${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework

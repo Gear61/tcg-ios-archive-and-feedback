@@ -179,11 +179,13 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AlertToast/AlertToast.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PagerTabStripView/PagerTabStripView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftUIPager/SwiftUIPager.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AlertToast/AlertToast.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PagerTabStripView/PagerTabStripView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftUIPager/SwiftUIPager.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

@@ -9,5 +9,6 @@ target 'TCG' do
   pod 'PagerTabStripView', '~> 3.0'
   pod 'AlertToast'
   pod 'SwiftUIPager'
+  pod 'lottie-ios'
 
 end
