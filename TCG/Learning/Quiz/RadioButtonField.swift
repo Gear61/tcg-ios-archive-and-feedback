@@ -32,7 +32,7 @@ struct RadioButtonField: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 24, height: 24)
-                    .foregroundColor(Colors.accentColor)
+                    .foregroundColor(.green)
                 Text(label)
                     .font(.system(size: 17))
                     .foregroundColor(Colors.normalText)

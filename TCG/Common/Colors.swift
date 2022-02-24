@@ -15,4 +15,5 @@ struct Colors {
     static let footerText = Color(UIColor(named: "footerTextColor")!)
     static let highlightedText = Color(UIColor(named: "highlightedTextColor")!)
     static let accentColor = Color(UIColor(named: "AccentColor")!)
+    static let indicatorCircle = Color(UIColor(named: "indicatorCircleColor")!)
 }

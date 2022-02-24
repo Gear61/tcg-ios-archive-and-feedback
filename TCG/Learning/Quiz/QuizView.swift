@@ -69,7 +69,7 @@ struct QuizView: View {
                         .foregroundColor(Color.white)
                         .frame(maxWidth: .infinity)
                         .padding()
-                        .background(RoundedRectangle(cornerRadius: 4).fill(Color.blue))
+                        .background(RoundedRectangle(cornerRadius: 4).fill(.green))
                 }
                 .padding(.top)
                 Spacer()

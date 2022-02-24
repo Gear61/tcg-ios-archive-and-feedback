@@ -18,6 +18,7 @@
 		813AE04A27C845E600CC8F02 /* learn.json in Resources */ = {isa = PBXBuildFile; fileRef = 813AE04727C845E600CC8F02 /* learn.json */; };
 		813AE04B27C845E600CC8F02 /* feedback.json in Resources */ = {isa = PBXBuildFile; fileRef = 813AE04827C845E600CC8F02 /* feedback.json */; };
 		813AE04D27C8468100CC8F02 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AE04C27C8468100CC8F02 /* LottieView.swift */; };
+		813AE04F27C84AD300CC8F02 /* IntroDotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AE04E27C84AD300CC8F02 /* IntroDotsView.swift */; };
 		8167445B278FC53800AB7B32 /* YouTubePlayerKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8167445A278FC53800AB7B32 /* YouTubePlayerKit.swift */; };
 		8167445D278FE76800AB7B32 /* RadioButtonField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8167445C278FE76800AB7B32 /* RadioButtonField.swift */; };
 		816744652791462800AB7B32 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816744642791462800AB7B32 /* Extensions.swift */; };
@@ -67,6 +68,7 @@
 		813AE04727C845E600CC8F02 /* learn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = learn.json; sourceTree = "<group>"; };
 		813AE04827C845E600CC8F02 /* feedback.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = feedback.json; sourceTree = "<group>"; };
 		813AE04C27C8468100CC8F02 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		813AE04E27C84AD300CC8F02 /* IntroDotsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroDotsView.swift; sourceTree = "<group>"; };
 		8167445A278FC53800AB7B32 /* YouTubePlayerKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubePlayerKit.swift; sourceTree = "<group>"; };
 		8167445C278FE76800AB7B32 /* RadioButtonField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonField.swift; sourceTree = "<group>"; };
 		816744642791462800AB7B32 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			children = (
 				813AE04127C83A4000CC8F02 /* IntroSlideshowView.swift */,
 				813AE04327C83F8800CC8F02 /* IntroSlideView.swift */,
+				813AE04E27C84AD300CC8F02 /* IntroDotsView.swift */,
 			);
 			path = Intro;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				813AE04D27C8468100CC8F02 /* LottieView.swift in Sources */,
 				81B280E1278D625000DCB425 /* BrowseLessonsView.swift in Sources */,
 				81B280CF278D0BDD00DCB425 /* SettingsView.swift in Sources */,
+				813AE04F27C84AD300CC8F02 /* IntroDotsView.swift in Sources */,
 				81B280F7278FA78700DCB425 /* ScoreReportView.swift in Sources */,
 				81C7DF1E27978CA800B99335 /* UserDefaultUtil.swift in Sources */,
 				81B280DB278D5CFE00DCB425 /* Question.swift in Sources */,

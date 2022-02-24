@@ -23,6 +23,7 @@ struct IntroSlideshowView: View {
     ]
     
     @StateObject var page: Page = .first()
+    @State var currentIndex: Int = 0
     var items = Array(0..<3)
    
     func onSlideshowFinish() {
@@ -38,13 +39,19 @@ struct IntroSlideshowView: View {
             ) {
                 self.pageView($0)
             }
-            Spacer()
+            .onPageChanged({ (newIndex) in
+                self.currentIndex = newIndex
+            })
+            IntroDotsView(
+                numDots: animationNames.count,
+                highlightIndex: $currentIndex
+            )
             Button(action: onSlideshowFinish) {
                 Text("Start Learning")
                     .foregroundColor(Color.white)
                     .frame(maxWidth: .infinity)
                     .padding()
-                    .background(RoundedRectangle(cornerRadius: 4).fill(Color.blue))
+                    .background(RoundedRectangle(cornerRadius: 4).fill(.green))
             }
             .padding()
         }
