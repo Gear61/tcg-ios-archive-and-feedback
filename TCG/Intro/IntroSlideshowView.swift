@@ -13,32 +13,32 @@ struct IntroSlideshowView: View {
     @StateObject var page: Page = .first()
     var items = Array(0..<10)
     
+    func onSlideshowFinish() {
+        UserDefaultUtil.markSlideshowAsSeen()
+    }
+    
     var body: some View {
-        NavigationView {
-                Pager(page: self.page,
-                      data: self.items,
-                      id: \.self) {
-                        self.pageView($0)
-                }
-                .pagingPriority(.simultaneous)
-                .itemSpacing(10)
-                .padding(20)
-                .itemAspectRatio(1.3)
-                .background(Color.gray.opacity(0.2))
-                .navigationBarTitle("SwiftUIPager", displayMode: .inline)
+        VStack {
+            Pager(
+                page: self.page,
+                data: self.items,
+                id: \.self
+            ) {
+                self.pageView($0)
             }
-            .navigationViewStyle(StackNavigationViewStyle())
+            Spacer()
+            Button(action: onSlideshowFinish) {
+                Text("Start Learning")
+                    .foregroundColor(Color.white)
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .background(RoundedRectangle(cornerRadius: 4).fill(Color.blue))
+            }
+            .padding()
+        }
     }
     
     func pageView(_ page: Int) -> some View {
-        ZStack {
-            Rectangle()
-                .fill(Color.yellow)
-            NavigationLink(destination: Text("Page \(page)")) {
-                Text("Page \(page)")
-            }
-        }
-        .cornerRadius(5)
-        .shadow(radius: 5)
+        IntroSlideView()
     }
 }
