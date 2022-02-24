@@ -10,6 +10,10 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        HomepageView()
+        if (UserDefaultUtil.hasSeenSlideshow()) {
+            HomepageView()
+        } else {
+            IntroSlideshowView()
+        }
     }
 }

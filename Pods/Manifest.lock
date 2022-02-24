@@ -1,20 +1,24 @@
 PODS:
   - AlertToast (1.3.7)
   - PagerTabStripView (3.0.0)
+  - SwiftUIPager (2.3.0)
 
 DEPENDENCIES:
   - AlertToast
   - PagerTabStripView (~> 3.0)
+  - SwiftUIPager
 
 SPEC REPOS:
   trunk:
     - AlertToast
     - PagerTabStripView
+    - SwiftUIPager
 
 SPEC CHECKSUMS:
   AlertToast: 8c9d5efb2df6ea728b32b62bce99d876ec3e5393
   PagerTabStripView: 39ff1bb8cb1bee877c7a21740cede99b45fd3355
+  SwiftUIPager: fa9b45ff5133f6aa2b4d82601d9e2662638f5459
 
-PODFILE CHECKSUM: 97c2f7e81cbc074aa5fe3f6cd7432fc3c278209d
+PODFILE CHECKSUM: 91de58f7dfdcc90a9ddfff91ba945d75b6f8fc8f
 
 COCOAPODS: 1.11.2

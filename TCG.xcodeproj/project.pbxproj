@@ -12,6 +12,7 @@
 		813AD89F278CFE7400C03B2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813AD89E278CFE7400C03B2C /* Assets.xcassets */; };
 		813AD8A2278CFE7400C03B2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813AD8A1278CFE7400C03B2C /* Preview Assets.xcassets */; };
 		813AE04027C8389200CC8F02 /* HomepageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AE03F27C8389200CC8F02 /* HomepageView.swift */; };
+		813AE04227C83A4000CC8F02 /* IntroSlideshowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AE04127C83A4000CC8F02 /* IntroSlideshowView.swift */; };
 		8167445B278FC53800AB7B32 /* YouTubePlayerKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8167445A278FC53800AB7B32 /* YouTubePlayerKit.swift */; };
 		8167445D278FE76800AB7B32 /* RadioButtonField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8167445C278FE76800AB7B32 /* RadioButtonField.swift */; };
 		816744652791462800AB7B32 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816744642791462800AB7B32 /* Extensions.swift */; };
@@ -55,6 +56,7 @@
 		813AD89E278CFE7400C03B2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		813AD8A1278CFE7400C03B2C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		813AE03F27C8389200CC8F02 /* HomepageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageView.swift; sourceTree = "<group>"; };
+		813AE04127C83A4000CC8F02 /* IntroSlideshowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroSlideshowView.swift; sourceTree = "<group>"; };
 		8167445A278FC53800AB7B32 /* YouTubePlayerKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubePlayerKit.swift; sourceTree = "<group>"; };
 		8167445C278FE76800AB7B32 /* RadioButtonField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonField.swift; sourceTree = "<group>"; };
 		816744642791462800AB7B32 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 		813AE03E27C8365200CC8F02 /* Intro */ = {
 			isa = PBXGroup;
 			children = (
+				813AE04127C83A4000CC8F02 /* IntroSlideshowView.swift */,
 			);
 			path = Intro;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				81B280D6278D0C9600DCB425 /* MailView.swift in Sources */,
 				81E1924027A2483F00E9DE3E /* Toaster.swift in Sources */,
 				81B280D4278D0C3500DCB425 /* Colors.swift in Sources */,
+				813AE04227C83A4000CC8F02 /* IntroSlideshowView.swift in Sources */,
 				81B280D1278D0C0A00DCB425 /* SettingsRow.swift in Sources */,
 				816744652791462800AB7B32 /* Extensions.swift in Sources */,
 				81B280EF278FA22100DCB425 /* LearningView.swift in Sources */,

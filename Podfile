@@ -8,5 +8,6 @@ target 'TCG' do
   # Pods for TCG
   pod 'PagerTabStripView', '~> 3.0'
   pod 'AlertToast'
+  pod 'SwiftUIPager'
 
 end
