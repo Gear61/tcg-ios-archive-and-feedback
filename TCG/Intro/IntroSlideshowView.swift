@@ -10,6 +10,8 @@ import SwiftUIPager
 
 struct IntroSlideshowView: View {
 
+    var delegate: AppStateDelegate
+    
     var animationNames = ["welcome", "learn", "feedback"]
     var titles = [
         "Welcome!",
@@ -27,7 +29,8 @@ struct IntroSlideshowView: View {
     var items = Array(0..<3)
    
     func onSlideshowFinish() {
-        UserDefaultUtil.markSlideshowAsSeen()
+        // UserDefaultUtil.markSlideshowAsSeen()
+        delegate.onSlideshowFinished()
     }
     
     var body: some View {

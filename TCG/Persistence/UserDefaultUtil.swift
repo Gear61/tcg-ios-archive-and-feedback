@@ -32,6 +32,14 @@ struct UserDefaultUtil {
         return UserDefaults.standard.bool(forKey: HAS_SEEN_SLIDESHOW_KEY)
     }
     
+    static func getAppState() -> AppState {
+        if (UserDefaults.standard.bool(forKey: HAS_SEEN_SLIDESHOW_KEY)) {
+            return AppState.ShowingHomepage
+        } else {
+            return AppState.WatchingSlideshow
+        }
+    }
+    
     static func markSlideshowAsSeen() {
         UserDefaults.standard.set(true, forKey: HAS_SEEN_SLIDESHOW_KEY)
     }

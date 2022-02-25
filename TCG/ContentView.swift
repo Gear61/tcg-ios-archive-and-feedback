@@ -7,13 +7,43 @@
 
 import SwiftUI
 
-struct ContentView: View {
+enum AppState {
+    case WatchingSlideshow
+    case OrderingContent
+    case ShowingHomepage
+}
+
+protocol AppStateDelegate {
+    
+    func onSlideshowFinished()
+    
+    func onContentOrderingFinished()
+}
+
+struct ContentView: View, AppStateDelegate {
+    
+    @State var appState: AppState = UserDefaultUtil.getAppState()
+    
+    func onSlideshowFinished() {
+        withAnimation {
+            appState = AppState.OrderingContent
+        }
+    }
+    
+    func onContentOrderingFinished() {
+        withAnimation {
+            appState = AppState.ShowingHomepage
+        }
+    }
     
     var body: some View {
-        if (UserDefaultUtil.hasSeenSlideshow()) {
+        switch appState {
+        case AppState.WatchingSlideshow:
+            IntroSlideshowView(delegate: self)
+        case AppState.OrderingContent:
+            OrderContentView()
+        case AppState.ShowingHomepage:
             HomepageView()
-        } else {
-            IntroSlideshowView()
         }
     }
 }
