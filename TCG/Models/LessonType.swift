@@ -18,4 +18,23 @@ enum LessonType: String, CustomStringConvertible {
     var description: String {
         return self.rawValue
     }
+    
+    var labelForOrdering: String {
+        switch self {
+        case .INTERVIEWING:
+            return "Acing Interviews"
+        case .RESUME:
+            return "Writing A Great Resume"
+        case .PRODUCTIVITY:
+            return "Becoming More Productive"
+        case .PROMOTION:
+            return "Getting Promoted"
+        case .LEARNING_QUICKLY:
+            return "Learning Stuff Quickly"
+        }
+    }
+}
+
+extension LessonType: Identifiable {
+    var id: RawValue { rawValue }
 }

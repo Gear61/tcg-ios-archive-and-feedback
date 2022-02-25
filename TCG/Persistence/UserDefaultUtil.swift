@@ -13,6 +13,7 @@ struct UserDefaultUtil {
     static let OPENS_FOR_RATING_UPSELL = 5
     
     static let HAS_SEEN_SLIDESHOW_KEY = "has-seen-slideshow"
+    static let CONTENT_ORDER_KEY = "content-order"
 
     static func markLessonCompleted(lessonId: String) {
         UserDefaults.standard.set(true, forKey: lessonId)
@@ -42,5 +43,24 @@ struct UserDefaultUtil {
     
     static func markSlideshowAsSeen() {
         UserDefaults.standard.set(true, forKey: HAS_SEEN_SLIDESHOW_KEY)
+    }
+    
+    static func getContentOrder() -> [LessonType] {
+        let fromPrefs: [String] = (UserDefaults.standard.object(forKey: CONTENT_ORDER_KEY) as? [String]) ?? []
+        if (fromPrefs.isEmpty) {
+            return [
+                LessonType.INTERVIEWING,
+                LessonType.RESUME,
+                LessonType.PRODUCTIVITY,
+                LessonType.LEARNING_QUICKLY,
+                LessonType.PROMOTION
+            ]
+        } else {
+            var types: [LessonType] = []
+            for type in fromPrefs {
+                types.append(LessonType(rawValue: type)!)
+            }
+            return types
+        }
     }
 }
