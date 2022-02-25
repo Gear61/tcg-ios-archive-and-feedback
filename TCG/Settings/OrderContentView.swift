@@ -13,11 +13,15 @@ struct OrderContentView: View {
     var delegate: AppStateDelegate
     
     @State var items = UserDefaultUtil.getContentOrder()
-    @State var draggedItem : String?
-    @State private var changedView: Bool = false
+    @State var editMode: EditMode = .inactive
     
     func onOrderSaved() {
+        UserDefaultUtil.setContentOrder(types: items)
         delegate.onContentOrderingFinished()
+    }
+    
+    private func onMove(source: IndexSet, destination: Int) {
+        items.move(fromOffsets: source, toOffset: destination)
     }
     
     var body: some View {
@@ -29,32 +33,22 @@ struct OrderContentView: View {
                     .font(.body)
                     .frame(maxWidth: .infinity)
                     .multilineTextAlignment(.leading)
+                    .padding(.top, 8)
                     .padding(.leading)
                     .padding(.trailing)
-                LazyVStack(spacing: 16) {
-                    ForEach(items, id:\.self) { item in
-                        Text(item)
+
+                List {
+                    ForEach(items) { item in
+                        Text(item.labelForOrdering)
                             .foregroundColor(Colors.normalText)
-                            .font(.body)
-                            .frame(minWidth: 0, maxWidth:.infinity)
-                            .padding(12)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 4)
-                                    .stroke(Colors.footerText, lineWidth: 2)
-                            )
-                            .opacity(draggedItem == item && changedView ? 0 : 1)
-                            .onDrag({
-                                self.draggedItem = item
-                                changedView = false
-                                return NSItemProvider(item: nil, typeIdentifier: item)
-                            })
-                            .onDrop(
-                                of: [UTType.text],
-                                delegate: MyDropDelegate(item: item, items: $items, draggedItem: $draggedItem, changedView: $changedView)
-                            )
+                            .padding(.leading, -32)
                     }
+                    .onMove(perform: onMove)
                 }
-                .padding()
+                .listStyle(.plain)
+                .environment(\.editMode, $editMode)
+                .onAppear(perform: {self.editMode = .active})
+
                 Spacer()
                 Button(action: onOrderSaved) {
                     Text("Save Order")
@@ -67,7 +61,6 @@ struct OrderContentView: View {
                 .padding(.trailing)
                 .padding(.bottom)
             }
-            .onDrop(of: [UTType.text], delegate: DropOutsideDelegate(draggedItem: $draggedItem, changedView: $changedView))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
@@ -79,55 +72,5 @@ struct OrderContentView: View {
                 }
             }
         }
-    }
-}
-
-struct MyDropDelegate : DropDelegate {
-    
-    let item: String
-    @Binding var items: [String]
-    @Binding var draggedItem : String?
-    @Binding var changedView: Bool
-    
-    func dropUpdated(info: DropInfo) -> DropProposal? {
-        return DropProposal(operation: .move)
-    }
-    
-    func performDrop(info: DropInfo) -> Bool {
-        changedView = false
-        self.draggedItem = nil
-        return true
-    }
-    
-    func dropEntered(info: DropInfo) {
-        guard let draggedItem = self.draggedItem else {
-            return
-        }
-        
-        changedView = true
-        
-        if draggedItem != item {
-            let from = items.firstIndex(of: draggedItem)!
-            let to = items.firstIndex(of: item)!
-            withAnimation(.default) {
-                self.items.move(fromOffsets: IndexSet(integer: from), toOffset: to > from ? to + 1 : to)
-            }
-        }
-    }
-}
-
-struct DropOutsideDelegate: DropDelegate {
-    
-    @Binding var draggedItem: String?
-    @Binding var changedView: Bool
-    
-    func dropEntered(info: DropInfo) {
-        changedView = true
-    }
-    
-    func performDrop(info: DropInfo) -> Bool {
-        changedView = false
-        draggedItem = nil
-        return true
     }
 }
