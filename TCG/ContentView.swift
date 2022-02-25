@@ -41,7 +41,7 @@ struct ContentView: View, AppStateDelegate {
         case AppState.WatchingSlideshow:
             IntroSlideshowView(delegate: self)
         case AppState.OrderingContent:
-            OrderContentView()
+            OrderContentView(delegate: self)
         case AppState.ShowingHomepage:
             HomepageView()
         }
