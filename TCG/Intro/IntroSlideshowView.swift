@@ -29,7 +29,7 @@ struct IntroSlideshowView: View {
     var items = Array(0..<3)
    
     func onSlideshowFinish() {
-        // UserDefaultUtil.markSlideshowAsSeen()
+        UserDefaultUtil.markSlideshowAsSeen()
         delegate.onSlideshowFinished()
     }
     
