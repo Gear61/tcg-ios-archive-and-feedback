@@ -21,15 +21,23 @@ struct OrderContentView: View {
     }
     
     var body: some View {
-        VStack {
-            ScrollView {
+        NavigationView {
+            VStack(alignment: .leading) {
+                Divider()
+                Text("Simply drag and drop what you care about more to the top, and those lessons will be easier to find.")
+                    .foregroundColor(Colors.normalText)
+                    .font(.body)
+                    .frame(maxWidth: .infinity)
+                    .multilineTextAlignment(.leading)
+                    .padding(.leading)
+                    .padding(.trailing)
                 LazyVStack(spacing: 16) {
                     ForEach(items, id:\.self) { item in
                         Text(item)
                             .foregroundColor(Colors.normalText)
-                            .font(.title3)
+                            .font(.body)
                             .frame(minWidth: 0, maxWidth:.infinity)
-                            .padding()
+                            .padding(12)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 4)
                                     .stroke(Colors.footerText, lineWidth: 2)
@@ -46,19 +54,31 @@ struct OrderContentView: View {
                             )
                     }
                 }
+                .padding()
+                Spacer()
+                Button(action: onOrderSaved) {
+                    Text("Save Order")
+                        .foregroundColor(Color.white)
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(RoundedRectangle(cornerRadius: 4).fill(.green))
+                }
+                .padding(.leading)
+                .padding(.trailing)
+                .padding(.bottom)
             }
-            Spacer()
-            Button(action: onOrderSaved) {
-                Text("Save Order")
-                    .foregroundColor(Color.white)
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(RoundedRectangle(cornerRadius: 4).fill(.green))
+            .onDrop(of: [UTType.text], delegate: DropOutsideDelegate(draggedItem: $draggedItem, changedView: $changedView))
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    HStack {
+                        Text("Order Content")
+                            .font(.headline)
+                            .foregroundColor(Colors.titleText)
+                    }
+                }
             }
-            .padding(.top)
         }
-        .onDrop(of: [UTType.text], delegate: DropOutsideDelegate(draggedItem: $draggedItem, changedView: $changedView))
-        .padding()
     }
 }
 
@@ -97,14 +117,14 @@ struct MyDropDelegate : DropDelegate {
 }
 
 struct DropOutsideDelegate: DropDelegate {
-
+    
     @Binding var draggedItem: String?
     @Binding var changedView: Bool
-
+    
     func dropEntered(info: DropInfo) {
         changedView = true
     }
-
+    
     func performDrop(info: DropInfo) -> Bool {
         changedView = false
         draggedItem = nil

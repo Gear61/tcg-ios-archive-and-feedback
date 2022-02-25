@@ -26,6 +26,7 @@ struct WatchContentView: View {
             Text(viewModel.lesson.name)
                 .foregroundColor(Colors.titleText)
                 .font(.title2)
+                .padding(.top, 8)
                 .padding(.bottom, 2)
             Text("To learn the contents of this lesson, watch the video below. After you are done, click the \"Quiz Me!\" button to see if you have truly mastered the content. Happy learning!")
                 .foregroundColor(Colors.normalText)
@@ -44,11 +45,13 @@ struct WatchContentView: View {
                     .foregroundColor(Color.white)
                     .frame(maxWidth: .infinity)
                     .padding()
-                    .background(RoundedRectangle(cornerRadius: 4).fill(Color.blue))
+                    .background(RoundedRectangle(cornerRadius: 4).fill(.green))
             }
             .padding(.top, 8)
             Spacer()
         }
-        .padding(16)
+        .padding(.leading, 16)
+        .padding(.trailing, 16)
+        .padding(.bottom, 16)
     }
 }

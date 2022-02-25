@@ -42,6 +42,7 @@ struct QuizView: View {
             VStack(alignment: .leading) {
                 HorizontalProgressBar(initialProgress: $viewModel.currentQuizProgress, color: .green)
                     .frame(height: 12)
+                    .padding(.top, 12)
                     .padding(.bottom, 4)
                 Text(viewModel.getCurrentQuestionHeader())
                     .font(.title2)
@@ -74,7 +75,9 @@ struct QuizView: View {
                 .padding(.top)
                 Spacer()
             }
-            .padding(16)
+            .padding(.leading, 16)
+            .padding(.trailing, 16)
+            .padding(.bottom, 16)
         }
         .toast(isPresenting: $toaster.show, duration: toaster.duration) {
             toaster.alertToast

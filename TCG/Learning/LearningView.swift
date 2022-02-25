@@ -47,6 +47,7 @@ struct LearningView: View, LearningDelegate {
     
     var body: some View {
         VStack {
+            Divider()
             switch viewModel.state {
             case LearningState.WatchingContent:
                 WatchContentView(

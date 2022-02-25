@@ -39,6 +39,7 @@ struct ScoreReportView: View {
                 Text(viewModel.lesson.name)
                     .foregroundColor(Colors.titleText)
                     .font(.title2)
+                    .padding(.top, 12)
                 Text(viewModel.scoreEmoji)
                     .font(.system(size: 69))
                     .padding(.top, 1)
@@ -56,7 +57,7 @@ struct ScoreReportView: View {
                             .foregroundColor(Color.white)
                             .frame(maxWidth: .infinity)
                             .padding()
-                            .background(RoundedRectangle(cornerRadius: 4).fill(Color.blue))
+                            .background(RoundedRectangle(cornerRadius: 4).fill(.green))
                     }
                     .padding(.top, 8)
                     Button(action: relearnContent) {
@@ -64,7 +65,7 @@ struct ScoreReportView: View {
                             .foregroundColor(Color.white)
                             .frame(maxWidth: .infinity)
                             .padding()
-                            .background(RoundedRectangle(cornerRadius: 4).fill(Color.blue))
+                            .background(RoundedRectangle(cornerRadius: 4).fill(.green))
                     }
                     .padding(.top, 8)
                 }
@@ -73,7 +74,7 @@ struct ScoreReportView: View {
                         .foregroundColor(Color.white)
                         .frame(maxWidth: .infinity)
                         .padding()
-                        .background(RoundedRectangle(cornerRadius: 4).fill(Color.blue))
+                        .background(RoundedRectangle(cornerRadius: 4).fill(.green))
                 }
                 .padding(.top, 8)
                 Spacer()
@@ -89,7 +90,9 @@ struct ScoreReportView: View {
                     repetitionInterval: 1
                 )
             }
-            .padding(16)
+            .padding(.leading, 16)
+            .padding(.trailing, 16)
+            .padding(.bottom, 16)
         }
         .onAppear(perform: onAppear)
     }
