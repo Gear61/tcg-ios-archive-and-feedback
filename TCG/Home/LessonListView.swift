@@ -78,10 +78,12 @@ struct LessonListView: View {
     }
     
     var body: some View {
-        LazyVStack() {
-            ForEach(getLessons()) { lesson in
-                LessonRowView(lesson: lesson).id(UUID())
-                Divider()
+        ScrollView {
+            LazyVStack() {
+                ForEach(getLessons()) { lesson in
+                    LessonRowView(lesson: lesson).id(UUID())
+                    Divider()
+                }
             }
         }
     }

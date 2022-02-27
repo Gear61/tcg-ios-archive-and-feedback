@@ -18,6 +18,7 @@ class LearningQuicklyContentProvider: ObservableObject {
         lessons.append(makeLesson3())
         lessons.append(makeLesson4())
         lessons.append(makeLesson5())
+        lessons.append(makeLesson6())
     }
     
     private func makeLesson1() -> Lesson {
@@ -437,6 +438,79 @@ class LearningQuicklyContentProvider: ObservableObject {
             type: LessonType.LEARNING_QUICKLY,
             name: "How To Learn A New Codebase Fast",
             youtubeVideoId: "QLCq91qrMC0",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson6() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "True or false: If you get a piece of feedback, you should initially assume good intent and that it is correct.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "True"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "What should be your immediate reaction when you get a piece of constructive feedback?",
+                options: [
+                    Question.Option(id: "Be defensive and ask questions to make the giver validate the feedback"),
+                    Question.Option(id: "Provide a piece of constructive criticism of the giver in return"),
+                    Question.Option(id: "Thank the giver, as they are likely feeling awkward themselves"),
+                    Question.Option(id: "None of the above")
+                ],
+                correctAnswer: "Thank the giver, as they are likely feeling awkward themselves"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: If you get feedback that you do not believe is 100% correct, you should just ignore it.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "False"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Which of the following are good things to do when you get a piece of feedback that you genuinely believe is not constructive and is phrased in a harmful way?",
+                options: [
+                    Question.Option(id: "Talk to the superior of the feedback giver"),
+                    Question.Option(id: "Have a crucial, honest conversation with the feedback giver and explain how you feel"),
+                    Question.Option(id: "Be vulnerable and share your feelings and perspective with people you trust"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: One of the most straightforward ways to grow in tech is to just immediately incorporate every piece of feedback you get.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "True"
+            )
+        )
+        
+        let lessonId = "learning-quickly-6"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.LEARNING_QUICKLY,
+            name: "Feedback Is A Gift",
+            youtubeVideoId: "ZfZzJ6C235s",
             isCompleted: completionStatus,
             questions: questions
         )
