@@ -17,6 +17,7 @@ class LearningQuicklyContentProvider: ObservableObject {
         lessons.append(makeLesson2())
         lessons.append(makeLesson3())
         lessons.append(makeLesson4())
+        lessons.append(makeLesson5())
     }
     
     private func makeLesson1() -> Lesson {
@@ -350,6 +351,92 @@ class LearningQuicklyContentProvider: ObservableObject {
             type: LessonType.LEARNING_QUICKLY,
             name: "Make It Easy For You To Receive Help",
             youtubeVideoId: "rfSy_MlMyfI",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson5() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "What is the best way to learn a codebase?",
+                options: [
+                    Question.Option(id: "Reading as much documentation as you can"),
+                    Question.Option(id: "Just making some code changes in it and seeing what happens"),
+                    Question.Option(id: "Following 5-10 tutorials to build various clone projects with the language the codebase is written in"),
+                    Question.Option(id: "None of the above")
+                ],
+                correctAnswer: "Just making some code changes in it and seeing what happens"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: In software, experimenting and making changes is cheap, so a great way to learn is by trying a lot of things and seeing what happens, even if you do not fully understand the overall codebase yet.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "True"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Why is structured learning like tutorials and courses not effective for actually learning a codebase?",
+                options: [
+                    Question.Option(id: "The good ones are too expensive"),
+                    Question.Option(id: "They take too long"),
+                    Question.Option(id: "They do not actually prepare you for the end goal, taking you away from the core concept of learning by doing"),
+                    Question.Option(id: "None of the above")
+                ],
+                correctAnswer: "They do not actually prepare you for the end goal, taking you away from the core concept of learning by doing"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: Before you jump into a codebase, you should ideally get a certificate in that tech stack before working with it.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "False"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Which of these is a good way to learn a codebase with your first code changes within it?",
+                options: [
+                    Question.Option(id: "Pair program with someone and have them tell you exactly what to do"),
+                    Question.Option(id: "Submit a pull request with a small to medium amount of code changes, even if you know it is far from perfect"),
+                    Question.Option(id: "Try to build a new very large and complex feature"),
+                    Question.Option(id: "None of the above")
+                ],
+                correctAnswer: "Submit a pull request with a small to medium amount of code changes, even if you know it is far from perfect"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: Breaking something locally is an effective way to learn a codebase.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "True"
+            )
+        )
+        
+        let lessonId = "learning-quickly-5"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.LEARNING_QUICKLY,
+            name: "How To Learn A New Codebase Fast",
+            youtubeVideoId: "QLCq91qrMC0",
             isCompleted: completionStatus,
             questions: questions
         )
