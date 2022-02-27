@@ -19,6 +19,7 @@ class LearningQuicklyContentProvider: ObservableObject {
         lessons.append(makeLesson4())
         lessons.append(makeLesson5())
         lessons.append(makeLesson6())
+        lessons.append(makeLesson7())
     }
     
     private func makeLesson1() -> Lesson {
@@ -511,6 +512,57 @@ class LearningQuicklyContentProvider: ObservableObject {
             type: LessonType.LEARNING_QUICKLY,
             name: "Feedback Is A Gift",
             youtubeVideoId: "ZfZzJ6C235s",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson7() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "True or false: The best way to level up is to join a team where you are the absolute strongest and know more than everybody. This way, you will get made the lead by default.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "False"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Why is it good to be the dumbest person in the room?",
+                options: [
+                    Question.Option(id: "You will get more feedback"),
+                    Question.Option(id: "You have more people to learn from"),
+                    Question.Option(id: "Embracing the struggle and being uncomfortable motivates you to become better"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "How can you really level up your skills building within a tech stack you are already familiar with?",
+                options: [
+                    Question.Option(id: "Refactor all the code you have ever written"),
+                    Question.Option(id: "Incorporate blockchain"),
+                    Question.Option(id: "Build a product with a higher level of quality and fidelity than you have ever done, handling extreme edge cases and scale"),
+                    Question.Option(id: "None of the above")
+                ],
+                correctAnswer: "Build a product with a higher level of quality and fidelity than you have ever done, handling extreme edge cases and scale"
+            )
+        )
+        
+        let lessonId = "learning-quickly-7"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.LEARNING_QUICKLY,
+            name: "Finding The Best Environment For Learning",
+            youtubeVideoId: "1jJf0ehQ7Fo",
             isCompleted: completionStatus,
             questions: questions
         )
