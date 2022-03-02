@@ -17,6 +17,7 @@ class MeetingsContentProvider: ObservableObject {
         lessons.append(makeLesson2())
         lessons.append(makeLesson3())
         lessons.append(makeLesson4())
+        lessons.append(makeLesson5())
     }
     
     private func makeLesson1() -> Lesson {
@@ -244,6 +245,46 @@ class MeetingsContentProvider: ObservableObject {
             type: LessonType.LEARNING_QUICKLY,
             name: "Taking Amazing Meeting Notes",
             youtubeVideoId: "b4A4zPu4xMQ",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson5() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "What can you do before a meeting to empower it to achieve more outcomes?",
+                options: [
+                    Question.Option(id: "Meditate"),
+                    Question.Option(id: "Get free donuts for everyone in the meeting"),
+                    Question.Option(id: "Write down an agenda with discussion topics and seed it into the meeting notes document"),
+                    Question.Option(id: "All of the topic")
+                ],
+                correctAnswer: "Write down an agenda with discussion topics and seed it into the meeting notes document"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "You write down an agenda for your upcoming meeting, and you realize that it is incredibly rich and complex. What else can you do to level up the meeting?",
+                options: [
+                    Question.Option(id: "Nothing, an agenda is all you need"),
+                    Question.Option(id: "Come up with some funny stories to tell during the meeting"),
+                    Question.Option(id: "Let everyone else on the meeting know that you have seeded it with an agenda, and you would appreciate them going through the agenda beforehand"),
+                    Question.Option(id: "None of the above"),
+                ],
+                correctAnswer: "Let everyone else on the meeting know that you have seeded it with an agenda, and you would appreciate them going through the agenda beforehand"
+            )
+        )
+        
+        let lessonId = "meetings-5"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.LEARNING_QUICKLY,
+            name: "A Simple Trick To Make Your Meetings More Efficient",
+            youtubeVideoId: "q8RxMZqVYmk",
             isCompleted: completionStatus,
             questions: questions
         )
