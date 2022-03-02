@@ -16,6 +16,7 @@ class MeetingsContentProvider: ObservableObject {
         lessons.append(makeLesson1())
         lessons.append(makeLesson2())
         lessons.append(makeLesson3())
+        lessons.append(makeLesson4())
     }
     
     private func makeLesson1() -> Lesson {
@@ -179,6 +180,70 @@ class MeetingsContentProvider: ObservableObject {
             type: LessonType.LEARNING_QUICKLY,
             name: "The Most Straightforward Way To Level Up Your Meetings",
             youtubeVideoId: "BIcS6glgqyQ",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson4() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "For any meeting, what should you make sure for it?",
+                options: [
+                    Question.Option(id: "It is clear who is responsible for taking notes"),
+                    Question.Option(id: "That everyone on the meeting invite is coming"),
+                    Question.Option(id: "That at least 5 people are on the meeting if it is a team meeting"),
+                    Question.Option(id: "None of the above")
+                ],
+                correctAnswer: "It is clear who is responsible for taking notes"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: As long as you write down most of what was said in a meeting, you have taken a good set of meeting notes.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "False"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "What can you do when someone else in a meeting says something really insightful?",
+                options: [
+                    Question.Option(id: "Stop paying attention to the meeting, so you can write it down"),
+                    Question.Option(id: "Stop the meeting and ask them to send an email to the entire team with that insight"),
+                    Question.Option(id: "Call out how you found what they just said to be very valuable and ask them for a bit of time so you can write it down"),
+                    Question.Option(id: "None of the above")
+                ],
+                correctAnswer: "Call out how you found what they just said to be very valuable and ask them for a bit of time so you can write it down"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Your meeting is winding down, and you have a good set of notes of what was said during the meeting. What should you do next?",
+                options: [
+                    Question.Option(id: "Your job is done. Tune out of the meeting"),
+                    Question.Option(id: "Work with the meeting group to convert what was covered in the meeting into concrete action items"),
+                    Question.Option(id: "Check your emails to see what you missed during the meeting"),
+                    Question.Option(id: "None of the above")
+                ],
+                correctAnswer: "Work with the meeting group to convert what was covered in the meeting into concrete action items"
+            )
+        )
+        
+        let lessonId = "meetings-4"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.LEARNING_QUICKLY,
+            name: "Taking Amazing Meeting Notes",
+            youtubeVideoId: "b4A4zPu4xMQ",
             isCompleted: completionStatus,
             questions: questions
         )
