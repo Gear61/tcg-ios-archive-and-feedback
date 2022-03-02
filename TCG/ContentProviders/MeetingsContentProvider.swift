@@ -18,6 +18,7 @@ class MeetingsContentProvider: ObservableObject {
         lessons.append(makeLesson3())
         lessons.append(makeLesson4())
         lessons.append(makeLesson5())
+        lessons.append(makeLesson6())
     }
     
     private func makeLesson1() -> Lesson {
@@ -259,7 +260,7 @@ class MeetingsContentProvider: ObservableObject {
                     Question.Option(id: "Meditate"),
                     Question.Option(id: "Get free donuts for everyone in the meeting"),
                     Question.Option(id: "Write down an agenda with discussion topics and seed it into the meeting notes document"),
-                    Question.Option(id: "All of the topic")
+                    Question.Option(id: "All of the above")
                 ],
                 correctAnswer: "Write down an agenda with discussion topics and seed it into the meeting notes document"
             )
@@ -285,6 +286,44 @@ class MeetingsContentProvider: ObservableObject {
             type: LessonType.LEARNING_QUICKLY,
             name: "A Simple Trick To Make Your Meetings More Efficient",
             youtubeVideoId: "q8RxMZqVYmk",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson6() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "Why should you err on the side of creating a 1 on 1 meeting instead of waiting for it to be absolutely necessary?",
+                options: [
+                    Question.Option(id: "They are relatively cheap as they only consume the time of 2 people"),
+                    Question.Option(id: "1 on 1 meetings are crucial to functioning optimally within a team due to their deep relationship-building nature"),
+                    Question.Option(id: "The consequences of not having a 1 on 1 meeting when you should have had one are often really painful"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: Team meetings are more important than 1 on 1 meetings, so you should create them more aggressively for everyone to stay in sync.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "False"
+            )
+        )
+        
+        let lessonId = "meetings-6"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.LEARNING_QUICKLY,
+            name: "1 on 1 Meetings Are An Exercise In Proactivity",
+            youtubeVideoId: "JmVVa94j04I",
             isCompleted: completionStatus,
             questions: questions
         )
