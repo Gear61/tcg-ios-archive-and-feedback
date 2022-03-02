@@ -15,6 +15,7 @@ class MeetingsContentProvider: ObservableObject {
         self.lessons = []
         lessons.append(makeLesson1())
         lessons.append(makeLesson2())
+        lessons.append(makeLesson3())
     }
     
     private func makeLesson1() -> Lesson {
@@ -127,6 +128,57 @@ class MeetingsContentProvider: ObservableObject {
             type: LessonType.LEARNING_QUICKLY,
             name: "Making Every Single Meeting You Have Effective",
             youtubeVideoId: "ZzQquAy7gwQ",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson3() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "What is the most straightforward way to level up a meeting?",
+                options: [
+                    Question.Option(id: "Make it longer"),
+                    Question.Option(id: "Write down what happens in the meeting and maintain a running set of notes"),
+                    Question.Option(id: "Invite more people in leadership roles to the meeting"),
+                    Question.Option(id: "None of the above")
+                ],
+                correctAnswer: "Write down what happens in the meeting and maintain a running set of notes"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: Maintaining a good set of meeting notes can help you substantially with promotion.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "True"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Which of the following are benefits of maintaining meeting notes?",
+                options: [
+                    Question.Option(id: "It helps you remember what happened during the meeting"),
+                    Question.Option(id: "It allows you to reflect on how useful a meeting series is"),
+                    Question.Option(id: "It shows that you care a lot about the meeting and the people within it"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+        
+        let lessonId = "meetings-3"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.LEARNING_QUICKLY,
+            name: "The Most Straightforward Way To Level Up Your Meetings",
+            youtubeVideoId: "BIcS6glgqyQ",
             isCompleted: completionStatus,
             questions: questions
         )
