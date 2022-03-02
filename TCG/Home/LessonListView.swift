@@ -13,7 +13,8 @@ struct LessonListView: View {
     @EnvironmentObject var resumeLessons: ResumeContentProvider
     @EnvironmentObject var productivityLessons: ProductivityContentProvider
     @EnvironmentObject var promotionLessons: PromotionContentProvider
-    @EnvironmentObject var learningQuicklyLesson: LearningQuicklyContentProvider
+    @EnvironmentObject var learningQuicklyLessons: LearningQuicklyContentProvider
+    @EnvironmentObject var meetingsLessons: MeetingsContentProvider
     
     var lessonType: LessonType
     
@@ -29,7 +30,9 @@ struct LessonListView: View {
         case .PROMOTION:
             lessons = promotionLessons.lessons
         case .LEARNING_QUICKLY:
-            lessons = learningQuicklyLesson.lessons
+            lessons = learningQuicklyLessons.lessons
+        case .MEETINGS:
+            lessons = meetingsLessons.lessons
         }
         verifyLessons(lessons: lessons)
         return lessons
@@ -50,6 +53,8 @@ struct LessonListView: View {
                 lessonIdPrefix = "promotion"
             case .LEARNING_QUICKLY:
                 lessonIdPrefix = "learning-quickly"
+            case .MEETINGS:
+                lessonIdPrefix = "meetings"
             }
             
             let lessonIdNumber = String(index + 1)

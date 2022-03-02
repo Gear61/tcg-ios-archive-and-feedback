@@ -20,6 +20,8 @@ struct TCGApp: App {
                 .environmentObject(ProductivityContentProvider())
                 .environmentObject(PromotionContentProvider())
                 .environmentObject(LearningQuicklyContentProvider())
+                .environmentObject(MeetingsContentProvider())
+
         }
     }
 }

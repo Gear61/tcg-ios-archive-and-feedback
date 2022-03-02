@@ -47,18 +47,26 @@ struct UserDefaultUtil {
     
     static func getContentOrder() -> [LessonType] {
         let fromPrefs: [String] = (UserDefaults.standard.stringArray(forKey: CONTENT_ORDER_KEY)) ?? []
+        let defaultTypes = [
+            LessonType.INTERVIEWING,
+            LessonType.RESUME,
+            LessonType.PRODUCTIVITY,
+            LessonType.LEARNING_QUICKLY,
+            LessonType.PROMOTION,
+            LessonType.MEETINGS
+        ]
         if (fromPrefs.isEmpty) {
-            return [
-                LessonType.INTERVIEWING,
-                LessonType.RESUME,
-                LessonType.PRODUCTIVITY,
-                LessonType.LEARNING_QUICKLY,
-                LessonType.PROMOTION
-            ]
+            return defaultTypes
         } else {
             var types: [LessonType] = []
             for type in fromPrefs {
                 types.append(LessonType(rawValue: type)!)
+            }
+            
+            for defaultType in defaultTypes {
+                if (!types.contains(defaultType)) {
+                    types.append(defaultType)
+                }
             }
             return types
         }
