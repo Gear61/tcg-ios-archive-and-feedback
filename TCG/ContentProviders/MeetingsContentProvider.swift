@@ -14,6 +14,7 @@ class MeetingsContentProvider: ObservableObject {
     init() {
         self.lessons = []
         lessons.append(makeLesson1())
+        lessons.append(makeLesson2())
     }
     
     private func makeLesson1() -> Lesson {
@@ -86,6 +87,46 @@ class MeetingsContentProvider: ObservableObject {
             type: LessonType.LEARNING_QUICKLY,
             name: "The #1 Thing To Remember With Meetings",
             youtubeVideoId: "e6Ej_9mEc10",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson2() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "What do you absolutely need to with every single meeting in order to make it effective?",
+                options: [
+                    Question.Option(id: "Talk a lot"),
+                    Question.Option(id: "Tell people what to do"),
+                    Question.Option(id: "Have a goal or set of goals for that meeting to achieve"),
+                    Question.Option(id: "None of the above")
+                ],
+                correctAnswer: "Have a goal or set of goals for that meeting to achieve"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "What is the most important question you should be asking yourself constantly during a meeting?",
+                options: [
+                    Question.Option(id: "Did someone say something wrong that I need to call out?"),
+                    Question.Option(id: "Is the meeting achieving its goal(s)?"),
+                    Question.Option(id: "How do I talk more during this meeting?"),
+                    Question.Option(id: "None of the above")
+                ],
+                correctAnswer: "Is the meeting achieving its goal(s)?"
+            )
+        )
+        
+        let lessonId = "meetings-2"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.LEARNING_QUICKLY,
+            name: "Making Every Single Meeting You Have Effective",
+            youtubeVideoId: "ZzQquAy7gwQ",
             isCompleted: completionStatus,
             questions: questions
         )
