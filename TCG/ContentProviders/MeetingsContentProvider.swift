@@ -19,6 +19,7 @@ class MeetingsContentProvider: ObservableObject {
         lessons.append(makeLesson4())
         lessons.append(makeLesson5())
         lessons.append(makeLesson6())
+        lessons.append(makeLesson7())
     }
     
     private func makeLesson1() -> Lesson {
@@ -324,6 +325,46 @@ class MeetingsContentProvider: ObservableObject {
             type: LessonType.LEARNING_QUICKLY,
             name: "1 on 1 Meetings Are An Exercise In Proactivity",
             youtubeVideoId: "JmVVa94j04I",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson7() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "What is the main condition to look out for that could prompt you to set up new 1 on 1 meetings?",
+                options: [
+                    Question.Option(id: "New people entering your work ecosystem"),
+                    Question.Option(id: "Needing a lot of executives to like you, so you set up meetings with them to get promoted"),
+                    Question.Option(id: "You are bored and just want people to talk to"),
+                    Question.Option(id: "None of the above")
+                ],
+                correctAnswer: "New people entering your work ecosystem"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Which of the following scenarios is something you probably should set up some new 1 on 1 meetings for?",
+                options: [
+                    Question.Option(id: "You are joining a new team"),
+                    Question.Option(id: "New members are joining your team"),
+                    Question.Option(id: "You need to work with a new team cross functionally"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+        
+        let lessonId = "meetings-7"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.LEARNING_QUICKLY,
+            name: "Common Scenarios For Setting Up 1 on 1s",
+            youtubeVideoId: "Et3Klf_jIhM",
             isCompleted: completionStatus,
             questions: questions
         )
