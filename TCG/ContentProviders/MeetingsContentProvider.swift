@@ -25,6 +25,7 @@ class MeetingsContentProvider: ObservableObject {
         lessons.append(makeLesson10())
         lessons.append(makeLesson11())
         lessons.append(makeLesson12())
+        lessons.append(makeLesson13())
     }
     
     private func makeLesson1() -> Lesson {
@@ -94,7 +95,7 @@ class MeetingsContentProvider: ObservableObject {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.LEARNING_QUICKLY,
+            type: LessonType.MEETINGS,
             name: "The #1 Thing To Remember With Meetings",
             youtubeVideoId: "e6Ej_9mEc10",
             isCompleted: completionStatus,
@@ -134,7 +135,7 @@ class MeetingsContentProvider: ObservableObject {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.LEARNING_QUICKLY,
+            type: LessonType.MEETINGS,
             name: "Making Every Single Meeting You Have Effective",
             youtubeVideoId: "ZzQquAy7gwQ",
             isCompleted: completionStatus,
@@ -185,7 +186,7 @@ class MeetingsContentProvider: ObservableObject {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.LEARNING_QUICKLY,
+            type: LessonType.MEETINGS,
             name: "The Most Straightforward Way To Level Up Your Meetings",
             youtubeVideoId: "BIcS6glgqyQ",
             isCompleted: completionStatus,
@@ -249,7 +250,7 @@ class MeetingsContentProvider: ObservableObject {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.LEARNING_QUICKLY,
+            type: LessonType.MEETINGS,
             name: "Taking Amazing Meeting Notes",
             youtubeVideoId: "b4A4zPu4xMQ",
             isCompleted: completionStatus,
@@ -289,7 +290,7 @@ class MeetingsContentProvider: ObservableObject {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.LEARNING_QUICKLY,
+            type: LessonType.MEETINGS,
             name: "A Simple Trick To Make Your Meetings More Efficient",
             youtubeVideoId: "q8RxMZqVYmk",
             isCompleted: completionStatus,
@@ -327,7 +328,7 @@ class MeetingsContentProvider: ObservableObject {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.LEARNING_QUICKLY,
+            type: LessonType.MEETINGS,
             name: "1 on 1 Meetings Are An Exercise In Proactivity",
             youtubeVideoId: "JmVVa94j04I",
             isCompleted: completionStatus,
@@ -367,7 +368,7 @@ class MeetingsContentProvider: ObservableObject {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.LEARNING_QUICKLY,
+            type: LessonType.MEETINGS,
             name: "Common Scenarios For Setting Up 1 on 1s",
             youtubeVideoId: "Et3Klf_jIhM",
             isCompleted: completionStatus,
@@ -418,7 +419,7 @@ class MeetingsContentProvider: ObservableObject {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.LEARNING_QUICKLY,
+            type: LessonType.MEETINGS,
             name: "Build The Relationship",
             youtubeVideoId: "GJHsNeogthY",
             isCompleted: completionStatus,
@@ -469,7 +470,7 @@ class MeetingsContentProvider: ObservableObject {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.LEARNING_QUICKLY,
+            type: LessonType.MEETINGS,
             name: "Be Awkward",
             youtubeVideoId: "4XFgKxYfrxY",
             isCompleted: completionStatus,
@@ -507,7 +508,7 @@ class MeetingsContentProvider: ObservableObject {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.LEARNING_QUICKLY,
+            type: LessonType.MEETINGS,
             name: "Structuring Your Manager 1 on 1",
             youtubeVideoId: "3x4Oz332R9s",
             isCompleted: completionStatus,
@@ -547,7 +548,7 @@ class MeetingsContentProvider: ObservableObject {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.LEARNING_QUICKLY,
+            type: LessonType.MEETINGS,
             name: "What To Do If Your Manager Keeps Canceling Your 1 on 1s",
             youtubeVideoId: "bPk5gEoGLAU",
             isCompleted: completionStatus,
@@ -585,9 +586,69 @@ class MeetingsContentProvider: ObservableObject {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.LEARNING_QUICKLY,
+            type: LessonType.MEETINGS,
             name: "Why Delayed And Infrequent Manager 1 on 1s Are Like Procrastination",
             youtubeVideoId: "NswneqhmEJ4",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson13() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "True or false: Your manager is your superior, so it is on them to ask the right questions and figure out what you need in your 1 on 1 meetings. You just need to show up on time.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "False"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Why is the burden on you to set the agenda and overall plan with your manager 1 on 1s?",
+                options: [
+                    Question.Option(id: "Your manager is not a mind reader. Only you truly know your own needs"),
+                    Question.Option(id: "Your manager is likely very busy and their mind space is split up among multiple reports. Since you only have 1 manager, you are better positioned to bring focus to the meeting"),
+                    Question.Option(id: "Creating plans and direction setting are vital skills for growing in tech"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: It is better for your career growth to view your manager as being a resource for you instead of you being a resource for your manager.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "True"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: A good manager 1 on 1 involves you giving status updates and then waiting for instruction on what to do next.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "False"
+            )
+        )
+        
+        let lessonId = "meetings-13"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.MEETINGS,
+            name: "Having The Proper Mentality For Manager 1 on 1s",
+            youtubeVideoId: "Ftcwz1I6mIg",
             isCompleted: completionStatus,
             questions: questions
         )
