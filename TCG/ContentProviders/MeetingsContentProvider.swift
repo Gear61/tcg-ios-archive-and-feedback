@@ -512,4 +512,44 @@ class MeetingsContentProvider: ObservableObject {
             questions: questions
         )
     }
+    
+    private func makeLesson11() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "Your manager keeps canceling your 1 on 1s due to a perceived lack of discussion topics, even though you always have a lot to talk about. What do you do?",
+                options: [
+                    Question.Option(id: "Nothing, just talk with someone else instead"),
+                    Question.Option(id: "Fill in a detailed, well-articulated agenda before each 1 on 1 and share it with your manager prior to the meeting"),
+                    Question.Option(id: "Complain to the manager of your manager"),
+                    Question.Option(id: "None of the above")
+                ],
+                correctAnswer: "Fill in a detailed, well-articulated agenda before each 1 on 1 and share it with your manager prior to the meeting"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Your manager cancels your upcoming 1 on 1 meeting due to an unexpected, new fire that they have to deal with. However, you have a lot of important issues to talk about. What do you do?",
+                options: [
+                    Question.Option(id: "Nothing, just wait for the next 1 on 1 as this is just how things are sometimes"),
+                    Question.Option(id: "Tell them that you understand the need to deal with fires and that you really value your time together. Proactively find a new time later in the week and move the 1 on 1 there"),
+                    Question.Option(id: "Tell your manager that they should just ignore the fire as things break all the time"),
+                    Question.Option(id: "None of the above")
+                ],
+                correctAnswer: "Tell them that you understand the need to deal with fires and that you really value your time together. Proactively find a new time later in the week and move the 1 on 1 there"
+            )
+        )
+        
+        let lessonId = "meetings-11"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.LEARNING_QUICKLY,
+            name: "What To Do If Your Manager Keeps Canceling Your 1 on 1s",
+            youtubeVideoId: "bPk5gEoGLAU",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
 }
