@@ -23,6 +23,8 @@ class MeetingsContentProvider: ObservableObject {
         lessons.append(makeLesson8())
         lessons.append(makeLesson9())
         lessons.append(makeLesson10())
+        lessons.append(makeLesson11())
+        lessons.append(makeLesson12())
     }
     
     private func makeLesson1() -> Lesson {
@@ -548,6 +550,44 @@ class MeetingsContentProvider: ObservableObject {
             type: LessonType.LEARNING_QUICKLY,
             name: "What To Do If Your Manager Keeps Canceling Your 1 on 1s",
             youtubeVideoId: "bPk5gEoGLAU",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson12() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "True or false: Delayed and infrequent manager 1 on 1s can seriously affect your career growth long-term.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "True"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Why is it crucial to have frequent, consistent 1 on 1 meetings with your manager?",
+                options: [
+                    Question.Option(id: "It forces you two to think about serious, longer-term issues like your personal career growth"),
+                    Question.Option(id: "It is vital towards building up this crucial work relationship"),
+                    Question.Option(id: "It maintains the quality of your work life as it prevents work problems from festering over time"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+        
+        let lessonId = "meetings-12"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.LEARNING_QUICKLY,
+            name: "Why Delayed And Infrequent Manager 1 on 1s Are Like Procrastination",
+            youtubeVideoId: "NswneqhmEJ4",
             isCompleted: completionStatus,
             questions: questions
         )
