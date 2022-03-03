@@ -29,6 +29,7 @@ class MeetingsContentProvider: ObservableObject {
         lessons.append(makeLesson14())
         lessons.append(makeLesson15())
         lessons.append(makeLesson16())
+        lessons.append(makeLesson17())
     }
     
     private func makeLesson1() -> Lesson {
@@ -786,6 +787,57 @@ class MeetingsContentProvider: ObservableObject {
             type: LessonType.MEETINGS,
             name: "You Should Be Vulnerable With Your Manager",
             youtubeVideoId: "7ZM7YNKHLy8",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson17() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "Which of these are important things to remember as you are voicing your problems and frustrations?",
+                options: [
+                    Question.Option(id: "Start off with how the issue makes you feel, making the dialogue more about how negative your experience was"),
+                    Question.Option(id: "Avoid placing blame on others"),
+                    Question.Option(id: "Talk tentatively using phrases like \"I think\" and \"Maybe\". Acknowledge the fact that you may not have all the answers and the issue may be something that is on you instead of a problem inflicted by another party"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Is the following a good way to voice a problem: \"I really hate how John thinks about the product. His vision does not make sense, and it will drag down the team. You can tell that he does not have enough experience.\"",
+                options: [
+                    Question.Option(id: "Yes"),
+                    Question.Option(id: "No")
+                ],
+                correctAnswer: "No"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "\"I really hate how John thinks about the product. His vision does not make sense, and it will drag down the team. You can tell that he does not have enough experience.\" - What is wrong with how this frustration is presented?",
+                options: [
+                    Question.Option(id: "There is no tentative language. The speaker is absolutely confident that John is wrong and that they are right"),
+                    Question.Option(id: "It attacks and places blame on John without trying to understand their viewpoint at all"),
+                    Question.Option(id: "It does not try to solve the problem, acting as a bridge burner instead of a bridge builder"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+
+        let lessonId = "meetings-17"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.MEETINGS,
+            name: "Voicing Your Problems And Frustrations Productively",
+            youtubeVideoId: "qWXfT2fiPVE",
             isCompleted: completionStatus,
             questions: questions
         )
