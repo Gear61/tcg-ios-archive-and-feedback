@@ -26,6 +26,7 @@ class MeetingsContentProvider: ObservableObject {
         lessons.append(makeLesson11())
         lessons.append(makeLesson12())
         lessons.append(makeLesson13())
+        lessons.append(makeLesson14())
     }
     
     private func makeLesson1() -> Lesson {
@@ -649,6 +650,44 @@ class MeetingsContentProvider: ObservableObject {
             type: LessonType.MEETINGS,
             name: "Having The Proper Mentality For Manager 1 on 1s",
             youtubeVideoId: "Ftcwz1I6mIg",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson14() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "True or false: In tech, operating at senior levels means that you are driving more, if not most, of the conversation in your manager 1 on 1s.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "True"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Why do senior employees tend to drive more of the conversation in manager 1 on 1 meetings?",
+                options: [
+                    Question.Option(id: "Because they really like talking"),
+                    Question.Option(id: "A mark of seniority is defining your own work, as opposed to someone telling you what to do"),
+                    Question.Option(id: "Managers do not have as much to say in meetings with senior reports"),
+                    Question.Option(id: "None of the above")
+                ],
+                correctAnswer: "None of the above"
+            )
+        )
+
+        let lessonId = "meetings-14"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.MEETINGS,
+            name: "The Manager 1 on 1 Is A Litmus Test For Seniority",
+            youtubeVideoId: "X8nxyvydHjg",
             isCompleted: completionStatus,
             questions: questions
         )
