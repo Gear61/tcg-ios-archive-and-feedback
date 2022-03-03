@@ -21,6 +21,8 @@ class MeetingsContentProvider: ObservableObject {
         lessons.append(makeLesson6())
         lessons.append(makeLesson7())
         lessons.append(makeLesson8())
+        lessons.append(makeLesson9())
+        lessons.append(makeLesson10())
     }
     
     private func makeLesson1() -> Lesson {
@@ -417,6 +419,95 @@ class MeetingsContentProvider: ObservableObject {
             type: LessonType.LEARNING_QUICKLY,
             name: "Build The Relationship",
             youtubeVideoId: "GJHsNeogthY",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson9() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "Why should you be awkward and even a little bit uncomfortable in 1 on 1 meetings?",
+                options: [
+                    Question.Option(id: "1 on 1 meetings are inherently a very inefficient way of conveying information, so you should take the opportunity to talk about more real, heavy-hitting topics"),
+                    Question.Option(id: "True growth happens when you are uncomfortable"),
+                    Question.Option(id: "The transparency helps build the relationship"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: 1 on 1 meetings are great for staying in sync, so status updates are one of the best things you can talk about during them.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "False"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Which of the following are good things to talk about in 1 on 1 meetings?",
+                options: [
+                    Question.Option(id: "Feedback to improve"),
+                    Question.Option(id: "How you are feeling"),
+                    Question.Option(id: "The struggles you are facing, both inside and outside of work"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+        
+        let lessonId = "meetings-9"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.LEARNING_QUICKLY,
+            name: "Be Awkward",
+            youtubeVideoId: "4XFgKxYfrxY",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson10() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "If you are working in a strong, high-growth tech company, what is a good frequency to meet with your manager?",
+                options: [
+                    Question.Option(id: "Once a day"),
+                    Question.Option(id: "Once every 1-2 weeks"),
+                    Question.Option(id: "Once every 1-2 months"),
+                    Question.Option(id: "None of the above")
+                ],
+                correctAnswer: "Once every 1-2 weeks"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: Managers are extremely busy, so it is best to have ad-hoc 1 on 1 meetings with them based on whenever they are able to find a sliver of free time.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "False"
+            )
+        )
+        
+        let lessonId = "meetings-10"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.LEARNING_QUICKLY,
+            name: "Structuring Your Manager 1 on 1",
+            youtubeVideoId: "3x4Oz332R9s",
             isCompleted: completionStatus,
             questions: questions
         )
