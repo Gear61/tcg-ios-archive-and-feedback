@@ -20,6 +20,7 @@ class MeetingsContentProvider: ObservableObject {
         lessons.append(makeLesson5())
         lessons.append(makeLesson6())
         lessons.append(makeLesson7())
+        lessons.append(makeLesson8())
     }
     
     private func makeLesson1() -> Lesson {
@@ -365,6 +366,57 @@ class MeetingsContentProvider: ObservableObject {
             type: LessonType.LEARNING_QUICKLY,
             name: "Common Scenarios For Setting Up 1 on 1s",
             youtubeVideoId: "Et3Klf_jIhM",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson8() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "Why should you build the relationship in 1 on 1 meetings?",
+                options: [
+                    Question.Option(id: "The more intimate nature makes it especially effective for earning social capital"),
+                    Question.Option(id: "It helps pass the time"),
+                    Question.Option(id: "So they can help debug your code"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "The more intimate nature makes it especially effective for earning social capital"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: Small talk is okay in 1 on 1 meetings to break the ice and learn more about the other person's life outside of work.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "True"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Why are deep relationships needed in tech, especially at senior levels?",
+                options: [
+                    Question.Option(id: "When things get hard or go wrong, your earned trust will lead to these people having your back"),
+                    Question.Option(id: "So you can play politics effectively and exclude your enemies"),
+                    Question.Option(id: "So you can get more lenient code reviews"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "When things get hard or go wrong, your earned trust will lead to these people having your back"
+            )
+        )
+        
+        let lessonId = "meetings-8"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.LEARNING_QUICKLY,
+            name: "Build The Relationship",
+            youtubeVideoId: "GJHsNeogthY",
             isCompleted: completionStatus,
             questions: questions
         )
