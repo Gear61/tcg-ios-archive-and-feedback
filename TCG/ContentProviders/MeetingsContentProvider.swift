@@ -28,6 +28,7 @@ class MeetingsContentProvider: ObservableObject {
         lessons.append(makeLesson13())
         lessons.append(makeLesson14())
         lessons.append(makeLesson15())
+        lessons.append(makeLesson16())
     }
     
     private func makeLesson1() -> Lesson {
@@ -738,6 +739,53 @@ class MeetingsContentProvider: ObservableObject {
             type: LessonType.MEETINGS,
             name: "Make Sure To Get This Resource From Your Manager 1 on 1s",
             youtubeVideoId: "SBf9S0B0W3Q",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson16() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "You are feeling burnt out at work. Should you share this with your manager?",
+                options: [
+                    Question.Option(id: "Yes, they can help decrease your workload and de-stress"),
+                    Question.Option(id: "No, sharing this is a sign of weakness. It is on you to figure out how you can work more efficiently")
+                ],
+                correctAnswer: "Yes, they can help decrease your workload and de-stress"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "You feel like you are slower than your other teammates and are afraid that you look bad amongst the team. Should you share this with your manager?",
+                options: [
+                    Question.Option(id: "Yes, this is a case of imposter syndrome and your manager can help with this"),
+                    Question.Option(id: "No, you simply need to work harder to catch up to the rest of your team")
+                ],
+                correctAnswer: "Yes, this is a case of imposter syndrome and your manager can help with this"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "Your dog just died, and you are having a really tough time concentrating at work because of this. Should you share this with your manager?",
+                options: [
+                    Question.Option(id: "Yes, your manager is responsible for your well-being and should be receptive to your current state"),
+                    Question.Option(id: "No, this is a personal issue and you should keep it completely separate from your work life. Hide your pain and prevent your manager from finding out you have a personal issue whatsoever")
+                ],
+                correctAnswer: "Yes, your manager is responsible for your well-being and should be receptive to your current state"
+            )
+        )
+
+        let lessonId = "meetings-16"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.MEETINGS,
+            name: "You Should Be Vulnerable With Your Manager",
+            youtubeVideoId: "7ZM7YNKHLy8",
             isCompleted: completionStatus,
             questions: questions
         )
