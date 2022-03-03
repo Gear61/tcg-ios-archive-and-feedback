@@ -27,6 +27,7 @@ class MeetingsContentProvider: ObservableObject {
         lessons.append(makeLesson12())
         lessons.append(makeLesson13())
         lessons.append(makeLesson14())
+        lessons.append(makeLesson15())
     }
     
     private func makeLesson1() -> Lesson {
@@ -677,7 +678,7 @@ class MeetingsContentProvider: ObservableObject {
                     Question.Option(id: "Managers do not have as much to say in meetings with senior reports"),
                     Question.Option(id: "None of the above")
                 ],
-                correctAnswer: "None of the above"
+                correctAnswer: "A mark of seniority is defining your own work, as opposed to someone telling you what to do"
             )
         )
 
@@ -688,6 +689,55 @@ class MeetingsContentProvider: ObservableObject {
             type: LessonType.MEETINGS,
             name: "The Manager 1 on 1 Is A Litmus Test For Seniority",
             youtubeVideoId: "X8nxyvydHjg",
+            isCompleted: completionStatus,
+            questions: questions
+        )
+    }
+    
+    private func makeLesson15() -> Lesson {
+        var questions = [Question]()
+        questions.append(
+            Question(
+                text: "True or false: Your performance review result should not be a surprise, and the manager 1 on 1 is an instrumental mechanism towards ensuring that.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "True"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "What are some ways to get the feedback flowing in a manager 1 on 1?",
+                options: [
+                    Question.Option(id: "Share your wins"),
+                    Question.Option(id: "Share an observation about a specific project or other aspect of your work life where you feel like you could improve"),
+                    Question.Option(id: "Ask how you are trending overall performance-wise every few months"),
+                    Question.Option(id: "All of the above")
+                ],
+                correctAnswer: "All of the above"
+            )
+        )
+        
+        questions.append(
+            Question(
+                text: "True or false: A simple \"Do you have any feedback for me?\" is a good way to ask for feedback from your manager.",
+                options: [
+                    Question.Option(id: "True"),
+                    Question.Option(id: "False")
+                ],
+                correctAnswer: "False"
+            )
+        )
+
+        let lessonId = "meetings-15"
+        let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
+        return Lesson(
+            id: lessonId,
+            type: LessonType.MEETINGS,
+            name: "Make Sure To Get This Resource From Your Manager 1 on 1s",
+            youtubeVideoId: "SBf9S0B0W3Q",
             isCompleted: completionStatus,
             questions: questions
         )
