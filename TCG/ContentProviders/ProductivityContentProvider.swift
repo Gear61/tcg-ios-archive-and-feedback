@@ -548,7 +548,7 @@ class ProductivityContentProvider: ObservableObject {
         return Lesson(
             id: lessonId,
             type: LessonType.PRODUCTIVITY,
-            name: "The 2 Ways To Become 100x More Productive That Nobody Does",
+            name: "2 Ways To 100x Your Productivity That Nobody Does",
             youtubeVideoId: "JtpVI7dc-9A",
             isCompleted: completionStatus,
             questions: questions

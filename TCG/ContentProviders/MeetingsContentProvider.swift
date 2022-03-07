@@ -60,7 +60,7 @@ class MeetingsContentProvider: ObservableObject {
         
         questions.append(
             Question(
-                text: "You have a meeting series where there is always action, but there is always an awkward portion at the end where people run out of topics. What should you do?",
+                text: "You have a meeting series where there is always action, but there is usually an awkward portion at the end where people run out of topics. What should you do?",
                 options: [
                     Question.Option(id: "Decrease the length of the meeting"),
                     Question.Option(id: "Delete the meeting"),

@@ -12,6 +12,7 @@ struct BrowseLessonsView: View {
     
     var lessonTypes = UserDefaultUtil.getContentOrder()
     
+    @EnvironmentObject var lessonProvider: LessonProvider
     @State private var selection: Int = 0
     
     var body: some View {
@@ -19,7 +20,7 @@ struct BrowseLessonsView: View {
             Divider()
             PagerTabStripView(selection: $selection) {
                 ForEach(lessonTypes) { lessonType in
-                    LessonListView(lessonType: lessonType)
+                    LessonListView(lessons: lessonProvider.getLessons(type: lessonType))
                         .pagerTabItem {
                             TitleNavBarItem(title: lessonType.description)
                         }
