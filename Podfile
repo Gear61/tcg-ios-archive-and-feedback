@@ -10,5 +10,6 @@ target 'TCG' do
   pod 'AlertToast'
   pod 'SwiftUIPager'
   pod 'lottie-ios'
+  pod 'SDWebImageSwiftUI'
 
 end
