@@ -14,9 +14,21 @@ struct LessonsGalleryView: View {
     var lessonType: LessonType
     
     var body: some View {
-        ScrollView {
-            LazyHStack {
+        VStack(alignment: .leading) {
+            Text(lessonType.description)
+                .foregroundColor(Colors.titleText)
+                .font(.title2)
+                .padding(.top, 8)
+                .padding(.bottom, 2)
+                .frame(maxWidth: .infinity)
+            ScrollView(.horizontal, showsIndicators: false) {
+                LazyHStack {
+                    ForEach(lessonProvider.getLessons(type: lessonType)) { lesson in
+                        LessonGalleryCardView(lesson: lesson)
+                    }
+                }
             }
         }
+        .padding()
     }
 }

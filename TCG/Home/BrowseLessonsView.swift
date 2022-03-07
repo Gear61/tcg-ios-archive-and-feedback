@@ -15,21 +15,12 @@ struct BrowseLessonsView: View {
     @State private var selection: Int = 0
     
     var body: some View {
-        VStack {
-            Divider()
-            PagerTabStripView(selection: $selection) {
+        ScrollView {
+            LazyVStack {
                 ForEach(lessonTypes) { lessonType in
-                    LessonListView(type: lessonType)
-                        .pagerTabItem {
-                            TitleNavBarItem(title: lessonType.description)
-                        }
+                    LessonsGalleryView(lessonType: lessonType)
                 }
             }
-            .pagerTabStripViewStyle(.scrollableBarButton(
-                indicatorBarColor: Color.blue,
-                tabItemSpacing: 16,
-                tabItemHeight: 48
-            ))
         }
     }
 }

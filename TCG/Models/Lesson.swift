@@ -37,7 +37,11 @@ class Lesson: Identifiable, ObservableObject {
         return type.description + " Lesson"
     }
     
-    func getYouTubeUrl() -> String {
+    func getYouTubeEmbedUrl() -> String {
         return "https://www.youtube.com/embed/" + youtubeVideoId
+    }
+    
+    func getYouTubeThumbnailUrl() -> String {
+        return "https://img.youtube.com/vi/" + youtubeVideoId + "/maxresdefault.jpg"
     }
 }
