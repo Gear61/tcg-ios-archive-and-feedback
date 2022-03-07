@@ -7,12 +7,10 @@
 
 import Foundation
 
-class ProductivityContentProvider: ObservableObject {
+struct ProductivityContentProvider {
     
-    var lessons: [Lesson]
-    
-    init() {
-        self.lessons = []
+    static func getLessons() -> [Lesson] {
+        var lessons: [Lesson] = []
         lessons.append(makeLesson1())
         lessons.append(makeLesson2())
         lessons.append(makeLesson3())
@@ -22,9 +20,10 @@ class ProductivityContentProvider: ObservableObject {
         lessons.append(makeLesson7())
         lessons.append(makeLesson8())
         lessons.append(makeLesson9())
+        return lessons
     }
     
-    private func makeLesson1() -> Lesson {
+    static func makeLesson1() -> Lesson {
         var questions = [Question]()
         questions.append(
             Question(
@@ -99,7 +98,7 @@ class ProductivityContentProvider: ObservableObject {
         )
     }
     
-    private func makeLesson2() -> Lesson {
+    static func makeLesson2() -> Lesson {
         var questions = [Question]()
         questions.append(
             Question(
@@ -174,7 +173,7 @@ class ProductivityContentProvider: ObservableObject {
         )
     }
     
-    private func makeLesson3() -> Lesson {
+    static func makeLesson3() -> Lesson {
         var questions = [Question]()
         questions.append(
             Question(
@@ -225,7 +224,7 @@ class ProductivityContentProvider: ObservableObject {
         )
     }
     
-    private func makeLesson4() -> Lesson {
+    static func makeLesson4() -> Lesson {
         var questions = [Question]()
         questions.append(
             Question(
@@ -300,7 +299,7 @@ class ProductivityContentProvider: ObservableObject {
         )
     }
     
-    private func makeLesson5() -> Lesson {
+    static func makeLesson5() -> Lesson {
         var questions = [Question]()
         questions.append(
             Question(
@@ -351,7 +350,7 @@ class ProductivityContentProvider: ObservableObject {
         )
     }
     
-    private func makeLesson6() -> Lesson {
+    static func makeLesson6() -> Lesson {
         var questions = [Question]()
         questions.append(
             Question(
@@ -402,7 +401,7 @@ class ProductivityContentProvider: ObservableObject {
         )
     }
     
-    private func makeLesson7() -> Lesson {
+    static func makeLesson7() -> Lesson {
         var questions = [Question]()
         questions.append(
             Question(
@@ -453,7 +452,7 @@ class ProductivityContentProvider: ObservableObject {
         )
     }
     
-    private func makeLesson8() -> Lesson {
+    static func makeLesson8() -> Lesson {
         var questions = [Question]()
         questions.append(
             Question(
@@ -504,7 +503,7 @@ class ProductivityContentProvider: ObservableObject {
         )
     }
     
-    private func makeLesson9() -> Lesson {
+    static func makeLesson9() -> Lesson {
         var questions = [Question]()
         questions.append(
             Question(

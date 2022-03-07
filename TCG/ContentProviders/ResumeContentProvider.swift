@@ -7,18 +7,17 @@
 
 import Foundation
 
-class ResumeContentProvider: ObservableObject {
-    
-    var lessons: [Lesson]
-    
-    init() {
-        self.lessons = []
+struct ResumeContentProvider {
+        
+    static func getLessons() -> [Lesson] {
+        var lessons: [Lesson] = []
         lessons.append(makeLesson1())
         lessons.append(makeLesson2())
         lessons.append(makeLesson3())
+        return lessons
     }
     
-    private func makeLesson1() -> Lesson {
+    static func makeLesson1() -> Lesson {
         var questions = [Question]()
         questions.append(
             Question(
@@ -91,7 +90,7 @@ class ResumeContentProvider: ObservableObject {
         )
     }
     
-    private func makeLesson2() -> Lesson {
+    static func makeLesson2() -> Lesson {
         var questions = [Question]()
         questions.append(
             Question(
@@ -164,7 +163,7 @@ class ResumeContentProvider: ObservableObject {
         )
     }
     
-    private func makeLesson3() -> Lesson {
+    static func makeLesson3() -> Lesson {
         var questions = [Question]()
         questions.append(
             Question(

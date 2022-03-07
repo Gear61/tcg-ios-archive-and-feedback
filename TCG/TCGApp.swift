@@ -15,12 +15,6 @@ struct TCGApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(InterviewContentProvider())
-                .environmentObject(ResumeContentProvider())
-                .environmentObject(ProductivityContentProvider())
-                .environmentObject(PromotionContentProvider())
-                .environmentObject(LearningQuicklyContentProvider())
-                .environmentObject(MeetingsContentProvider())
                 .environmentObject(LessonProvider())
         }
     }

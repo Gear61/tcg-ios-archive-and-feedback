@@ -7,12 +7,10 @@
 
 import Foundation
 
-class LearningQuicklyContentProvider: ObservableObject {
+struct LearningQuicklyContentProvider {
     
-    var lessons: [Lesson]
-    
-    init() {
-        self.lessons = []
+    static func getLessons() -> [Lesson] {
+        var lessons: [Lesson] = []
         lessons.append(makeLesson1())
         lessons.append(makeLesson2())
         lessons.append(makeLesson3())
@@ -20,9 +18,10 @@ class LearningQuicklyContentProvider: ObservableObject {
         lessons.append(makeLesson5())
         lessons.append(makeLesson6())
         lessons.append(makeLesson7())
+        return lessons
     }
     
-    private func makeLesson1() -> Lesson {
+    static func makeLesson1() -> Lesson {
         var questions = [Question]()
         questions.append(
             Question(
@@ -97,7 +96,7 @@ class LearningQuicklyContentProvider: ObservableObject {
         )
     }
     
-    private func makeLesson2() -> Lesson {
+    static func makeLesson2() -> Lesson {
         var questions = [Question]()
         questions.append(
             Question(
@@ -172,7 +171,7 @@ class LearningQuicklyContentProvider: ObservableObject {
         )
     }
     
-    private func makeLesson3() -> Lesson {
+    static func makeLesson3() -> Lesson {
         var questions = [Question]()
         questions.append(
             Question(
@@ -307,7 +306,7 @@ class LearningQuicklyContentProvider: ObservableObject {
         )
     }
     
-    private func makeLesson4() -> Lesson {
+    static func makeLesson4() -> Lesson {
         var questions = [Question]()
         questions.append(
             Question(
@@ -358,7 +357,7 @@ class LearningQuicklyContentProvider: ObservableObject {
         )
     }
     
-    private func makeLesson5() -> Lesson {
+    static func makeLesson5() -> Lesson {
         var questions = [Question]()
         questions.append(
             Question(
@@ -444,7 +443,7 @@ class LearningQuicklyContentProvider: ObservableObject {
         )
     }
     
-    private func makeLesson6() -> Lesson {
+    static func makeLesson6() -> Lesson {
         var questions = [Question]()
         questions.append(
             Question(
@@ -517,7 +516,7 @@ class LearningQuicklyContentProvider: ObservableObject {
         )
     }
     
-    private func makeLesson7() -> Lesson {
+    static func makeLesson7() -> Lesson {
         var questions = [Question]()
         questions.append(
             Question(

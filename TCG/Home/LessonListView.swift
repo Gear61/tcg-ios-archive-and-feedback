@@ -9,12 +9,14 @@ import SwiftUI
 
 struct LessonListView: View {
     
-    var lessons: [Lesson]
+    @EnvironmentObject var lessonProvider: LessonProvider
+    
+    var type: LessonType
 
     var body: some View {
         ScrollView {
             LazyVStack() {
-                ForEach(lessons) { lesson in
+                ForEach(lessonProvider.getLessons(type: type)) { lesson in
                     LessonRowView(lesson: lesson).id(UUID())
                     Divider()
                 }

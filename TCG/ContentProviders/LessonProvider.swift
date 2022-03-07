@@ -9,23 +9,16 @@ import Foundation
 
 class LessonProvider: ObservableObject {
     
-    var interviewLessons = InterviewContentProvider()
-    var resumeLessons = ResumeContentProvider()
-    var productivityLessons = ProductivityContentProvider()
-    var promotionLessons = PromotionContentProvider()
-    var learningQuicklyLessons = LearningQuicklyContentProvider()
-    var meetingsLessons = MeetingsContentProvider()
-    
     var lessons: [Lesson]
     
     init() {
         self.lessons = []
-        lessons.append(contentsOf: interviewLessons.lessons)
-        lessons.append(contentsOf: resumeLessons.lessons)
-        lessons.append(contentsOf: productivityLessons.lessons)
-        lessons.append(contentsOf: promotionLessons.lessons)
-        lessons.append(contentsOf: learningQuicklyLessons.lessons)
-        lessons.append(contentsOf: meetingsLessons.lessons)
+        lessons.append(contentsOf: InterviewContentProvider.getLessons())
+        lessons.append(contentsOf: ResumeContentProvider.getLessons())
+        lessons.append(contentsOf: ProductivityContentProvider.getLessons())
+        lessons.append(contentsOf: PromotionContentProvider.getLessons())
+        lessons.append(contentsOf: LearningQuicklyContentProvider.getLessons())
+        lessons.append(contentsOf: MeetingsContentProvider.getLessons())
         verifyLessons(lessons: lessons)
     }
     
