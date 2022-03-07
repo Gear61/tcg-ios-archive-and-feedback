@@ -28,9 +28,10 @@ struct LessonGalleryCardView: View {
                 .frame(width: 256, height: 52)
                 .multilineTextAlignment(.leading)
         }
+        .cornerRadius(4, corners: [.topLeft, .bottomLeft, .topRight, .bottomRight])
         .overlay(
             RoundedRectangle(cornerRadius: 4)
-                .stroke(Colors.footerText, lineWidth: 2)
+                .stroke(Colors.footerText, lineWidth: 1)
         )
     }
 }

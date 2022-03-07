@@ -32,9 +32,9 @@ class OrientationLockedController<Content: View>: UIHostingController<Orientatio
         var supportedOrientations: UIInterfaceOrientationMask
         init() {
             self.supportedOrientations =
-                UIDevice.current.userInterfaceIdiom == .pad
-                    ? .all
-                    : .allButUpsideDown
+            UIDevice.current.userInterfaceIdiom == .pad
+            ? .all
+            : .allButUpsideDown
         }
     }
     
@@ -63,7 +63,7 @@ class OrientationLockedController<Content: View>: UIHostingController<Orientatio
                 .onPreferenceChange(SupportedOrientationsPreferenceKey.self) { value in
                     // Update the binding to set the value on the root controller.
                     self.box.supportedOrientations = value
-            }
+                }
         }
     }
 }
@@ -72,5 +72,20 @@ extension View {
     func supportedOrientations(_ supportedOrientations: UIInterfaceOrientationMask) -> some View {
         // When rendered, export the requested orientations upward to Root
         preference(key: SupportedOrientationsPreferenceKey.self, value: supportedOrientations)
+    }
+    
+    func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
+        clipShape(RoundedCorner(radius: radius, corners: corners) )
+    }
+}
+
+struct RoundedCorner: Shape {
+    
+    var radius: CGFloat = .infinity
+    var corners: UIRectCorner = .allCorners
+    
+    func path(in rect: CGRect) -> Path {
+        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        return Path(path.cgPath)
     }
 }
