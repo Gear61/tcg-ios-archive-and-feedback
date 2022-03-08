@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import PagerTabStripView
 
 struct BrowseLessonsView: View {
     

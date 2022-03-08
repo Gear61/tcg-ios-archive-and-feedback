@@ -39,8 +39,6 @@
 		81B280D9278D5CED00DCB425 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280D8278D5CED00DCB425 /* Lesson.swift */; };
 		81B280DB278D5CFE00DCB425 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280DA278D5CFE00DCB425 /* Question.swift */; };
 		81B280E1278D625000DCB425 /* BrowseLessonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280E0278D625000DCB425 /* BrowseLessonsView.swift */; };
-		81B280E8278EA16600DCB425 /* TitleNavBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280E7278EA16600DCB425 /* TitleNavBarItem.swift */; };
-		81B280EA278EC23D00DCB425 /* LessonRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280E9278EC23D00DCB425 /* LessonRowView.swift */; };
 		81B280EC278EC72A00DCB425 /* InterviewContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280EB278EC72A00DCB425 /* InterviewContentProvider.swift */; };
 		81B280EF278FA22100DCB425 /* LearningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280EE278FA22100DCB425 /* LearningView.swift */; };
 		81B280F1278FA25000DCB425 /* LearningViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B280F0278FA25000DCB425 /* LearningViewModel.swift */; };
@@ -51,7 +49,6 @@
 		81C8891627A60FA7003F3FF5 /* ProductivityContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C8891527A60FA7003F3FF5 /* ProductivityContentProvider.swift */; };
 		81E1924027A2483F00E9DE3E /* Toaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1923F27A2483F00E9DE3E /* Toaster.swift */; };
 		81E4683627B1C6F80051BB0A /* PromotionContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4683527B1C6F80051BB0A /* PromotionContentProvider.swift */; };
-		81E4683A27B1DA340051BB0A /* LessonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4683927B1DA340051BB0A /* LessonListView.swift */; };
 		81E4683C27B1DA710051BB0A /* LessonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4683B27B1DA710051BB0A /* LessonType.swift */; };
 		81E7776F27A37E8200DA3244 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 81E7776E27A37E8200DA3244 /* ConfettiSwiftUI */; };
 		A0B13811264EACE818262661 /* Pods_TCG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4369D5D0A613E86BD977D652 /* Pods_TCG.framework */; };
@@ -94,8 +91,6 @@
 		81B280D8278D5CED00DCB425 /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 		81B280DA278D5CFE00DCB425 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		81B280E0278D625000DCB425 /* BrowseLessonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseLessonsView.swift; sourceTree = "<group>"; };
-		81B280E7278EA16600DCB425 /* TitleNavBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleNavBarItem.swift; sourceTree = "<group>"; };
-		81B280E9278EC23D00DCB425 /* LessonRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonRowView.swift; sourceTree = "<group>"; };
 		81B280EB278EC72A00DCB425 /* InterviewContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewContentProvider.swift; sourceTree = "<group>"; };
 		81B280EE278FA22100DCB425 /* LearningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningView.swift; sourceTree = "<group>"; };
 		81B280F0278FA25000DCB425 /* LearningViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningViewModel.swift; sourceTree = "<group>"; };
@@ -107,7 +102,6 @@
 		81C8891527A60FA7003F3FF5 /* ProductivityContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductivityContentProvider.swift; sourceTree = "<group>"; };
 		81E1923F27A2483F00E9DE3E /* Toaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toaster.swift; sourceTree = "<group>"; };
 		81E4683527B1C6F80051BB0A /* PromotionContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionContentProvider.swift; sourceTree = "<group>"; };
-		81E4683927B1DA340051BB0A /* LessonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonListView.swift; sourceTree = "<group>"; };
 		81E4683B27B1DA710051BB0A /* LessonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -287,9 +281,6 @@
 			isa = PBXGroup;
 			children = (
 				81B280E0278D625000DCB425 /* BrowseLessonsView.swift */,
-				81B280E7278EA16600DCB425 /* TitleNavBarItem.swift */,
-				81B280E9278EC23D00DCB425 /* LessonRowView.swift */,
-				81E4683927B1DA340051BB0A /* LessonListView.swift */,
 				813AE03F27C8389200CC8F02 /* HomepageView.swift */,
 				81601EEA27D6BFB500215744 /* LessonsGalleryView.swift */,
 				81601EEE27D6CEC200215744 /* LessonGalleryCardView.swift */,
@@ -451,7 +442,6 @@
 				81B280DB278D5CFE00DCB425 /* Question.swift in Sources */,
 				813AE04027C8389200CC8F02 /* HomepageView.swift in Sources */,
 				810B039C27CEF4520052AF1D /* MeetingsContentProvider.swift in Sources */,
-				81E4683A27B1DA340051BB0A /* LessonListView.swift in Sources */,
 				8167445B278FC53800AB7B32 /* YouTubePlayerKit.swift in Sources */,
 				81B280D6278D0C9600DCB425 /* MailView.swift in Sources */,
 				81E1924027A2483F00E9DE3E /* Toaster.swift in Sources */,
@@ -474,11 +464,9 @@
 				81601EEB27D6BFB500215744 /* LessonsGalleryView.swift in Sources */,
 				81601EEF27D6CEC200215744 /* LessonGalleryCardView.swift in Sources */,
 				813AD89B278CFE6F00C03B2C /* TCGApp.swift in Sources */,
-				81B280EA278EC23D00DCB425 /* LessonRowView.swift in Sources */,
 				8167445D278FE76800AB7B32 /* RadioButtonField.swift in Sources */,
 				81AF2EC027C60EE400A44A71 /* LearningQuicklyContentProvider.swift in Sources */,
 				81B280F1278FA25000DCB425 /* LearningViewModel.swift in Sources */,
-				81B280E8278EA16600DCB425 /* TitleNavBarItem.swift in Sources */,
 				81A2616C27C20D7900B73ED3 /* HorizontalProgressBar.swift in Sources */,
 				81674467279146FD00AB7B32 /* AppDelegate.swift in Sources */,
 			);

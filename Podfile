@@ -6,7 +6,6 @@ target 'TCG' do
   use_frameworks!
 
   # Pods for TCG
-  pod 'PagerTabStripView', '~> 3.0'
   pod 'AlertToast'
   pod 'SwiftUIPager'
   pod 'lottie-ios'
