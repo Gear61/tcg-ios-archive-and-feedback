@@ -14,10 +14,12 @@ struct BrowseLessonsView: View {
     @State private var selection: Int = 0
     
     var body: some View {
-        ScrollView {
-            VStack(spacing: 0) {
-                ForEach(lessonTypes) { lessonType in
-                    LessonGalleryView(lessonType: lessonType)
+        ScrollView(showsIndicators: false) {
+            VStack() {
+                ForEach(lessonTypes.indices) { index in
+                    LessonGalleryView(lessonType: lessonTypes[index])
+                        .padding(.top, index == 0 ? 16 : 0)
+                        .padding(.bottom, index == lessonTypes.count - 1 ? 16 : 20)
                 }
             }
         }

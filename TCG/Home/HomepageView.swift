@@ -35,7 +35,7 @@ struct HomepageView: View {
                                selection: $action) {
                     EmptyView()
                 }
-                VStack {
+                VStack(spacing: 0) {
                     Divider()
                     BrowseLessonsView()
                 }

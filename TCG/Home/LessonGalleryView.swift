@@ -29,6 +29,8 @@ struct LessonGalleryView: View {
                         .padding(8)
                         .background(Circle().fill(Color.green))
                 }
+                .padding(.leading, 16)
+                .padding(.trailing, 16)
                 .padding(.bottom, 2)
             }
             ScrollView(.horizontal, showsIndicators: false) {
@@ -39,6 +41,5 @@ struct LessonGalleryView: View {
                 }
             }
         }
-        .padding()
     }
 }
