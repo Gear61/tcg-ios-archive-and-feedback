@@ -23,10 +23,11 @@ struct LessonGalleryCardView: View {
             Divider()
             Text(lesson.name)
                 .foregroundColor(Colors.normalText)
-                .font(.body)
-                .padding()
-                .frame(width: 256, height: 52)
-                .multilineTextAlignment(.leading)
+                .font(.system(size: 15))
+                .padding(8)
+                .frame(width: 256, height: 56, alignment: .leading)
+                .lineLimit(2)
+                .truncationMode(.tail)
         }
         .cornerRadius(4, corners: [.topLeft, .bottomLeft, .topRight, .bottomRight])
         .overlay(
