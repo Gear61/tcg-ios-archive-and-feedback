@@ -87,7 +87,7 @@ struct InterviewContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.INTERVIEWING,
+            type: LessonTag.INTERVIEWING,
             name: "Effectively Learning Data Structures And Algorithms",
             youtubeVideoId: "j9FD_Y5JTbw",
             isCompleted: completionStatus,
@@ -160,7 +160,7 @@ struct InterviewContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.INTERVIEWING,
+            type: LessonTag.INTERVIEWING,
             name: "Having The Proper Mindset",
             youtubeVideoId: "guxFTl_qIRg",
             isCompleted: completionStatus,
@@ -233,7 +233,7 @@ struct InterviewContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.INTERVIEWING,
+            type: LessonTag.INTERVIEWING,
             name: "Mentally Preparing For Interviews With Data Structures And Algorithms",
             youtubeVideoId: "LSLyly2GJo4",
             isCompleted: completionStatus,
@@ -293,7 +293,7 @@ struct InterviewContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.INTERVIEWING,
+            type: LessonTag.INTERVIEWING,
             name: "Truly Mastering A Data Structures And Algorithms Problem - 2 Sum Example",
             youtubeVideoId: "tfqPGGdS8Tk",
             isCompleted: completionStatus,
@@ -368,7 +368,7 @@ struct InterviewContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.INTERVIEWING,
+            type: LessonTag.INTERVIEWING,
             name: "How Big Tech Judges Interview Performance Differently",
             youtubeVideoId: "TqjiQbyomx4",
             isCompleted: completionStatus,
@@ -441,7 +441,7 @@ struct InterviewContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.INTERVIEWING,
+            type: LessonTag.INTERVIEWING,
             name: "Inventing The API And Analyzing Your Solution",
             youtubeVideoId: "XuOXRBYlidg",
             isCompleted: completionStatus,

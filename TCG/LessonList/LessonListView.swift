@@ -11,7 +11,7 @@ struct LessonListView: View {
     
     @EnvironmentObject var lessonProvider: LessonProvider
     
-    var lessonType: LessonType
+    var lessonType: LessonTag
     
     var body: some View {
         VStack(spacing: 0) {

@@ -10,7 +10,7 @@ import Foundation
 class Lesson: Identifiable, ObservableObject, Hashable {
     
     var id: String
-    var type: LessonType
+    var type: LessonTag
     var name: String
     var youtubeVideoId: String
     var questions: [Question]
@@ -19,7 +19,7 @@ class Lesson: Identifiable, ObservableObject, Hashable {
     
     init(
         id: String,
-        type: LessonType,
+        type: LessonTag,
         name: String,
         youtubeVideoId: String,
         isCompleted: Bool,

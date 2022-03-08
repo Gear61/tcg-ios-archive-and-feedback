@@ -50,7 +50,7 @@ class LessonProvider: ObservableObject {
         }
     }
     
-    func getLessons(type: LessonType) -> [Lesson] {
+    func getLessons(type: LessonTag) -> [Lesson] {
         var filteredLessons: [Lesson] = []
         var completedLessons: [Lesson] = []
         for lesson in lessons {

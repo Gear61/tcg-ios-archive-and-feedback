@@ -90,7 +90,7 @@ struct ProductivityContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.PRODUCTIVITY,
+            type: LessonTag.PRODUCTIVITY,
             name: "Setting Up Your Mindset For Long-Term Success And What Separates The Top Engineers From The Rest",
             youtubeVideoId: "XqBA2fkvUTg",
             isCompleted: completionStatus,
@@ -165,7 +165,7 @@ struct ProductivityContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.PRODUCTIVITY,
+            type: LessonTag.PRODUCTIVITY,
             name: "How To Accomplish Something Every Single Day",
             youtubeVideoId: "3gvjpMhhfnY",
             isCompleted: completionStatus,
@@ -216,7 +216,7 @@ struct ProductivityContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.PRODUCTIVITY,
+            type: LessonTag.PRODUCTIVITY,
             name: "Why Time Is 100x More Valuable Than Money In Tech",
             youtubeVideoId: "7VwKfMZUFxk",
             isCompleted: completionStatus,
@@ -291,7 +291,7 @@ struct ProductivityContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.PRODUCTIVITY,
+            type: LessonTag.PRODUCTIVITY,
             name: "The Best Gift You Can Give Yourself",
             youtubeVideoId: "L8a4Sc17DLw",
             isCompleted: completionStatus,
@@ -342,7 +342,7 @@ struct ProductivityContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.PRODUCTIVITY,
+            type: LessonTag.PRODUCTIVITY,
             name: "The Importance of Reflection With Time Management",
             youtubeVideoId: "Ntb5IvW869s",
             isCompleted: completionStatus,
@@ -393,7 +393,7 @@ struct ProductivityContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.PRODUCTIVITY,
+            type: LessonTag.PRODUCTIVITY,
             name: "Easy Tactics You Can Apply Today To Increase Your Focus",
             youtubeVideoId: "PMUyZ7VoowE",
             isCompleted: completionStatus,
@@ -444,7 +444,7 @@ struct ProductivityContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.PRODUCTIVITY,
+            type: LessonTag.PRODUCTIVITY,
             name: "Eat The Frog",
             youtubeVideoId: "nrg02T8VSDY",
             isCompleted: completionStatus,
@@ -495,7 +495,7 @@ struct ProductivityContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.PRODUCTIVITY,
+            type: LessonTag.PRODUCTIVITY,
             name: "Accountability Partners",
             youtubeVideoId: "RPXLB8HH4Q4",
             isCompleted: completionStatus,
@@ -546,7 +546,7 @@ struct ProductivityContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.PRODUCTIVITY,
+            type: LessonTag.PRODUCTIVITY,
             name: "2 Ways To 100x Your Productivity That Nobody Does",
             youtubeVideoId: "JtpVI7dc-9A",
             isCompleted: completionStatus,

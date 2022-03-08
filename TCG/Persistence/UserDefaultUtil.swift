@@ -45,22 +45,22 @@ struct UserDefaultUtil {
         UserDefaults.standard.set(true, forKey: HAS_SEEN_SLIDESHOW_KEY)
     }
     
-    static func getContentOrder() -> [LessonType] {
+    static func getContentOrder() -> [LessonTag] {
         let fromPrefs: [String] = (UserDefaults.standard.stringArray(forKey: CONTENT_ORDER_KEY)) ?? []
         let defaultTypes = [
-            LessonType.INTERVIEWING,
-            LessonType.RESUME,
-            LessonType.PRODUCTIVITY,
-            LessonType.LEARNING_QUICKLY,
-            LessonType.PROMOTION,
-            LessonType.MEETINGS
+            LessonTag.INTERVIEWING,
+            LessonTag.RESUME,
+            LessonTag.PRODUCTIVITY,
+            LessonTag.LEARNING_QUICKLY,
+            LessonTag.PROMOTION,
+            LessonTag.MEETINGS
         ]
         if (fromPrefs.isEmpty) {
             return defaultTypes
         } else {
-            var types: [LessonType] = []
+            var types: [LessonTag] = []
             for type in fromPrefs {
-                types.append(LessonType(rawValue: type)!)
+                types.append(LessonTag(rawValue: type)!)
             }
             
             for defaultType in defaultTypes {
@@ -72,7 +72,7 @@ struct UserDefaultUtil {
         }
     }
     
-    static func setContentOrder(types: [LessonType]) {
+    static func setContentOrder(types: [LessonTag]) {
         var typeStrings: [String] = []
         for type in types {
             typeStrings.append(type.rawValue)

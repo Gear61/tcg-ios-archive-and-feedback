@@ -88,7 +88,7 @@ struct LearningQuicklyContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.LEARNING_QUICKLY,
+            type: LessonTag.LEARNING_QUICKLY,
             name: "There Is No Such Thing As A Stupid Question",
             youtubeVideoId: "fVgZBX0yinc",
             isCompleted: completionStatus,
@@ -163,7 +163,7 @@ struct LearningQuicklyContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.LEARNING_QUICKLY,
+            type: LessonTag.LEARNING_QUICKLY,
             name: "Asking Effective Questions That Get Great Answers Quickly",
             youtubeVideoId: "VS75nql2Csg",
             isCompleted: completionStatus,
@@ -298,7 +298,7 @@ struct LearningQuicklyContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.LEARNING_QUICKLY,
+            type: LessonTag.LEARNING_QUICKLY,
             name: "Bad Question vs. Good Question Example",
             youtubeVideoId: "24CGlaL5bXo",
             isCompleted: completionStatus,
@@ -349,7 +349,7 @@ struct LearningQuicklyContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.LEARNING_QUICKLY,
+            type: LessonTag.LEARNING_QUICKLY,
             name: "Make It Easy For You To Receive Help",
             youtubeVideoId: "rfSy_MlMyfI",
             isCompleted: completionStatus,
@@ -435,7 +435,7 @@ struct LearningQuicklyContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.LEARNING_QUICKLY,
+            type: LessonTag.LEARNING_QUICKLY,
             name: "How To Learn A New Codebase Fast",
             youtubeVideoId: "QLCq91qrMC0",
             isCompleted: completionStatus,
@@ -508,7 +508,7 @@ struct LearningQuicklyContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.LEARNING_QUICKLY,
+            type: LessonTag.LEARNING_QUICKLY,
             name: "Feedback Is A Gift",
             youtubeVideoId: "ZfZzJ6C235s",
             isCompleted: completionStatus,
@@ -559,7 +559,7 @@ struct LearningQuicklyContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonType.LEARNING_QUICKLY,
+            type: LessonTag.LEARNING_QUICKLY,
             name: "Finding The Best Environment For Learning",
             youtubeVideoId: "1jJf0ehQ7Fo",
             isCompleted: completionStatus,

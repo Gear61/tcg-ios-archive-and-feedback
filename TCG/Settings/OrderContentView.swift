@@ -39,7 +39,7 @@ struct OrderContentView: View {
 
                 List {
                     ForEach(items) { item in
-                        Text(item.labelForOrdering)
+                        Text(item.description)
                             .foregroundColor(Colors.normalText)
                             .padding(.leading, -32)
                     }
