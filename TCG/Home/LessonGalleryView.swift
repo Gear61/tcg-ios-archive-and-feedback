@@ -34,9 +34,14 @@ struct LessonGalleryView: View {
                 .padding(.bottom, 2)
             }
             ScrollView(.horizontal, showsIndicators: false) {
-                LazyHStack(spacing: 16) {
-                    ForEach(lessonProvider.getLessons(type: lessonType)) { lesson in
+                LazyHStack(spacing: 0) {
+                    ForEach(
+                        Array(lessonProvider.getLessons(type: lessonType).enumerated()),
+                        id: \.element
+                    ) { index, lesson in
                         LessonGalleryCardView(lesson: lesson)
+                            .padding(.leading, index == 0 ? 16 : 0)
+                            .padding(.trailing, 16)
                     }
                 }
             }
