@@ -21,7 +21,7 @@ struct LessonsGalleryView: View {
                 .padding(.bottom, 2)
                 .frame(maxWidth: .infinity, alignment: .leading)
             ScrollView(.horizontal, showsIndicators: false) {
-                LazyHStack {
+                LazyHStack(spacing: 16) {
                     ForEach(lessonProvider.getLessons(type: lessonType)) { lesson in
                         LessonGalleryCardView(lesson: lesson)
                     }
