@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum LessonTag: String, CustomStringConvertible {
+enum LessonTag: String, CustomStringConvertible, CaseIterable {
 
     case INTERVIEWING = "Interviewing"
     case RESUME = "Resume"

@@ -9,7 +9,18 @@ import SwiftUI
 
 struct LessonTagsView: View {
 
+    @EnvironmentObject var lessonProvider: LessonProvider
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView(showsIndicators: false) {
+            LazyVStack() {
+                ForEach(
+                    Array(lessonProvider.getLessonTagViewModels().enumerated()),
+                    id: \.element
+                ) { index, viewModel in
+                    LessonTagRowView(viewModel: viewModel)
+                }
+            }
+        }
     }
 }

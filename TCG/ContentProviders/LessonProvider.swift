@@ -66,10 +66,16 @@ class LessonProvider: ObservableObject {
         return filteredLessons
     }
     
-    func getLessonTagViewModel(tag: LessonTag) -> LessonTagViewModel {
-        return LessonTagViewModel(
-            tag: tag,
-            lessons: getLessons(tag: tag)
-        )
+    func getLessonTagViewModels() -> [LessonTagViewModel] {
+        var viewModels: [LessonTagViewModel] = []
+        for tag in LessonTag.allCases {
+            viewModels.append(
+                LessonTagViewModel (
+                    tag: tag,
+                    lessons: getLessons(tag: tag)
+                )
+            )
+        }
+        return viewModels.sorted(by: { $0.tag.description > $1.tag.description })
     }
 }

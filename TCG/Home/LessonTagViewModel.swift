@@ -7,7 +7,7 @@
 
 import Foundation
 
-class LessonTagViewModel: ObservableObject {
+class LessonTagViewModel: ObservableObject, Hashable {
     
     var tag: LessonTag
     var lessons: [Lesson]
@@ -34,5 +34,13 @@ class LessonTagViewModel: ObservableObject {
     func getNumLessonsText() -> String {
         let countString = String(lessons.count)
         return countString + " Lessons"
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(ObjectIdentifier(self))
+    }
+    
+    static func == (lhs: LessonTagViewModel, rhs: LessonTagViewModel) -> Bool {
+        return lhs.tag == rhs.tag
     }
 }

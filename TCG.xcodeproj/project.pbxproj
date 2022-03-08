@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8103F98F27D810AF00DB291B /* LessonTagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8103F98E27D810AF00DB291B /* LessonTagsView.swift */; };
 		8103F99127D8181900DB291B /* LessonTagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8103F99027D8181900DB291B /* LessonTagViewModel.swift */; };
+		8103F99327D81FBF00DB291B /* LessonTagRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8103F99227D81FBF00DB291B /* LessonTagRowView.swift */; };
 		810B039C27CEF4520052AF1D /* MeetingsContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810B039B27CEF4520052AF1D /* MeetingsContentProvider.swift */; };
 		813AD89B278CFE6F00C03B2C /* TCGApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AD89A278CFE6F00C03B2C /* TCGApp.swift */; };
 		813AD89D278CFE6F00C03B2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AD89C278CFE6F00C03B2C /* ContentView.swift */; };
@@ -64,6 +65,7 @@
 		4369D5D0A613E86BD977D652 /* Pods_TCG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8103F98E27D810AF00DB291B /* LessonTagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTagsView.swift; sourceTree = "<group>"; };
 		8103F99027D8181900DB291B /* LessonTagViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTagViewModel.swift; sourceTree = "<group>"; };
+		8103F99227D81FBF00DB291B /* LessonTagRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTagRowView.swift; sourceTree = "<group>"; };
 		810B039B27CEF4520052AF1D /* MeetingsContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingsContentProvider.swift; sourceTree = "<group>"; };
 		813AD897278CFE6F00C03B2C /* TCG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		813AD89A278CFE6F00C03B2C /* TCGApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCGApp.swift; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 				81601EEE27D6CEC200215744 /* LessonGalleryCardView.swift */,
 				8103F98E27D810AF00DB291B /* LessonTagsView.swift */,
 				8103F99027D8181900DB291B /* LessonTagViewModel.swift */,
+				8103F99227D81FBF00DB291B /* LessonTagRowView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 				81C8891627A60FA7003F3FF5 /* ProductivityContentProvider.swift in Sources */,
 				8167446927915B4900AB7B32 /* ResumeContentProvider.swift in Sources */,
 				8154727427C86AFC00B00F92 /* OrderContentView.swift in Sources */,
+				8103F99327D81FBF00DB291B /* LessonTagRowView.swift in Sources */,
 				81B280D9278D5CED00DCB425 /* Lesson.swift in Sources */,
 				81B280F5278FA77700DCB425 /* QuizView.swift in Sources */,
 				81B280EC278EC72A00DCB425 /* InterviewContentProvider.swift in Sources */,
