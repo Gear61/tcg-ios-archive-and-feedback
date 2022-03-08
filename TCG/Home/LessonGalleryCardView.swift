@@ -10,16 +10,37 @@ import SDWebImageSwiftUI
 
 struct LessonGalleryCardView: View {
     
-    var lesson: Lesson
+    @ObservedObject var lesson: Lesson
+    
+    func checkCompletion() {
+        if (!lesson.isCompleted) {
+            if (UserDefaults.standard.bool(forKey: lesson.id)) {
+                lesson.isCompleted = true
+            }
+        }
+    }
     
     var body: some View {
         VStack(spacing: 0) {
-            WebImage(url: URL(string: (lesson.getYouTubeThumbnailUrl())))
-                .resizable()
-                .indicator(.activity)
-                .transition(.fade(duration: 0.5))
-                .scaledToFit()
-                .frame(width: 256, height: 144)
+            ZStack(alignment: .top) {
+                WebImage(url: URL(string: (lesson.getYouTubeThumbnailUrl())))
+                    .resizable()
+                    .indicator(.activity)
+                    .transition(.fade(duration: 0.5))
+                    .scaledToFit()
+                    .frame(width: 256, height: 144)
+                HStack {
+                    Spacer()
+                    Image(systemName: lesson.isCompleted ? "checkmark" : "xmark")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 20, height: 20)
+                        .foregroundColor(lesson.isCompleted ? Color.green : Color.red)
+                        .padding(8)
+                        .background(RoundedRectangle(cornerRadius: 4).fill(Colors.white80Alpha))
+                }
+                .padding(8)
+            }
             Divider()
             Text(lesson.name)
                 .foregroundColor(Colors.normalText)
@@ -34,5 +55,6 @@ struct LessonGalleryCardView: View {
             RoundedRectangle(cornerRadius: 4)
                 .stroke(Colors.footerText, lineWidth: 1)
         )
+        .onAppear(perform: checkCompletion)
     }
 }
