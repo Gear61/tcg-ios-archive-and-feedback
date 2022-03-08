@@ -36,6 +36,7 @@ struct HomepageView: View {
                     EmptyView()
                 }
                 VStack {
+                    Divider()
                     BrowseLessonsView()
                 }
                 .navigationBarTitleDisplayMode(.inline)
