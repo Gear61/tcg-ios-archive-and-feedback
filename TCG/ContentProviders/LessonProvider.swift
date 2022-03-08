@@ -52,11 +52,17 @@ class LessonProvider: ObservableObject {
     
     func getLessons(type: LessonType) -> [Lesson] {
         var filteredLessons: [Lesson] = []
+        var completedLessons: [Lesson] = []
         for lesson in lessons {
             if (lesson.type == type) {
-                filteredLessons.append(lesson)
+                if (lesson.isCompleted) {
+                    completedLessons.append(lesson)
+                } else {
+                    filteredLessons.append(lesson)
+                }
             }
         }
+        filteredLessons.append(contentsOf: completedLessons)
         return filteredLessons
     }
 }
