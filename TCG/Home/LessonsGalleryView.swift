@@ -18,9 +18,8 @@ struct LessonsGalleryView: View {
             Text(lessonType.description)
                 .foregroundColor(Colors.titleText)
                 .font(.title2)
-                .padding(.top, 8)
                 .padding(.bottom, 2)
-                .frame(maxWidth: .infinity)
+                .frame(maxWidth: .infinity, alignment: .leading)
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHStack {
                     ForEach(lessonProvider.getLessons(type: lessonType)) { lesson in

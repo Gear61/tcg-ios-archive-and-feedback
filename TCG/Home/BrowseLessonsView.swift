@@ -16,7 +16,7 @@ struct BrowseLessonsView: View {
     
     var body: some View {
         ScrollView {
-            LazyVStack {
+            VStack(spacing: 0) {
                 ForEach(lessonTypes) { lessonType in
                     LessonsGalleryView(lessonType: lessonType)
                 }
