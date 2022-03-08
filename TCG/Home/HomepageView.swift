@@ -37,7 +37,16 @@ struct HomepageView: View {
                 }
                 VStack(spacing: 0) {
                     Divider()
-                    BrowseLessonsView()
+                    TabView {
+                        BrowseLessonsView()
+                            .tabItem {
+                                Label("Home", systemImage: "house")
+                            }
+                        LessonTagsView()
+                            .tabItem {
+                                Label("Lesson Tags", systemImage: "tag.fill")
+                            }
+                    }
                 }
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {

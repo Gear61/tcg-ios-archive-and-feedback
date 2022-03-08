@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8103F98F27D810AF00DB291B /* LessonTagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8103F98E27D810AF00DB291B /* LessonTagsView.swift */; };
 		810B039C27CEF4520052AF1D /* MeetingsContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810B039B27CEF4520052AF1D /* MeetingsContentProvider.swift */; };
 		813AD89B278CFE6F00C03B2C /* TCGApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AD89A278CFE6F00C03B2C /* TCGApp.swift */; };
 		813AD89D278CFE6F00C03B2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AD89C278CFE6F00C03B2C /* ContentView.swift */; };
@@ -60,6 +61,7 @@
 		0E4A011A94843A606EA38E78 /* Pods-TCG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCG.release.xcconfig"; path = "Target Support Files/Pods-TCG/Pods-TCG.release.xcconfig"; sourceTree = "<group>"; };
 		172527B9954D6B8626B5E2CB /* Pods-TCG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCG.debug.xcconfig"; path = "Target Support Files/Pods-TCG/Pods-TCG.debug.xcconfig"; sourceTree = "<group>"; };
 		4369D5D0A613E86BD977D652 /* Pods_TCG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8103F98E27D810AF00DB291B /* LessonTagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTagsView.swift; sourceTree = "<group>"; };
 		810B039B27CEF4520052AF1D /* MeetingsContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingsContentProvider.swift; sourceTree = "<group>"; };
 		813AD897278CFE6F00C03B2C /* TCG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		813AD89A278CFE6F00C03B2C /* TCGApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCGApp.swift; sourceTree = "<group>"; };
@@ -298,6 +300,7 @@
 				813AE03F27C8389200CC8F02 /* HomepageView.swift */,
 				81601EEA27D6BFB500215744 /* LessonGalleryView.swift */,
 				81601EEE27D6CEC200215744 /* LessonGalleryCardView.swift */,
+				8103F98E27D810AF00DB291B /* LessonTagsView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -483,6 +486,7 @@
 				8167445D278FE76800AB7B32 /* RadioButtonField.swift in Sources */,
 				81AF2EC027C60EE400A44A71 /* LearningQuicklyContentProvider.swift in Sources */,
 				81B280F1278FA25000DCB425 /* LearningViewModel.swift in Sources */,
+				8103F98F27D810AF00DB291B /* LessonTagsView.swift in Sources */,
 				81A2616C27C20D7900B73ED3 /* HorizontalProgressBar.swift in Sources */,
 				81674467279146FD00AB7B32 /* AppDelegate.swift in Sources */,
 			);
@@ -615,7 +619,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TCG/TCG.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_ASSET_PATHS = "\"TCG/Preview Content\"";
 				DEVELOPMENT_TEAM = 6G9RAHBVQN;
 				ENABLE_PREVIEWS = YES;
@@ -631,7 +635,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.randomappsinc.tcgapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -648,7 +652,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TCG/TCG.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_ASSET_PATHS = "\"TCG/Preview Content\"";
 				DEVELOPMENT_TEAM = 6G9RAHBVQN;
 				ENABLE_PREVIEWS = YES;
@@ -664,7 +668,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.randomappsinc.tcgapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
