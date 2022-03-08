@@ -63,7 +63,7 @@ struct LearningView: View, LearningDelegate {
         .toolbar {
             ToolbarItem(placement: .principal) {
                 HStack {
-                    Text(viewModel.lesson.getLessonToolbarTitleText()).font(.headline)
+                    Text("Learn Lesson").font(.headline)
                 }
             }
         }

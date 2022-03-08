@@ -19,7 +19,7 @@ struct LessonListView: View {
             ScrollView(showsIndicators: false) {
                 LazyVStack(spacing: 0) {
                     ForEach(
-                        Array(lessonProvider.getLessons(type: lessonType).enumerated()),
+                        Array(lessonProvider.getLessons(tag: lessonType).enumerated()),
                         id: \.element
                     ) { index, lesson in
                         LessonFullCardView(lesson: lesson)

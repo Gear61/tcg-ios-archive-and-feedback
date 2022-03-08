@@ -36,7 +36,7 @@ struct LessonGalleryView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHStack(spacing: 0) {
                     ForEach(
-                        Array(lessonProvider.getLessons(type: lessonType).enumerated()),
+                        Array(lessonProvider.getLessons(tag: lessonType).enumerated()),
                         id: \.element
                     ) { index, lesson in
                         LessonGalleryCardView(lesson: lesson)

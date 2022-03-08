@@ -32,11 +32,7 @@ class Lesson: Identifiable, ObservableObject, Hashable {
         self.isCompleted = isCompleted
         self.questions = questions
     }
-    
-    func getLessonToolbarTitleText() -> String {
-        return tags.description + " Lesson"
-    }
-    
+
     func getYouTubeEmbedUrl() -> String {
         return "https://www.youtube.com/embed/" + youtubeVideoId
     }

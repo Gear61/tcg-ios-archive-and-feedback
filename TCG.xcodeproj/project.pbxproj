@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8103F98F27D810AF00DB291B /* LessonTagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8103F98E27D810AF00DB291B /* LessonTagsView.swift */; };
+		8103F99127D8181900DB291B /* LessonTagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8103F99027D8181900DB291B /* LessonTagViewModel.swift */; };
 		810B039C27CEF4520052AF1D /* MeetingsContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810B039B27CEF4520052AF1D /* MeetingsContentProvider.swift */; };
 		813AD89B278CFE6F00C03B2C /* TCGApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AD89A278CFE6F00C03B2C /* TCGApp.swift */; };
 		813AD89D278CFE6F00C03B2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AD89C278CFE6F00C03B2C /* ContentView.swift */; };
@@ -62,6 +63,7 @@
 		172527B9954D6B8626B5E2CB /* Pods-TCG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCG.debug.xcconfig"; path = "Target Support Files/Pods-TCG/Pods-TCG.debug.xcconfig"; sourceTree = "<group>"; };
 		4369D5D0A613E86BD977D652 /* Pods_TCG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8103F98E27D810AF00DB291B /* LessonTagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTagsView.swift; sourceTree = "<group>"; };
+		8103F99027D8181900DB291B /* LessonTagViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTagViewModel.swift; sourceTree = "<group>"; };
 		810B039B27CEF4520052AF1D /* MeetingsContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingsContentProvider.swift; sourceTree = "<group>"; };
 		813AD897278CFE6F00C03B2C /* TCG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		813AD89A278CFE6F00C03B2C /* TCGApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCGApp.swift; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 				81601EEA27D6BFB500215744 /* LessonGalleryView.swift */,
 				81601EEE27D6CEC200215744 /* LessonGalleryCardView.swift */,
 				8103F98E27D810AF00DB291B /* LessonTagsView.swift */,
+				8103F99027D8181900DB291B /* LessonTagViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 				81B280F5278FA77700DCB425 /* QuizView.swift in Sources */,
 				81B280EC278EC72A00DCB425 /* InterviewContentProvider.swift in Sources */,
 				81B280F3278FA76300DCB425 /* WatchContentView.swift in Sources */,
+				8103F99127D8181900DB291B /* LessonTagViewModel.swift in Sources */,
 				81601EEB27D6BFB500215744 /* LessonGalleryView.swift in Sources */,
 				81601EF227D6E1FE00215744 /* LessonListView.swift in Sources */,
 				81601EEF27D6CEC200215744 /* LessonGalleryCardView.swift in Sources */,

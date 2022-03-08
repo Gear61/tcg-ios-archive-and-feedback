@@ -50,11 +50,11 @@ class LessonProvider: ObservableObject {
         }
     }
     
-    func getLessons(type: LessonTag) -> [Lesson] {
+    func getLessons(tag: LessonTag) -> [Lesson] {
         var filteredLessons: [Lesson] = []
         var completedLessons: [Lesson] = []
         for lesson in lessons {
-            if (lesson.tags.contains(type)) {
+            if (lesson.tags.contains(tag)) {
                 if (lesson.isCompleted) {
                     completedLessons.append(lesson)
                 } else {
@@ -64,5 +64,12 @@ class LessonProvider: ObservableObject {
         }
         filteredLessons.append(contentsOf: completedLessons)
         return filteredLessons
+    }
+    
+    func getLessonTagViewModel(tag: LessonTag) -> LessonTagViewModel {
+        return LessonTagViewModel(
+            tag: tag,
+            lessons: getLessons(tag: tag)
+        )
     }
 }
