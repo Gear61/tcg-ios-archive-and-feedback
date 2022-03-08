@@ -21,9 +21,11 @@
 		813AE04D27C8468100CC8F02 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AE04C27C8468100CC8F02 /* LottieView.swift */; };
 		813AE04F27C84AD300CC8F02 /* IntroDotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AE04E27C84AD300CC8F02 /* IntroDotsView.swift */; };
 		8154727427C86AFC00B00F92 /* OrderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154727327C86AFC00B00F92 /* OrderContentView.swift */; };
-		81601EEB27D6BFB500215744 /* LessonsGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81601EEA27D6BFB500215744 /* LessonsGalleryView.swift */; };
+		81601EEB27D6BFB500215744 /* LessonGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81601EEA27D6BFB500215744 /* LessonGalleryView.swift */; };
 		81601EED27D6BFFD00215744 /* LessonProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81601EEC27D6BFFD00215744 /* LessonProvider.swift */; };
 		81601EEF27D6CEC200215744 /* LessonGalleryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81601EEE27D6CEC200215744 /* LessonGalleryCardView.swift */; };
+		81601EF227D6E1FE00215744 /* LessonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81601EF127D6E1FE00215744 /* LessonListView.swift */; };
+		81601EF427D6E28500215744 /* LessonFullCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81601EF327D6E28500215744 /* LessonFullCardView.swift */; };
 		8167445B278FC53800AB7B32 /* YouTubePlayerKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8167445A278FC53800AB7B32 /* YouTubePlayerKit.swift */; };
 		8167445D278FE76800AB7B32 /* RadioButtonField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8167445C278FE76800AB7B32 /* RadioButtonField.swift */; };
 		816744652791462800AB7B32 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816744642791462800AB7B32 /* Extensions.swift */; };
@@ -73,9 +75,11 @@
 		813AE04C27C8468100CC8F02 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		813AE04E27C84AD300CC8F02 /* IntroDotsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroDotsView.swift; sourceTree = "<group>"; };
 		8154727327C86AFC00B00F92 /* OrderContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderContentView.swift; sourceTree = "<group>"; };
-		81601EEA27D6BFB500215744 /* LessonsGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsGalleryView.swift; sourceTree = "<group>"; };
+		81601EEA27D6BFB500215744 /* LessonGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonGalleryView.swift; sourceTree = "<group>"; };
 		81601EEC27D6BFFD00215744 /* LessonProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonProvider.swift; sourceTree = "<group>"; };
 		81601EEE27D6CEC200215744 /* LessonGalleryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonGalleryCardView.swift; sourceTree = "<group>"; };
+		81601EF127D6E1FE00215744 /* LessonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonListView.swift; sourceTree = "<group>"; };
+		81601EF327D6E28500215744 /* LessonFullCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonFullCardView.swift; sourceTree = "<group>"; };
 		8167445A278FC53800AB7B32 /* YouTubePlayerKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubePlayerKit.swift; sourceTree = "<group>"; };
 		8167445C278FE76800AB7B32 /* RadioButtonField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonField.swift; sourceTree = "<group>"; };
 		816744642791462800AB7B32 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -161,6 +165,7 @@
 				813AE03E27C8365200CC8F02 /* Intro */,
 				81B280ED278FA20A00DCB425 /* Learning */,
 				81B280E2278D625600DCB425 /* Home */,
+				81601EF027D6E1CE00215744 /* LessonList */,
 				81B280DC278D5EA600DCB425 /* ContentProviders */,
 				81B280D7278D576A00DCB425 /* Models */,
 				81B280D2278D0C2800DCB425 /* Common */,
@@ -203,6 +208,15 @@
 				813AE04C27C8468100CC8F02 /* LottieView.swift */,
 			);
 			path = Lottie;
+			sourceTree = "<group>";
+		};
+		81601EF027D6E1CE00215744 /* LessonList */ = {
+			isa = PBXGroup;
+			children = (
+				81601EF127D6E1FE00215744 /* LessonListView.swift */,
+				81601EF327D6E28500215744 /* LessonFullCardView.swift */,
+			);
+			path = LessonList;
 			sourceTree = "<group>";
 		};
 		81674461278FF40500AB7B32 /* WatchingContent */ = {
@@ -282,7 +296,7 @@
 			children = (
 				81B280E0278D625000DCB425 /* BrowseLessonsView.swift */,
 				813AE03F27C8389200CC8F02 /* HomepageView.swift */,
-				81601EEA27D6BFB500215744 /* LessonsGalleryView.swift */,
+				81601EEA27D6BFB500215744 /* LessonGalleryView.swift */,
 				81601EEE27D6CEC200215744 /* LessonGalleryCardView.swift */,
 			);
 			path = Home;
@@ -454,6 +468,7 @@
 				81B280EF278FA22100DCB425 /* LearningView.swift in Sources */,
 				813AD89D278CFE6F00C03B2C /* ContentView.swift in Sources */,
 				81E4683627B1C6F80051BB0A /* PromotionContentProvider.swift in Sources */,
+				81601EF427D6E28500215744 /* LessonFullCardView.swift in Sources */,
 				81C8891627A60FA7003F3FF5 /* ProductivityContentProvider.swift in Sources */,
 				8167446927915B4900AB7B32 /* ResumeContentProvider.swift in Sources */,
 				8154727427C86AFC00B00F92 /* OrderContentView.swift in Sources */,
@@ -461,7 +476,8 @@
 				81B280F5278FA77700DCB425 /* QuizView.swift in Sources */,
 				81B280EC278EC72A00DCB425 /* InterviewContentProvider.swift in Sources */,
 				81B280F3278FA76300DCB425 /* WatchContentView.swift in Sources */,
-				81601EEB27D6BFB500215744 /* LessonsGalleryView.swift in Sources */,
+				81601EEB27D6BFB500215744 /* LessonGalleryView.swift in Sources */,
+				81601EF227D6E1FE00215744 /* LessonListView.swift in Sources */,
 				81601EEF27D6CEC200215744 /* LessonGalleryCardView.swift in Sources */,
 				813AD89B278CFE6F00C03B2C /* TCGApp.swift in Sources */,
 				8167445D278FE76800AB7B32 /* RadioButtonField.swift in Sources */,

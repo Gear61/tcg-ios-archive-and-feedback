@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Lesson: Identifiable, ObservableObject {
+class Lesson: Identifiable, ObservableObject, Hashable {
     
     var id: String
     var type: LessonType
@@ -43,5 +43,13 @@ class Lesson: Identifiable, ObservableObject {
     
     func getYouTubeThumbnailUrl() -> String {
         return "https://img.youtube.com/vi/" + youtubeVideoId + "/maxresdefault.jpg"
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(ObjectIdentifier(self))
+    }
+    
+    static func == (lhs: Lesson, rhs: Lesson) -> Bool {
+        return lhs.id == rhs.id
     }
 }

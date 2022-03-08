@@ -17,7 +17,7 @@ struct BrowseLessonsView: View {
         ScrollView {
             VStack(spacing: 0) {
                 ForEach(lessonTypes) { lessonType in
-                    LessonsGalleryView(lessonType: lessonType)
+                    LessonGalleryView(lessonType: lessonType)
                 }
             }
         }
