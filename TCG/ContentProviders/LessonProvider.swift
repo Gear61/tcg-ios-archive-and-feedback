@@ -54,7 +54,7 @@ class LessonProvider: ObservableObject {
         var filteredLessons: [Lesson] = []
         var completedLessons: [Lesson] = []
         for lesson in lessons {
-            if (lesson.type == type) {
+            if (lesson.tags.contains(type)) {
                 if (lesson.isCompleted) {
                     completedLessons.append(lesson)
                 } else {

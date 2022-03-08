@@ -98,7 +98,7 @@ struct MeetingsContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonTag.MEETINGS,
+            tags: [LessonTag.MEETINGS],
             name: "The #1 Thing To Remember With Meetings",
             youtubeVideoId: "e6Ej_9mEc10",
             isCompleted: completionStatus,
@@ -138,7 +138,7 @@ struct MeetingsContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonTag.MEETINGS,
+            tags: [LessonTag.MEETINGS],
             name: "Making Every Single Meeting You Have Effective",
             youtubeVideoId: "ZzQquAy7gwQ",
             isCompleted: completionStatus,
@@ -189,7 +189,7 @@ struct MeetingsContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonTag.MEETINGS,
+            tags: [LessonTag.MEETINGS],
             name: "The Most Straightforward Way To Level Up Your Meetings",
             youtubeVideoId: "BIcS6glgqyQ",
             isCompleted: completionStatus,
@@ -253,7 +253,7 @@ struct MeetingsContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonTag.MEETINGS,
+            tags: [LessonTag.MEETINGS],
             name: "Taking Amazing Meeting Notes",
             youtubeVideoId: "b4A4zPu4xMQ",
             isCompleted: completionStatus,
@@ -293,7 +293,7 @@ struct MeetingsContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonTag.MEETINGS,
+            tags: [LessonTag.MEETINGS],
             name: "A Simple Trick To Make Your Meetings More Efficient",
             youtubeVideoId: "q8RxMZqVYmk",
             isCompleted: completionStatus,
@@ -331,7 +331,7 @@ struct MeetingsContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonTag.MEETINGS,
+            tags: [LessonTag.MEETINGS, LessonTag.ONE_ON_ONE_MEETINGS],
             name: "1 on 1 Meetings Are An Exercise In Proactivity",
             youtubeVideoId: "JmVVa94j04I",
             isCompleted: completionStatus,
@@ -371,7 +371,7 @@ struct MeetingsContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonTag.MEETINGS,
+            tags: [LessonTag.MEETINGS, LessonTag.ONE_ON_ONE_MEETINGS],
             name: "Common Scenarios For Setting Up 1 on 1s",
             youtubeVideoId: "Et3Klf_jIhM",
             isCompleted: completionStatus,
@@ -422,7 +422,7 @@ struct MeetingsContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonTag.MEETINGS,
+            tags: [LessonTag.MEETINGS, LessonTag.ONE_ON_ONE_MEETINGS],
             name: "Build The Relationship",
             youtubeVideoId: "GJHsNeogthY",
             isCompleted: completionStatus,
@@ -473,7 +473,7 @@ struct MeetingsContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonTag.MEETINGS,
+            tags: [LessonTag.MEETINGS, LessonTag.ONE_ON_ONE_MEETINGS],
             name: "Be Awkward",
             youtubeVideoId: "4XFgKxYfrxY",
             isCompleted: completionStatus,
@@ -511,7 +511,7 @@ struct MeetingsContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonTag.MEETINGS,
+            tags: [LessonTag.MEETINGS, LessonTag.ONE_ON_ONE_MEETINGS, LessonTag.WORKING_WITH_MANAGER],
             name: "Structuring Your Manager 1 on 1",
             youtubeVideoId: "3x4Oz332R9s",
             isCompleted: completionStatus,
@@ -551,7 +551,7 @@ struct MeetingsContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonTag.MEETINGS,
+            tags: [LessonTag.MEETINGS, LessonTag.ONE_ON_ONE_MEETINGS, LessonTag.WORKING_WITH_MANAGER],
             name: "What To Do If Your Manager Keeps Canceling Your 1 on 1s",
             youtubeVideoId: "bPk5gEoGLAU",
             isCompleted: completionStatus,
@@ -589,7 +589,7 @@ struct MeetingsContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonTag.MEETINGS,
+            tags: [LessonTag.MEETINGS, LessonTag.ONE_ON_ONE_MEETINGS, LessonTag.WORKING_WITH_MANAGER],
             name: "Why Delayed And Infrequent Manager 1 on 1s Are Like Procrastination",
             youtubeVideoId: "NswneqhmEJ4",
             isCompleted: completionStatus,
@@ -649,7 +649,7 @@ struct MeetingsContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonTag.MEETINGS,
+            tags: [LessonTag.MEETINGS, LessonTag.ONE_ON_ONE_MEETINGS, LessonTag.WORKING_WITH_MANAGER, LessonTag.JUNIOR_ENGINEER],
             name: "Having The Proper Mentality For Manager 1 on 1s",
             youtubeVideoId: "Ftcwz1I6mIg",
             isCompleted: completionStatus,
@@ -687,7 +687,7 @@ struct MeetingsContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonTag.MEETINGS,
+            tags: [LessonTag.MEETINGS, LessonTag.ONE_ON_ONE_MEETINGS, LessonTag.WORKING_WITH_MANAGER, LessonTag.SENIOR_ENGINEER],
             name: "The Manager 1 on 1 Is A Litmus Test For Seniority",
             youtubeVideoId: "X8nxyvydHjg",
             isCompleted: completionStatus,
@@ -736,7 +736,7 @@ struct MeetingsContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonTag.MEETINGS,
+            tags: [LessonTag.MEETINGS, LessonTag.ONE_ON_ONE_MEETINGS, LessonTag.WORKING_WITH_MANAGER],
             name: "Make Sure To Get This Resource From Your Manager 1 on 1s",
             youtubeVideoId: "SBf9S0B0W3Q",
             isCompleted: completionStatus,
@@ -783,7 +783,7 @@ struct MeetingsContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonTag.MEETINGS,
+            tags: [LessonTag.MEETINGS, LessonTag.ONE_ON_ONE_MEETINGS, LessonTag.WORKING_WITH_MANAGER],
             name: "You Should Be Vulnerable With Your Manager",
             youtubeVideoId: "7ZM7YNKHLy8",
             isCompleted: completionStatus,
@@ -834,7 +834,7 @@ struct MeetingsContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonTag.MEETINGS,
+            tags: [LessonTag.MEETINGS, LessonTag.ONE_ON_ONE_MEETINGS, LessonTag.WORKING_WITH_MANAGER],
             name: "Voicing Your Problems And Frustrations Productively",
             youtubeVideoId: "qWXfT2fiPVE",
             isCompleted: completionStatus,

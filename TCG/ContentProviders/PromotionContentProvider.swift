@@ -65,7 +65,7 @@ struct PromotionContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonTag.PROMOTION,
+            tags: [LessonTag.PROMOTION, LessonTag.SENIOR_ENGINEER],
             name: "The One Thing You Need To Know About Promotion In Tech",
             youtubeVideoId: "8a-ZMCGg4rc",
             isCompleted: completionStatus,
@@ -116,7 +116,7 @@ struct PromotionContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonTag.PROMOTION,
+            tags: [LessonTag.PROMOTION, LessonTag.SENIOR_ENGINEER],
             name: "Understanding The Differences Between Engineering Levels",
             youtubeVideoId: "tdfXpFZriFI",
             isCompleted: completionStatus,
@@ -189,7 +189,7 @@ struct PromotionContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonTag.PROMOTION,
+            tags: [LessonTag.PROMOTION, LessonTag.SENIOR_ENGINEER],
             name: "How To Learn From The Rockstar Engineers You Work With",
             youtubeVideoId: "wgCDDE_WAJ8",
             isCompleted: completionStatus,
@@ -240,7 +240,7 @@ struct PromotionContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonTag.PROMOTION,
+            tags: [LessonTag.PROMOTION, LessonTag.JUNIOR_ENGINEER],
             name: "Junior Engineers, Avoid This Fake Growth Trap",
             youtubeVideoId: "6ss9oQWn2K8",
             isCompleted: completionStatus,
@@ -337,7 +337,7 @@ struct PromotionContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonTag.PROMOTION,
+            tags: [LessonTag.PROMOTION, LessonTag.SENIOR_ENGINEER],
             name: "This Is How Engineers Are Measured For Promotion",
             youtubeVideoId: "nHwHnNwN6to",
             isCompleted: completionStatus,
@@ -388,7 +388,7 @@ struct PromotionContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonTag.PROMOTION,
+            tags: [LessonTag.PROMOTION, LessonTag.SENIOR_ENGINEER],
             name: "The Resource You Need For Promotion That Few Understand",
             youtubeVideoId: "xDKjrf-tpZ4",
             isCompleted: completionStatus,
@@ -439,7 +439,7 @@ struct PromotionContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonTag.PROMOTION,
+            tags: [LessonTag.PROMOTION],
             name: "What Makes A Good Growth Environment For Promotion",
             youtubeVideoId: "s3Fq2xzZ8E0",
             isCompleted: completionStatus,
@@ -490,7 +490,7 @@ struct PromotionContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonTag.PROMOTION,
+            tags: [LessonTag.PROMOTION, LessonTag.SENIOR_ENGINEER],
             name: "Why Just Doing The Work Isn’t Enough For Promotion",
             youtubeVideoId: "_w0VUTA7z2E",
             isCompleted: completionStatus,

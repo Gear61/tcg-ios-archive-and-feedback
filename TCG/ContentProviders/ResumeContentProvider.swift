@@ -82,7 +82,7 @@ struct ResumeContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonTag.RESUME,
+            tags: [LessonTag.RESUME],
             name: "Understanding The Resume Review Process And Formats",
             youtubeVideoId: "MByD2CTwfmM",
             isCompleted: completionStatus,
@@ -155,7 +155,7 @@ struct ResumeContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonTag.RESUME,
+            tags: [LessonTag.RESUME],
             name: "Explaining Your Experience In A Meaningful Way",
             youtubeVideoId: "sDbK84GEE94",
             isCompleted: completionStatus,
@@ -217,7 +217,7 @@ struct ResumeContentProvider {
         let completionStatus = UserDefaultUtil.getLessonCompletionStatus(lessonId: lessonId)
         return Lesson(
             id: lessonId,
-            type: LessonTag.RESUME,
+            tags: [LessonTag.RESUME, LessonTag.JUNIOR_ENGINEER],
             name: "How To Supercharge Your Resume As A Junior Engineer",
             youtubeVideoId: "9Wb-gHEO9ug",
             isCompleted: completionStatus,

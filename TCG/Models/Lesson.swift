@@ -10,7 +10,7 @@ import Foundation
 class Lesson: Identifiable, ObservableObject, Hashable {
     
     var id: String
-    var type: LessonTag
+    var tags: Set<LessonTag>
     var name: String
     var youtubeVideoId: String
     var questions: [Question]
@@ -19,14 +19,14 @@ class Lesson: Identifiable, ObservableObject, Hashable {
     
     init(
         id: String,
-        type: LessonTag,
+        tags: Set<LessonTag>,
         name: String,
         youtubeVideoId: String,
         isCompleted: Bool,
         questions: [Question]
     ) {
         self.id = id
-        self.type = type
+        self.tags = tags
         self.name = name
         self.youtubeVideoId = youtubeVideoId
         self.isCompleted = isCompleted
@@ -34,7 +34,7 @@ class Lesson: Identifiable, ObservableObject, Hashable {
     }
     
     func getLessonToolbarTitleText() -> String {
-        return type.description + " Lesson"
+        return tags.description + " Lesson"
     }
     
     func getYouTubeEmbedUrl() -> String {
