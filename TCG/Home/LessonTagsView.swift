@@ -8,19 +8,22 @@
 import SwiftUI
 
 struct LessonTagsView: View {
-
+    
     @EnvironmentObject var lessonProvider: LessonProvider
     
     var body: some View {
-        ScrollView(showsIndicators: false) {
-            LazyVStack() {
-                ForEach(
-                    Array(lessonProvider.getLessonTagViewModels().enumerated()),
-                    id: \.element
-                ) { index, viewModel in
-                    LessonTagRowView(viewModel: viewModel)
+        VStack(spacing: 0) {
+            ScrollView(showsIndicators: false) {
+                LazyVStack() {
+                    ForEach(
+                        Array(lessonProvider.getLessonTagViewModels().enumerated()),
+                        id: \.element
+                    ) { index, viewModel in
+                        LessonTagRowView(viewModel: viewModel)
+                    }
                 }
             }
+            Divider()
         }
     }
 }
