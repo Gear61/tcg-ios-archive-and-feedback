@@ -20,6 +20,10 @@ struct LessonTagsView: View {
                         id: \.element
                     ) { index, viewModel in
                         LessonTagRowView(viewModel: viewModel)
+                            .padding(.top, index == 0 ? 16 : 0)
+                            .padding(.bottom, 16)
+                            .padding(.leading, 16)
+                            .padding(.trailing, 16)
                     }
                 }
             }
