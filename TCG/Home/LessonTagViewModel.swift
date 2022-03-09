@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Lottie
 
 class LessonTagViewModel: ObservableObject, Hashable {
     

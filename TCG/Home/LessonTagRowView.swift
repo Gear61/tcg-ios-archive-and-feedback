@@ -17,16 +17,22 @@ struct LessonTagRowView: View {
                 VStack(alignment: .leading) {
                     Text(viewModel.tag.description)
                         .foregroundColor(Colors.titleText)
-                        .font(.title2)
+                        .font(.title3)
                     Text(viewModel.getNumLessonsText())
                         .foregroundColor(Colors.normalText)
                         .font(.body)
                 }
                 Spacer()
                 Text(viewModel.completionPercentText)
+                    .font(.system(size: 15))
                     .foregroundColor(Color(viewModel.getCompletionTextColor()))
+                    .frame(width: 52, height: 52, alignment: .center)
+                    .overlay(
+                        Circle()
+                            .stroke(Color(viewModel.getCompletionTextColor()), lineWidth: 2)
+                    )
             }
-            .padding(12)
+            .padding(8)
             .overlay(
                 RoundedRectangle(cornerRadius: 4)
                     .stroke(Colors.footerText, lineWidth: 1)
