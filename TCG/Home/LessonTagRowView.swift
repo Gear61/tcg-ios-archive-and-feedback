@@ -23,7 +23,8 @@ struct LessonTagRowView: View {
                         .font(.body)
                 }
                 Spacer()
-                Text("100%")
+                Text(viewModel.completionPercentText)
+                    .foregroundColor(Color(viewModel.getCompletionTextColor()))
             }
             .padding(12)
             .overlay(

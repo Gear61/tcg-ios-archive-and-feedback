@@ -6,13 +6,24 @@
 //
 
 import Foundation
+import UIKit
 
 class LessonTagViewModel: ObservableObject, Hashable {
     
+    let START_RED: Float = 0.957
+    let END_RED: Float = 0.298
+    
+    let START_GREEN: Float = 0.263
+    let END_GREEN: Float = 0.686
+    
+    let START_BLUE: Float = 0.212
+    let END_BLUE: Float = 0.314
+    
     var tag: LessonTag
     var lessons: [Lesson]
+    var completionPercent: Int
     
-    @Published var completionPercent: Int
+    @Published var completionPercentText: String
     
     init(
         tag: LessonTag,
@@ -29,11 +40,26 @@ class LessonTagViewModel: ObservableObject, Hashable {
         }
         let countFloat = Float(lessons.count)
         self.completionPercent = Int((numComplete / countFloat) * 100.0)
+        self.completionPercentText = String(completionPercent) + "%"
     }
     
     func getNumLessonsText() -> String {
         let countString = String(lessons.count)
         return countString + " Lessons"
+    }
+    
+    func getCompletionTextColor() -> UIColor {
+        let completionFloat: Float = Float(completionPercent) / 100.0
+        let redDelta: Float = END_RED - START_RED
+        let greenDelta: Float = END_GREEN - START_GREEN
+        let blueDelta: Float = END_BLUE - START_BLUE
+        
+        return UIColor(
+            red: CGFloat(START_RED + (redDelta * completionFloat)),
+            green: CGFloat(START_GREEN + (greenDelta * completionFloat)),
+            blue: CGFloat(START_BLUE + (blueDelta * completionFloat)),
+            alpha: 1.0
+        )
     }
     
     func hash(into hasher: inout Hasher) {
