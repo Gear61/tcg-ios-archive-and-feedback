@@ -11,7 +11,7 @@ struct LessonListView: View {
     
     @EnvironmentObject var lessonProvider: LessonProvider
     
-    var lessonType: LessonTag
+    var lessonTag: LessonTag
     
     var body: some View {
         VStack(spacing: 0) {
@@ -19,7 +19,7 @@ struct LessonListView: View {
             ScrollView(showsIndicators: false) {
                 LazyVStack(spacing: 0) {
                     ForEach(
-                        Array(lessonProvider.getLessons(tag: lessonType).enumerated()),
+                        Array(lessonProvider.getLessons(tag: lessonTag).enumerated()),
                         id: \.element
                     ) { index, lesson in
                         LessonFullCardView(lesson: lesson)
@@ -34,7 +34,7 @@ struct LessonListView: View {
         .toolbar {
             ToolbarItem(placement: .principal) {
                 HStack {
-                    Text(lessonType.description).font(.headline)
+                    Text(lessonTag.description).font(.headline)
                 }
             }
         }

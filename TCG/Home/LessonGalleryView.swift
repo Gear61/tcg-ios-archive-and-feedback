@@ -15,7 +15,7 @@ struct LessonGalleryView: View {
     
     var body: some View {
         VStack() {
-            NavigationLink(destination: LessonListView(lessonType: lessonType)) {
+            NavigationLink(destination: LessonListView(lessonTag: lessonType)) {
                 HStack {
                     Text(lessonType.description)
                         .foregroundColor(Colors.titleText)
