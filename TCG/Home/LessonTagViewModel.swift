@@ -22,9 +22,7 @@ class LessonTagViewModel: ObservableObject, Hashable {
     
     var tag: LessonTag
     var lessons: [Lesson]
-    var completionPercent: Int
-    
-    @Published var completionPercentText: String
+    @Published var completionPercent: Int
     
     init(
         tag: LessonTag,
@@ -41,7 +39,6 @@ class LessonTagViewModel: ObservableObject, Hashable {
         }
         let countFloat = Float(lessons.count)
         self.completionPercent = Int((numComplete / countFloat) * 100.0)
-        self.completionPercentText = String(completionPercent) + "%"
     }
     
     func getNumLessonsText() -> String {
@@ -61,6 +58,21 @@ class LessonTagViewModel: ObservableObject, Hashable {
             blue: CGFloat(START_BLUE + (blueDelta * completionFloat)),
             alpha: 1.0
         )
+    }
+
+    func maybeRefreshCompletion() {
+        var numComplete: Float = 0.0
+        for lesson in lessons {
+            if (lesson.isCompleted) {
+                numComplete += 1.0
+            }
+        }
+        let countFloat = Float(lessons.count)
+        let freshCompletionPercent = Int((numComplete / countFloat) * 100.0)
+        
+        if (freshCompletionPercent != self.completionPercent) {
+            self.completionPercent = freshCompletionPercent
+        }
     }
     
     func hash(into hasher: inout Hasher) {

@@ -91,7 +91,7 @@ struct ProductivityContentProvider {
         return Lesson(
             id: lessonId,
             tags: [LessonTag.PRODUCTIVITY, LessonTag.SENIOR_ENGINEER, LessonTag.BIG_TECH],
-            name: "Setting Up Your Mindset For Long-Term Success And What Separates The Top Engineers From The Rest",
+            name: "Setting Up Your Engineering Mindset For Long-Term Success",
             youtubeVideoId: "XqBA2fkvUTg",
             isCompleted: completionStatus,
             questions: questions

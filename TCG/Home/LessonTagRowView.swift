@@ -11,6 +11,10 @@ struct LessonTagRowView: View {
     
     @ObservedObject var viewModel: LessonTagViewModel
     
+    func checkCompletion() {
+        viewModel.maybeRefreshCompletion()
+    }
+    
     var body: some View {
         NavigationLink(destination: LessonListView(lessonTag: viewModel.tag)) {
             HStack {
@@ -23,7 +27,7 @@ struct LessonTagRowView: View {
                         .font(.body)
                 }
                 Spacer()
-                Text(viewModel.completionPercentText)
+                Text(String(viewModel.completionPercent) + "%")
                     .font(.system(size: 15))
                     .foregroundColor(Color(viewModel.getCompletionTextColor()))
                     .frame(width: 52, height: 52, alignment: .center)
@@ -31,6 +35,7 @@ struct LessonTagRowView: View {
                         Circle()
                             .stroke(Color(viewModel.getCompletionTextColor()), lineWidth: 2)
                     )
+                    .onAppear(perform: checkCompletion)
             }
             .padding(8)
             .overlay(
