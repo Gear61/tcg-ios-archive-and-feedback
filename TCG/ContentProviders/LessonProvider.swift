@@ -76,6 +76,6 @@ class LessonProvider: ObservableObject {
                 )
             )
         }
-        return viewModels.sorted(by: { $0.tag.description > $1.tag.description })
+        return viewModels.sorted(by: { $0.tag.description < $1.tag.description })
     }
 }

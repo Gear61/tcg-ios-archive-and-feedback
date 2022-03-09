@@ -24,7 +24,7 @@ struct LessonTagRowView: View {
             Spacer()
             Text("100%")
         }
-        .padding(16)
+        .padding(12)
         .overlay(
             RoundedRectangle(cornerRadius: 4)
                 .stroke(Colors.footerText, lineWidth: 1)
